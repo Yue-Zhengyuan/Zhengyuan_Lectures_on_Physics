@@ -1,26 +1,3 @@
-<style>
-    .katex {
-        font-size: 1.1em;
-    }
-    .remark {
-        border-radius: 15px;
-        padding: 20px;
-        background-color: SeaGreen;
-        color: White;
-    }
-    .result {
-        border-radius: 15px;
-        padding: 20px;
-        background-color: DarkSlateBlue;
-        color: White;
-    }
-    .imgtext{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-</style>
-
 # Spectral Representation at Finite-*T*
 
 The zero-temperature Green's function can be generalized to finite temperature by replacing the ground state expectation value with the grand-canonical ensemble average:

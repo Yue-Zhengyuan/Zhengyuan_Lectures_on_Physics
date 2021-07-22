@@ -229,7 +229,7 @@ $$
 
 </div><br>
 
-## Density Matrix: Path Integral in Imaginary Time
+## Euclidean Path Integral in Imaginary Time
 
 <div class="remark">
 <center>

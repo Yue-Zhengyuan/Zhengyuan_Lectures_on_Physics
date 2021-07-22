@@ -185,8 +185,6 @@ $$
 
 ## Jordan-Wigner Transformation
 
-### Mapping to Complex Fermion
-
 With the string operator, the complete mapping from spin to (complex) fermion is
 
 <div class="result">
@@ -224,9 +222,9 @@ $$
 
     $$
     \begin{align*}
-        [F_j, S_m^{\pm}] &= 0 \qquad j \le m \\
-        \{F_j, S_m^{\pm}\} &= 0 \qquad j > m
-    \end{align*}
+        [F_j, S_m^{a}] &= 0 \qquad j \le m \\
+        \{F_j, S_m^{a}\} &= 0 \qquad j > m
+    \end{align*} \qquad (a = +,-,x,y)
     $$
 
 </div>
@@ -235,14 +233,14 @@ $$
 
 *Proof of the commutation relations*:
 
-- When $j \le m$, $S^z_m$ is not in the string $F_j$, which then only includes operators on other sites than $m$. Thus $[F_j, S^\pm_m] = 0$ 
+- When $j \le m$, the string $F_j$ contains no operators of site $m$. Thus $[F_j, S^a_m] = 0$ 
 
 - When $j > m$, $S^z_m$ is in $F_j$. Then
 
     $$
-    \{F_j, S_m^\pm\} = (-2)^{j-1} 
+    \{F_j, S^a_m\} = (-2)^{j-1} 
     S^z_1 \cdots \cancel{S^z_m} \cdots S^z_{j-1} 
-    \underbrace{\{S^z_m, S_m^\pm\}}_{=0} = 0
+    \underbrace{\{S^z_m, S^a_m\}}_{=0} = 0
     \quad \blacksquare
     $$
 
@@ -268,14 +266,14 @@ $$
     \\~\\
     \{c_i, c_i^\dagger\} &= \{S^-_i F_i, S^+_i F_i\}
     = S^-_i F_i S^+_i F_i + S^+_i F_i S^-_i F_i \\
-    &= \{S^-_i, S^+_i\} (F_i)^2 = 1 
-    &\qquad \blacksquare
+    &= \underbrace{\{S^-_i, S^+_i\}}_{=1} (F_i)^2 = 1 
+    & \blacksquare
 \end{align*}
 $$
 
 ----
 
-### Mapping to Majorana Fermion
+## Majorana Fermion
 
 The complex fermion $c_j$ can be rearranged into **Majorana fermions** $a_j, b_j$, whose corresponding operators are *Hermitian*:
 
@@ -283,14 +281,14 @@ $$
 \begin{bmatrix}
     c_j \\ c_j^\dagger
 \end{bmatrix} = \frac{1}{\sqrt{2}} \begin{bmatrix}
-    a_j + i b_j \\ a_i - i b_j
+    a_j - i b_j \\ a_i + i b_j
 \end{bmatrix}
 \Rightarrow 
 \begin{bmatrix}
     a_j \\ b_j
 \end{bmatrix} = \frac{1}{\sqrt{2}} \begin{bmatrix}
     c_j + c_j^\dagger \\
-    -i (c_j - c_j^\dagger)
+    i (c_j - c_j^\dagger)
 \end{bmatrix}    
 $$
 
@@ -338,10 +336,10 @@ Next we determine the mapping from spin to Majorana fermions.
 $$
 \begin{align*}
     c_j &= S_j^- F_j = (S^x_j - iS^y_j) F_j
-    \overset{!}{=} \frac{1}{\sqrt{2}}(a_j + ib_j)
+    \overset{!}{=} \frac{1}{\sqrt{2}}(a_j - ib_j)
     \\
     c_j^\dagger &= S_j^+ F_j = (S^x_j + iS^y_j) F_j
-    \overset{!}{=} \frac{1}{\sqrt{2}}(a_j - ib_j)
+    \overset{!}{=} \frac{1}{\sqrt{2}}(a_j + ib_j)
 \end{align*}
 $$
 
@@ -353,7 +351,7 @@ Comparing with the definition of $a_j, b_j$, we obtain (remember that $F_j$ is H
 
 $$
 a_j = \sqrt{2} S^x_j F_j, \quad
-b_j = -\sqrt{2} S^y_j F_j \qquad
+b_j = \sqrt{2} S^y_j F_j \qquad
 \bigg[ F_j = \prod_{l=1}^{j-1} (-Z_l) \bigg]
 $$
 
@@ -363,12 +361,47 @@ Let us verify the anti-commutation relations of $a, b$ again using the spin repr
 
 ----
 
-*Proof*: 
+*Proof*: Assume $i < j$ without loss of generality.
 
 $$
 \begin{align*}
-    \{a_i, a_j\} &= 2 \{S^x_i F_i, S^y_j F_j\} \\
-    &= 
+    \{a_i, a_j\} &= 2 \{S^x_i F_i, S^x_j F_j\} 
+    = 2 [
+        S^x_i F_i S^x_j F_j + S^x_j F_j S^x_i F_i
+    ] \\
+    &= 2 [
+        S^x_i S^x_j F_i F_j + S^x_j (-S^x_i F_j) F_i
+    ] \\
+    &= 2 [
+        S^x_i S^x_j F_i F_j - S^x_i S^x_j F_i F_j
+    ] = 0 
+    \\
+    \{a_i, a_i\} &= 2 a_i^2
+    = 4 S^x_i F_i S^x_i F_i = 4 (S^x_i)^2 (F_i)^2 = 1
+\end{align*}
+$$
+
+The relation $\{b_i, b_j\} = \delta_{ij}$ can be proved analogously. Finally
+
+$$
+\begin{align*}
+    \{a_i, b_j\} &= 2 \{S^x_i F_i, S^y_j F_j\}
+    = 2 [
+        S^x_i F_i S^y_j F_j + S^y_j F_j S^x_i F_i
+    ] \\
+    &= 2 [
+        S^x_i S^y_j F_i F_j + S^y_j (-S^x_i F_j) F_i
+    ] \\
+    &= 2 [
+        S^x_i S^y_j F_i F_j - S^x_i S^y_j F_i F_j
+    ] = 0 
+    \\
+    \{a_i, b_i\} &= 2 \{S^x_i F_i, S^y_i F_i\} 
+    = 2 [
+        S^x_i F_i S^y_i F_i + S^y_i F_i S^x_i F_i
+    ] \\
+    &= 4 \underbrace{\{S^x_i, S^y_i\}}_{=0} (F_i)^2 = 0
+    & \blacksquare
 \end{align*}
 $$
 

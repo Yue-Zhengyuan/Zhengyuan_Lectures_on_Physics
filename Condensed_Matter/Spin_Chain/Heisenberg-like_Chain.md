@@ -89,7 +89,7 @@ $$
 
 ## Non-Boundary Terms
 
-- **"Spin Hopping" $t$-Term**
+- "Spin Hopping" $t$-Term
 
     $$
     \begin{align*}
@@ -104,13 +104,7 @@ $$
     \end{align*}
     $$
 
-    Combining with the h.c. term, we arrive at:
-
-    $$
-    S_j^+ S_{j+1}^- + h.c. = c_j^\dagger c_{j+1} + h.c.
-    $$
-
-- **"Spin Pairing" $\Delta$-Term**
+- "Spin Pairing" $\Delta$-Term
 
     $$
     \begin{align*}
@@ -123,15 +117,11 @@ $$
     \end{align*}
     $$
 
-    The last equality follows from the same argument as for the previous term. Therefore (this term is related to the **$p$-wave superconductivity**)
-
-    $$
-    S_j^+ S_{j+1}^+ + h.c. = c_j^\dagger c_{j+1}^\dagger + h.c.
-    $$
+    The last equality follows from the same argument as for the previous term. This term is related to the **$p$-wave superconductivity**.
 
 <div class="result">
 
-**Local non-boundary term of fermion theory:** ($j = 1,...,N-1$)
+**Non-boundary term of fermion theory:** ($j = 1,...,N-1$)
 
 $$
 \begin{align*}
@@ -147,7 +137,7 @@ $$
 
 ## The Boundary Term $H_N$
 
-Since the spin chain contains only nearest neighbor interaction, the only boundary term is $H_N$, which must be transformed carefully:
+Since the spin chain contains only nearest neighbor interaction, the only boundary term is $H_N$:
 
 $$
 \begin{align*}
