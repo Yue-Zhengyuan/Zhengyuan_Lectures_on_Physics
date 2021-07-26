@@ -75,7 +75,7 @@ $$
 \end{align*}
 $$
 
-To express the denominator as an operator, we examine the only nonzero matrix elements of
+To express the denominator as an operator, we examine the only nonbero matrix elements of
 
 $$
 \begin{align*}
@@ -129,7 +129,7 @@ $$
 \end{align*}
 $$
 
-From the relations
+From the relations (note that Fourier transform (with symmetric convention) preserves boson/fermion commutation relations)
 
 $$
 \begin{align*}
@@ -256,38 +256,38 @@ For small phonon momentum $q$, the potential is *negative* ($|\epsilon_k - \epsi
 
 ## Path Integral Approach
 
-One can also derive the effective electron Hamiltonian using the coherent state path integral: replacing operators $(c, b)$ by Grassmann/complex numbers $(\psi, z)$, the partition function is
+One can also derive the effective electron Hamiltonian using the coherent state path integral: replacing operators $(c, b)$ by Grassmann/complex numbers, the partition function is
 
 $$
 \begin{align*}
-    Z &= \int D\bar{\psi} \, D\psi \, D\bar{z} \, Dz \, e^{-S}
+    Z &= \int D\bar{c} \, Dc \, D\bar{b} \, Db \, e^{-S}
     \\
     S &= S_e + S_{ph} + S_{e-ph}
     \\
     &= \int_0^\beta d\tau \, \bigg\{ 
         \sum_k \Big[
-            \bar{\psi}_k \partial_\tau \psi_k
-            + \epsilon_k \bar{\psi}_k \psi_k 
+            \bar{c}_k \partial_\tau c_k
+            + \epsilon_k \bar{c}_k c_k 
         \Big] 
         + \sum_q \Big[
-            \bar{z}_q \partial_\tau z_q
-            + \omega_q \bar{z}_q z_q 
+            \bar{b}_q \partial_\tau b_q
+            + \omega_q \bar{b}_q b_q 
         \Big] \\ &\quad
         + \sum_{k,q} \Big[
-            g_{k,q} \bar{\psi}_{k+q} \psi_k z_q 
-            + g_{k,-q} \bar{\psi}_{k-q} \psi_k \bar{z}_q)
+            g_{k,q} \bar{c}_{k+q} c_k b_q 
+            + g_{k,-q} \bar{c}_{k-q} c_k \bar{b}_q)
         \Big]
     \bigg\}
 \end{align*}
 $$
 
-To derive the effective electron action $S_\text{eff}$, we only need to integrate out $\bar{z},z$: 
+To derive the effective electron action $S_\text{eff}$, we only need to integrate out $\bar{b},b$: 
 
 $$
 \begin{align*}
-    Z &= \int D\bar{\psi} \, D\psi \, e^{-S_\text{eff}} \\
+    Z &= \int D\bar{c} \, Dc \, e^{-S_\text{eff}} \\
     e^{-S_\text{eff}} &\equiv 
-    e^{-S_e} \int D\bar{z} \, Dz \, e^{-(S_{ph}+S_{e-ph})}
+    e^{-S_e} \int D\bar{b} \, Db \, e^{-(S_{ph}+S_{e-ph})}
 \end{align*}
 $$
 
@@ -295,20 +295,20 @@ It helps to also Fourier transform to frequency representation:
 
 $$
 \begin{align*}
-    \psi_k(\tau) &= \frac{1}{\sqrt{\beta}} \sum_{\nu}
-    \psi_{k\nu} e^{i\nu\tau}, & 
+    c_k(\tau) &= \frac{1}{\sqrt{\beta}} \sum_{\nu}
+    c_{k\nu} e^{i\nu\tau}, & 
     \nu &\in \left\{
         \frac{(2n+1)\pi}{\beta} \bigg| n \in \mathbb{Z}
     \right\} \\
-    z_q(\tau) &= \frac{1}{\sqrt{\beta}} \sum_{\chi}
-    z_{q\chi} e^{i\chi\tau}, & 
+    b_q(\tau) &= \frac{1}{\sqrt{\beta}} \sum_{\chi}
+    b_{q\chi} e^{i\chi\tau}, & 
     \chi &\in \left\{
         \frac{2n\pi}{\beta}  \bigg| n \in \mathbb{Z}
     \right\}
 \end{align*}
 $$
 
-We focus on the terms involved in the integration of $\bar{z},z$:
+We focus on the terms involved in the integration of $\bar{b},b$:
 
 - Pure phonon term
 
@@ -316,9 +316,9 @@ We focus on the terms involved in the integration of $\bar{z},z$:
     \begin{align*}
         S_{ph} &= \frac{1}{\beta} \int_0^\beta d\tau 
         \sum_q \sum_{\chi,\chi'} e^{i(-\chi'+\chi)\tau} 
-        \bar{z}_{q\chi'} (i\chi + \omega_q) z_{q\chi}
+        \bar{b}_{q\chi'} (i\chi + \omega_q) b_{q\chi}
         \\
-        &= \sum_{q,\chi} (i\chi + \omega_q) \bar{z}_{q\chi} z_{q\chi}
+        &= \sum_{q,\chi} (i\chi + \omega_q) \bar{b}_{q\chi} b_{q\chi}
     \end{align*}
     $$
 
@@ -329,15 +329,15 @@ We focus on the terms involved in the integration of $\bar{z},z$:
         S_{e-ph} &= \frac{1}{\beta^{3/2}} \int_0^\beta d\tau 
         \sum_{k,q} \sum_{\nu,\nu',\chi} 
         \\ &\quad \times \Big[
-            g_{k,q} \bar{\psi}_{k+q,\nu} \psi_{k\nu'} z_{q\chi}
+            g_{k,q} \bar{c}_{k+q,\nu} c_{k\nu'} b_{q\chi}
             e^{i(-\nu+\nu'+\chi)}
-            + g_{k,-q} \bar{\psi}_{k-q,\nu} \psi_{k\nu'} \bar{z}_{q\chi}
+            + g_{k,-q} \bar{c}_{k-q,\nu} c_{k\nu'} \bar{b}_{q\chi}
             e^{i(-\nu+\nu'-\chi)}
         \Big]
         \\
         &= \frac{1}{\sqrt{\beta}} \sum_{q,\chi} \sum_{k,\nu} \Big[
-            g_{k,q} \bar{\psi}_{k+q,\nu} \psi_{k,\nu-\chi} z_{q\chi}
-            + g_{k,-q} \bar{\psi}_{k-q,\nu} \psi_{k,\nu+\chi} \bar{z}_{q\chi}
+            g_{k,q} \bar{c}_{k+q,\nu} c_{k,\nu-\chi} b_{q\chi}
+            + g_{k,-q} \bar{c}_{k-q,\nu} c_{k,\nu+\chi} \bar{b}_{q\chi}
         \Big]
     \end{align*}
     $$
@@ -347,44 +347,44 @@ Then
 $$
 \begin{align*}
     S &= S_e + \sum_{q,\chi} \bigg\{
-        (i\chi + \omega_q) \bar{z}_{q\chi} z_{q\chi}
+        (i\chi + \omega_q) \bar{b}_{q\chi} b_{q\chi}
         \\ &\quad
         + \frac{1}{\sqrt{\beta}} \sum_{k,\nu} \Big[
-            g_{k,q} \bar{\psi}_{k+q,\nu} \psi_{k,\nu-\chi} z_{q\chi}
-            + g_{k,-q} \bar{\psi}_{k-q,\nu} \psi_{k,\nu+\chi} \bar{z}_{q\chi}
+            g_{k,q} \bar{c}_{k+q,\nu} c_{k,\nu-\chi} b_{q\chi}
+            + g_{k,-q} \bar{c}_{k-q,\nu} c_{k,\nu+\chi} \bar{b}_{q\chi}
         \Big]
     \bigg\}
 \end{align*}
 $$
 
-The integration over $\bar{z},z$ is therefore Gaussian. The result is
+The integration over $\bar{b},b$ is therefore Gaussian. The result is
 
 $$
 \begin{align*}
-    & \int D\bar{z} \, Dz \, e^{-(S_{ph}+S_{e-ph})}
+    & \int D\bar{b} \, Db \, e^{-(S_{ph}+S_{e-ph})}
     \\
-    &\propto \prod_{q,\chi} \int d\bar{z}_{q\chi} \, dz_{q\chi}
+    &\propto \prod_{q,\chi} \int d\bar{b}_{q\chi} \, db_{q\chi}
     \exp \bigg\{
-        - (i\chi + \omega_q) \bar{z}_{q\chi} z_{q\chi}
+        - (i\chi + \omega_q) \bar{b}_{q\chi} b_{q\chi}
         \\ &\quad
         - \bigg[
             \frac{1}{\sqrt{\beta}} \sum_{k,\nu}
-            g_{k,q} \bar{\psi}_{k+q,\nu} \psi_{k,\nu-\chi}
-        \bigg] z_{q\chi}
+            g_{k,q} \bar{c}_{k+q,\nu} c_{k,\nu-\chi}
+        \bigg] b_{q\chi}
         - \bigg[
             \frac{1}{\sqrt{\beta}} \sum_{k,\nu}
-            g_{k,-q} \bar{\psi}_{k-q,\nu} \psi_{k,\nu+\chi}
-        \bigg] \bar{z}_{q\chi}
+            g_{k,-q} \bar{c}_{k-q,\nu} c_{k,\nu+\chi}
+        \bigg] \bar{b}_{q\chi}
     \bigg\}
     \\
     &\propto \exp \bigg\{
         \sum_{q,\chi} \frac{1}{\beta(i\chi + \omega_q)}
         \\ &\quad \times \bigg[
             \sum_{k,\nu}
-            g_{k,q} \bar{\psi}_{k+q,\nu} \psi_{k,\nu-\chi}
+            g_{k,q} \bar{c}_{k+q,\nu} c_{k,\nu-\chi}
         \bigg] \bigg[
             \sum_{k',\nu'}
-            g_{k',-q} \bar{\psi}_{k'-q,\nu'} \psi_{k',\nu'+\chi}
+            g_{k',-q} \bar{c}_{k'-q,\nu'} c_{k',\nu'+\chi}
         \bigg]
     \bigg\}
     \\
@@ -392,8 +392,8 @@ $$
     S_\text{eff} &= S_e 
     - \sum_{q,\chi} \frac{1}{\beta(i\chi + \omega_q)}
     \sum_{k,k',\nu,\nu'}
-    g_{k,q} g_{k',-q} \bar{\psi}_{k+q,\nu} \psi_{k,\nu-\chi}
-    \bar{\psi}_{k'-q,\nu'} \psi_{k',\nu'+\chi}
+    g_{k,q} g_{k',-q} \bar{c}_{k+q,\nu} c_{k,\nu-\chi}
+    \bar{c}_{k'-q,\nu'} c_{k',\nu'+\chi}
 \end{align*}
 $$
 

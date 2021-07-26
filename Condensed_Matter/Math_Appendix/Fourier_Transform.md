@@ -473,9 +473,11 @@ $$
 \end{align*}
 $$
 
-## Relation to Quantum Mechanics
+## Application in Quantum Mechanics
 
-In quantum mechanics, the position-space wave function of the momentum eigenstate $\ket{k}$ is (not normalized)
+### Resolution of Identity
+
+The position-space wave function of the momentum eigenstate $\ket{k}$ is (not normalized)
 
 $$
 \braket{x}{k} = e^{ikx}
@@ -513,4 +515,56 @@ $$
     = \int dx\, \braket{k}{x} \braket{x}{f}
     = \int dx\, e^{-ikx} f(x)
 \end{align*}
+$$
+
+### Creation/Annihilation Operators
+
+Consider first bosons. The creation/annihilation operators on a 1D lattice (site positions are labelled by $R$) satisfy the commutation rules
+
+$$
+[b_R, b_{R'}] = 0, \quad [b^\dagger_R, b^\dagger_{R'}] = 0, \quad 
+[b_R, b_{R'}^\dagger] = \delta_{R-R'}
+$$
+
+The Fourier transform of these operators is (using the symmetric convention)
+
+$$
+b_k = \frac{1}{\sqrt{N}} \sum_R e^{-i k R} b_R
+$$
+
+Then we can show that the Fourier transform preserves commutation relations:
+
+$$
+[b_k, b_{k'}] = 0, \quad [b^\dagger_k, b^\dagger_{k'}] = 0, \quad 
+[b_k, b_{k'}^\dagger] = \delta_{k-k'}
+$$
+
+----
+
+*Proof*: The first two are obvious. We prove the last one:
+
+$$
+\begin{align*}
+    [b_k, b_{k'}^\dagger] &= \frac{1}{N} \sum_{R,R'}
+    e^{i(kR - k'R')} 
+    \underbrace{[b_R, b^\dagger_{R'}]}_{=\delta_{R-R'}} 
+    \\
+    &= \frac{1}{N} \sum_{R} e^{i(k - k') R} 
+    = \delta_{k-k'}
+    &\blacksquare
+\end{align*}
+$$
+
+----
+
+Similarly, for fermion operators $c_R$, the anti-commutation relations are preserved by Fourier transform (with symmetric convention).
+
+$$
+\begin{gather*}
+    \{c_R, c_{R'}\} = 0, \quad \{c^\dagger_R, c^\dagger_{R'}\} = 0, \quad 
+    \{c_R, c_{R'}^\dagger\} = \delta_{R-R'}
+    \\ \Downarrow \\
+    \{c_k, c_{k'}\} = 0, \quad \{c^\dagger_k, c^\dagger_{k'}\} = 0, \quad 
+    \{c_k, c_{k'}^\dagger\} = \delta_{k-k'}
+\end{gather*}
 $$

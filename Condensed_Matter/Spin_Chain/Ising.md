@@ -75,7 +75,7 @@ $$
     $$
     \begin{align*}
         &\text{PBC} \ (c_{N+1} = c_1): & a_{N+1} &= a_1 \\
-        &\text{APBC} \ (c_{N+1} = -c_1): & a_{N+1} &= -a_1
+        &\text{ABC} \ (c_{N+1} = -c_1): & a_{N+1} &= -a_1
     \end{align*}
     $$
 
@@ -98,7 +98,7 @@ The boundary conditions correspond to
 $$
 \begin{align*}
     \text{PBC}\ &(c_{N+1} = c_1): & a_{2N+1} &= a_1 \\
-    \text{APBC}\ &(c_{N+1} = -c_1): & a_{2N+1} &= -a_1
+    \text{ABC}\ &(c_{N+1} = -c_1): & a_{2N+1} &= -a_1
 \end{align*}
 $$
 
@@ -110,6 +110,17 @@ $$
 H_F = -i \sum_{j=1}^N \Big[
     2J a_{2j+1} a_{2j} + h a_{2j} a_{2j-1}
 \Big]
+$$
+
+</div><br>
+
+<div class="remark">
+
+*Remark*: Let us assure that the Hamiltonian is still Hermitian in terms of $a$ operators:
+
+$$
+(i a_{n+1} a_n)^\dagger = -i a_n^\dagger a_{n+1}^\dagger
+= -i a_n a_{n+1} = i a_{n+1} a_n \quad \blacksquare
 $$
 
 </div><br>

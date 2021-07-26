@@ -16,13 +16,13 @@ Now we use Jordan-Wigner transformation to map the Hamiltonian $H^{A/P}$ of **He
     \end{gather*}
     $$
 
-- APBC boundary term
+- ABC boundary term
 
     $$
     \begin{align*}
         H^A_N &= Z_1 H_N Z_1 \\
         &= - J_x S^x_N S^x_1 - J_y S^y_N S^y_1 
-        + J_z S^z_j S^z_{j+1} - h S^z_N
+        + J_z S^z_N S^z_1 - h S^z_N
     \end{align*}
     $$
 
@@ -142,18 +142,21 @@ Since the spin chain contains only nearest neighbor interaction, the only bounda
 $$
 \begin{align*}
     H^P_N &= + t(S_N^+ S_1^- + h.c.)
-    + \Delta (S_N^+ S_1^+ + h.c.) + (\text{$S^z$-terms})
+    + \Delta (S_N^+ S_1^+ + h.c.) + J_z S^z_N S^z_1 - h S^z_N
     \\
     H^A_N &= - t(S_N^+ S_1^- + h.c.)
-    - \Delta (S_N^+ S_1^+ + h.c.) + (\text{$S^z$-terms})
+    - \Delta (S_N^+ S_1^+ + h.c.) + J_z S^z_N S^z_1 - h S^z_N
 \end{align*}
 $$
 
-The $S^z$-term can be transformed ordinarily. We focus on the first two terms:
+The $h$-term can be transformed ordinarily. We focus on $S_N S_1$-like terms:
 
 $$
-S_N^+ S_1^{(\pm)} = c_N^\dagger F_N c_1^{(\dagger)} \cancel{F_1}
-= c_N^\dagger F_N c_1^{(\dagger)}
+\begin{align*}
+    S_N^+ S_1^{(\pm)} &= c_N^\dagger F_N c_1^{(\dagger)} \cancel{F_1}
+    = c_N^\dagger F_N c_1^{(\dagger)} \\
+    S_N^z S_1^z &= (n_N - 1/2)(n_1 - 1/2)
+\end{align*}
 $$
 
 Introduce the the **fermion number parity** operator
@@ -163,7 +166,7 @@ P \equiv (-1)^{n_\text{tot}} = \exp(i\pi n_\text{tot})
 \quad \bigg( n_\text{tot} \equiv \sum_{l=1}^N n_l \bigg)
 $$
 
-Obviously $P^2 = 1$, so its eigenvalues are $\pm 1$ ($n_\text{tot}$ is even or odd). Then we express $F_N$ in terms of $P$:
+Obviously $P^2 = 1$, so its eigenvalues are $\pm 1$ ($n_\text{tot}$ is even or odd). Then we express $F_N$ in terms of $P$: (using the anti-commutator $\{P, c_j^{(\dagger)}\} = 0$ for all $j$)
 
 $$
 \begin{align*}
@@ -171,10 +174,9 @@ $$
     S_N^+ S_1^{(\pm)} &= c_N^\dagger P (-1)^{n_N} c_1^{(\dagger)}
     \\
     &= c_N^\dagger P c_1^{(\dagger)} \qquad 
-    (\text{$\ne 0$ only when input $n_N = 0$})
+    (\ne 0 \ \text{only when input} \ n_N = 0)
     \\
     &= - c_N^\dagger c_1^{(\dagger)} P \qquad
-    (\{P, c_j^{(\dagger)}\} = 0 \ \text{for any} \ j)
 \end{align*}
 $$
 
@@ -187,10 +189,43 @@ $$
     \\ &\quad
     + J_z (n_j - \tfrac{1}{2}) (n_{j+1} - \tfrac{1}{2})
     - h \left(n_N - \tfrac{1}{2} \right)
+    \\ &\Downarrow \\
+    c_N^\dagger c_{N+1}^{(\dagger)} &\overset{\text{def}}{=}
+    (\mp 1)_\text{Spin BC} c_N^\dagger c_1^{(\dagger)} P
 \end{align*}
 $$
 
-($c_{N+1}$ will be defined shortly) so that the fermion Hamiltonian for *both* PBC and APBC are the *same*:
+where the upper/lower sign is for PBC/ABC spin chain. Since the Hamiltonian $H_F$ preserves fermion parity $[H_F,P] = 0$, we can divide the fermion Hilbert space into $P = \pm 1$ sectors. In each sector, we to define $c_{N+1}$ (i.e. choose the boundary condition for the fermion theory) as:
+
+<div class="result">
+
+**Boundary condition of fermion theory:**
+
+$$
+\begin{array}{ccc}
+    \text{Spin BC} & \begin{gathered}
+        \text{Fermion} \\ \text{Parity} \ P
+    \end{gathered} & c_{N+1}^{(\dagger)} & \text{Fermion BC}
+    \\[4pt] \hline \\[-8pt]
+    \text{Periodic} & +1 & -c_1 & \text{Anti-Periodic}
+    \\[0.4em]
+    & -1 & +c_1 & \text{Periodic}
+    \\[4pt] \hline \\[-8pt]
+    \text{Anti-Periodic} & +1 & +c_1 & \text{Periodic}
+    \\[0.4em]
+    & -1 & -c_1 & \text{Anti-Periodic}
+\end{array}
+$$
+
+</div><br>
+
+With this definition, the number operator $n_{N+1}$ in any sector is 
+
+$$
+n_{N+1} = c_{N+1}^\dagger c_{N+1} = (\pm 1)^2 c_1^\dagger c_1 = n_1
+$$
+
+which still satisfies PBC. The fermion Hamiltonian for *both* PBC and ABC are therefore the *same*:
 
 <div class="result">
 
@@ -210,36 +245,12 @@ $$
 
 </div><br>
 
-Then we need to define $c_{N+1}$ (i.e. choose the boundary condition for the fermion theory) as:
-
-<div class="result">
-
-**Boundary condition of fermion theory:**
-
-$$
-\begin{array}{ccc}
-    \text{Spin BC} & c_{N+1}^{(\dagger)}\ \text{Definition} & \text{Fermion BC}
-    \\[4pt] \hline \\[-8pt]
-    \text{Periodic} & -c_1^{(\dagger)} P & \begin{aligned}
-        P = -1 & \Rightarrow \text{Periodic} \\
-        P = +1 & \Rightarrow \text{Anti-Periodic}
-    \end{aligned}
-    \\[10pt] \hline \\[-8pt]
-    \text{Anti-Periodic} & +c_1^{(\dagger)} P & \begin{aligned}
-        P = -1 & \Rightarrow \text{Anti-Periodic} \\
-        P = +1 & \Rightarrow \text{Periodic}
-    \end{aligned}
-\end{array}
-$$
-
-</div><br>
-
 <div class="remark">
 
 *Remark*: The boundary conditions for the fermion theory are usually called:
 
 - PBC: **Ramond (R) sector**
-- APBC: **Neveu-Schwarz (NS) sector**
+- ABC: **Neveu-Schwarz (NS) sector**
 
 </div><br>
 
@@ -257,6 +268,6 @@ $$
 \end{align*}
 $$
 
-where $H_F^{(A/P)}$ refers to $H_F$ with APBC/PBC. 
+where $H_F^{(A/P)}$ refers to $H_F$ with ABC/PBC. 
 
 </div><br>

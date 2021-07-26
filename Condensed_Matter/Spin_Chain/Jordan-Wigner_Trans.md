@@ -351,8 +351,8 @@ Comparing with the definition of $a_j, b_j$, we obtain (remember that $F_j$ is H
 
 $$
 a_j = \sqrt{2} S^x_j F_j, \quad
-b_j = \sqrt{2} S^y_j F_j \qquad
-\bigg[ F_j = \prod_{l=1}^{j-1} (-Z_l) \bigg]
+b_j = \sqrt{2} S^y_j F_j \quad
+\text{with} \quad F_j = \prod_{l=1}^{j-1} (-Z_l)
 $$
 
 </div><br>
