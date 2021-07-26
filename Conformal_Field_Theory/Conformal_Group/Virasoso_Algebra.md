@@ -1,21 +1,14 @@
 # Virasoro Algebra (Mathematical)
 
-## Central Extension
+*Definition*:
 
-A **central extension** of a group $G$ is a short exact sequence of groups
+- **Central extension** of a group $G$: A new group $E$ defined by the following short exact sequence of groups
 
-$$
-1 \to A \to E \to G \to 1
-$$
+    $$
+    1 \to A \to E \to G \to 1
+    $$
 
-such that $A$ is in $Z(E)$, the **center** of the group $E$, which is the set of elements in $E$ that commute with every element of $E$:
-
-$$
-Z(E)\equiv
-\{ z\in E \mid z g=g z, \, \forall g\in E\}
-$$
-
-Obviously, the center of $E$ is an *invariant* subgroup of $E$.
+    such that $A$ is in $Z(E)$, the **center** of the group $E$.
 
 The set of isomorphism classes of central extensions of $G$ by $A$ (where $G$ acts *trivially* on $A$) is in one-to-one correspondence with the cohomology group $H^2(G,A)$.
 

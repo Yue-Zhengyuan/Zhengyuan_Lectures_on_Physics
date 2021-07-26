@@ -1,6 +1,4 @@
-# Translational Symmetry
-
-## The Translation Group
+# The Translation Group
 
 An $d$-dimensional **Bravais lattice** is an infinite array of discrete points described by $d$ linearly independent basis vectors $\{a_1,...,a_d\}$: the position of any point $R$ can be described by
 

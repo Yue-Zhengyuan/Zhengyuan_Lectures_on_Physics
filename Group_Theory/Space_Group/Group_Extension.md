@@ -37,20 +37,29 @@
     1 \to N \xrightarrow{i} G \xrightarrow{\pi} Q \to 1
     $$
 
+    Later we prove that $G$ is also a group.
+
     - **Equivalent group extensions**: Two group extensions $G, G'$ are **equivalent** if there is a commutative diagram
 
         $$
         \begin{CD}
-            1 @>>> T @>{i}>> G @>{\pi}>> G_0 @>>> 1
+            1 @>>> N @>{i}>> G @>{\pi}>> Q @>>> 1
             \\
             @. @VV{\text{id}}V @VV{\varphi}V @VV{\text{id}}V @.
             \\
-            1 @>>> T @>>{i'}> G' @>>{\pi'}> G_0 @>>> 1
+            1 @>>> N @>>{i'}> G' @>>{\pi'}> Q @>>> 1
         \end{CD}
         $$
 
         where $\varphi: G \to G'$ is a group *isomorphism*.
 
-## Properties of A Group Extension
+## Properties of Group Extension
 
-- 
+- The extension $G$ is a group.
+
+- $i(N)$ is a normal subgroup of $G$.
+
+    *Proof*: By definition of exact sequence, $i(N) = \ker G$
+
+- $Q$ is isomorphic to the quotient group $G/i(N)$.
+

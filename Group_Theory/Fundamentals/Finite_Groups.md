@@ -45,13 +45,13 @@ Whenever we use the additive notation, we have assumed that we are dealing with 
     \end{align*} 
     $$
 
-    - **Isomorphism (同构)**: an homomorphism from one group to another which is *also injective (one-to-one)*.
+- **Isomorphism (同构)**: an homomorphism from one group to another which is *also injective (one-to-one)*.
 
-    - **Isomorphic Groups**: Two groups between which exists an isomorphism, denoted by
+- **Isomorphic Groups**: Two groups between which exists an isomorphism, denoted by
 
-        $$
-        G_1 \cong G_2
-        $$
+    $$
+    G_1 \cong G_2
+    $$
 
 ## Subgroups and Cosets
 
@@ -59,13 +59,13 @@ Whenever we use the additive notation, we have assumed that we are dealing with 
 
 - **Subgroups**: a subset $H$ of $G$ which still forms a group under the same multiplication rule of $G$
     
-    - **Normal (invariant) subgroup**: a subgroup $H \in G$ which is invariant under *conjugation* by any elements in $G$:
+- **Normal (invariant) subgroup**: a subgroup $H \in G$ which is invariant under *conjugation* by any elements in $G$:
 
-        $$
-        (H \triangleleft G) :=
-        \forall \, h \in H, g \in G :
-        g^{-1} h g \in H
-        $$
+    $$
+    (H \triangleleft G) :=
+    \forall \, h \in H, g \in G :
+    g^{-1} h g \in H
+    $$
 
 - **Coset**: The set of group elements obtained by multiplying $g \in G$ on the left (or right) of a subgroup $H$ of $G$
 
@@ -94,7 +94,7 @@ Let $f: G_1 \to G_2$ be a group homomorphism. Then
 
 ## Equivalence and Quotient Group
 
-Let $G$ be a group; $H$ is a subgroup of $G$. 
+Let $G$ be a group, and $H$ a subgroup of $G$. 
 
 - **Equivalence relation**: Two elements $g, g' \in G$ are **equivalent** if 
     
@@ -111,7 +111,7 @@ Let $G$ be a group; $H$ is a subgroup of $G$.
     g' - g \in H
     $$
 
-- **Equivalence class $[g]$**: the set of all elements in $G$ that are equivalent to $g$
+- **Equivalence class** $[g]$: the set of all elements in $G$ that are equivalent to $g$
     
     $$
     [g] = \{gh \mid h \in H\}
@@ -119,7 +119,7 @@ Let $G$ be a group; $H$ is a subgroup of $G$.
 
     which is just the *left coset* $gH$. 
     
-- **The quotient group $G/H$**: when $H$ is a *normal* subgroup of $G$, *the set of all equivalence classes* (left cosets of $H$) will become a new group called the **quotient group**:
+- **The quotient group** $G/H$: The set of all equivalence classes (left cosets of $H$) (defined only when $H$ is a *normal* subgroup of $G$)
 
     $$
     G/H = \{ [g] \mid g \in G\}
@@ -131,15 +131,28 @@ Let $G$ be a group; $H$ is a subgroup of $G$.
     [g] [g'] = [g g']
     $$
 
-    *Verification of unambiguity*:
-
-    Since $g^{-1} H g = H$, we obtain
+    *Verification of unambiguity*: Since $g^{-1} H g = H$, we obtain
 
     $$
     [g][g'] = (g H) (g' H)
     = g g' (g'^{-1} H g') H 
     = g g' H = [g g']
     $$
+
+- **Center** of a group $G$: the set of elements that commute with every element of $G$, denoted by
+    
+    $$
+    Z(G) = \{z \in G \mid \forall g \in G, \ zg = gz\}
+    $$
+
+    - **Centerless group**: a group with $Z(G) = 1$ (trivial, containing only the identity element of $G$)
+
+----
+
+*Theorem*: (On the center of a group)
+
+- $Z(G)$ is a normal subgroup of $G$
+- A group $G$ is abelian *if and only if* $Z(G) = G$
 
 ----
 
