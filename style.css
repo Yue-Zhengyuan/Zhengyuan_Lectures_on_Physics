@@ -3,13 +3,21 @@
 }
 .remark {
     border-radius: 15px;
-    padding: 20px;
+    /* padding: 20px; */
+    padding-top: 15px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: SeaGreen;
     color: White;
 }
 .result {
     border-radius: 15px;
-    padding: 20px;
+    /* padding: 20px; */
+    padding-top: 15px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: DarkSlateBlue;
     color: White;
 }

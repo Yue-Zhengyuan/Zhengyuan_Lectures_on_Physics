@@ -124,14 +124,13 @@ We transform the Hamiltonian term by term:
             ) \sin ka
         \Big] \\
         &= i \sum_k c_k^\dagger c_{-k}^\dagger \sin ka
-        + \text{const}
         \\
         &\sum_k c_{-k} c_k e^{-ika} \\
         &= \frac{1}{2} \sum_k \Big[
             (c_{-k} c_k + c_{k} c_{-k}) \cos ka 
             - i (c_{-k} c_k - c_{k} c_{-k}) \sin ka
         \Big] \\
-        &= -i \sum_k c_{-k} c_k \sin ka + \text{const}
+        &= -i \sum_k c_{-k} c_k \sin ka
     \end{align*}
     $$
 
@@ -142,6 +141,20 @@ We transform the Hamiltonian term by term:
     = i\Delta \sum_k 
     (c_k^\dagger c_{-k}^\dagger - c_{-k} c_k) \sin ka
     $$
+
+    <div class="remark">
+
+    *Remark*: During this calculation, we obtained
+    
+    $$
+    \sum_k c_{-k} c_k
+    = \frac{1}{2} \sum_k (c_{-k} c_k + c_k c_{-k}) = 0
+    $$
+
+    and similarly the $\sum_k c^\dagger_{k} c^\dagger_{-k} = 0$.
+    It is therefore impossible to introduce a momentum-independent (**s-wave**) pairing potential due to anti-commutation of fermion operators.
+
+    </div><br>
 
 - Chemical potential term (omitting the constants)
 
@@ -160,19 +173,74 @@ We transform the Hamiltonian term by term:
 
 Thus (define $\epsilon_k = 2t\cos(ka) - h$)
 
+<div class="result">
+
+**XY fermion Hamiltonian in momentum representation:**
+
 $$
-H = \sum_k \Big[
-    \epsilon_k c_k^\dagger c_k
-    + \Delta (
-        c_k^\dagger c_{-k}^\dagger e^{ika}
-        + c_{-k} c_k e^{-ika}
-    )
-\Big]
+\begin{align*}
+    H &= \sum_k \Big[
+        \epsilon_k c_k^\dagger c_k
+        + \Delta (
+            c_k^\dagger c_{-k}^\dagger e^{ika}
+            + c_{-k} c_k e^{-ika}
+        )
+    \Big] \\
+    &= \sum_k \Big[
+        \epsilon_k c_k^\dagger c_k
+        + i\Delta (c_k^\dagger c_{-k}^\dagger - c_{-k} c_k) \sin ka
+    \Big]
+\end{align*}
 $$
+
+</div><br>
 
 ### Bogoliubov-de-Gennes (BdG) Formalism
 
-To diagonalize the Hamiltonian, we put $H$ into matrix form (**Bogoliubov-de-Gennes (BdG) formalism**): first symmetrize $c_k, c_{-k}$ operators (note that $\epsilon_k = \epsilon_{-k}$)
+To diagonalize the Hamiltonian, we define the vector
+
+$$
+\Psi_k = (c_k, c_{-k}^\dagger)^\mathsf{T}
+\Rightarrow \Psi_k^\dagger = (c_k^\dagger, c_{-k})
+$$
+
+and put $H$ into matrix form (**Bogoliubov-de-Gennes (BdG) formalism**): 
+
+$$
+H = \sum_k \Psi_k^\dagger H_\text{BdG}(k) \Psi_k
+$$
+
+To obtain the correct matrix $H_\text{BdG}$, we need to be very careful to avoid double-counting: notice that when $k \ne 0$
+
+$$
+\begin{align*}
+    \Psi_k^\dagger H_\text{BdG}(k) \Psi_k
+    &= c_k^\dagger c_k H_\text{BdG}^{11}(k)
+    + c_k^\dagger c_{-k}^\dagger H_\text{BdG}^{12}(k)
+    \\ &\quad
+    + c_{-k} c_k H_\text{BdG}^{21}(k)
+    + c_{-k} c_{-k}^\dagger H_\text{BdG}^{22}(k)
+    \\
+    \Psi_{-k}^\dagger H_\text{BdG}(-k) \Psi_{-k}
+    &= c_{-k}^\dagger c_{-k} H_\text{BdG}^{11}(-k)
+    + c_{-k}^\dagger c_{k}^\dagger H_\text{BdG}^{12}(-k)
+    \\ &\quad
+    + c_{k} c_{-k} H_\text{BdG}^{21}(-k)
+    + c_{k} c_{k}^\dagger H_\text{BdG}^{22}(-k)
+    \\
+    &= c_k^\dagger c_k H_\text{BdG}^{22}(-k)
+    - c_k^\dagger c_{-k}^\dagger H_\text{BdG}^{12}(-k)
+    \\ &\quad
+    - c_{-k} c_k H_\text{BdG}^{21}(-k)
+    + c_{-k} c_{-k}^\dagger H_\text{BdG}^{22}(-k)
+    \\ &\quad
+    + \text{number}
+\end{align*}
+$$
+
+We see that the same combination of $c$ operators are counted by both $H_\text{BdG}(\pm k)$. Therefore if we insist on summing over all $k$,  
+
+First symmetrize $c_k, c_{-k}$ operators (note that $\epsilon_k = \epsilon_{-k}$)
 
 $$
 H = \frac{1}{2} \sum_k \Big[
@@ -219,10 +287,10 @@ $$
         c_k \\ c_{-k}^\dagger
     \end{pmatrix} 
     = \sum_k (c_k^\dagger c_{-k}^\dagger + c_{-k} c_k) \\
-    &= \frac{1}{2} \sum_k (
-        c_k^\dagger c_{-k}^\dagger + c_{-k}^\dagger c_{k}^\dagger 
-        + c_{-k} c_k + c_{k} c_{-k}
-    ) = \text{const}
+    &= \frac{1}{2} \sum_k \Big[
+        (c_k^\dagger c_{-k}^\dagger + c_{-k}^\dagger c_{k}^\dagger) 
+        + (c_{-k} c_k + c_{k} c_{-k})
+    \Big] = 0
 \end{align*}
 $$
 

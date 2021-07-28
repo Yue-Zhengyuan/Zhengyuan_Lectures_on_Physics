@@ -23,7 +23,7 @@ $$
 
 - $H_0(K) \cong \mathbb{Z}^N$
 
-- $K \text{ is connected} \Leftrightarrow H_0(K) \cong \mathbb{Z}$
+- $K \ \text{is connected} \Leftrightarrow H_0(K) \cong \mathbb{Z}$
 
 ----
 
