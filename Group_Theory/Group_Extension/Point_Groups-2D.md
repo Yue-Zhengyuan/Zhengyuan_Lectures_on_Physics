@@ -1,1 +1,0 @@
-# Point Groups in 2D

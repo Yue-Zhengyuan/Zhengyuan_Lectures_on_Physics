@@ -96,7 +96,15 @@ $$
 \{c_i^{(\dagger)}, c_j^{(\dagger)}\} = 0 \qquad (i \ne j)
 $$
 
-The bracket means we are referring to either $c^\dagger$ or $c$, and $S^+$ or $S^-$. One way to overcome this difficulty is to introduce a **string (kink) operator** to the fermion operators:
+The bracket means we are referring to either $c^\dagger$ or $c$, and $S^+$ or $S^-$. 
+
+<div class="remark">
+
+*Remark*: The spin operators corresponds to **hard-core bosons**: they commute on different sites, but on each site only single-occupation is allowed (which can be regarded as the result of infinite on-site repulsion, hence the name "hard-core").
+
+</div><br>
+
+One way to overcome this difficulty is to introduce a **string (kink) operator** to the fermion operators:
 
 <div class="result">
 

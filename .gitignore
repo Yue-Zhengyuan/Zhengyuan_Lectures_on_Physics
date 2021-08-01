@@ -16,6 +16,7 @@ sub_job/
 # Test Files
 *test*
 *test*/
+tmp/
 
 ### Microsoft Office
 ~$*
