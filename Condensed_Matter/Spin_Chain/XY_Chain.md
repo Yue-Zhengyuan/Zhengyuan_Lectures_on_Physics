@@ -138,21 +138,7 @@ $$
 
 ### Bogoliubov-de-Gennes (BdG) Hamiltonian
 
-To diagonalize the Hamiltonian, we define the vector
-
-$$
-\Psi_k = (c_k, c_{-k}^\dagger)^\mathsf{T}
-\Rightarrow \Psi_k^\dagger = (c_k^\dagger, c_{-k})
-$$
-
-and put $H$ into matrix form (**Bogoliubov-de-Gennes (BdG) formalism**): 
-
-$$
-H = \frac{1}{2} \sum_k \Psi_k^\dagger H^\text{BdG}_k \Psi_k
-+ (\text{Possible constant})
-$$
-
-The $1/2$ factor will be explained later. To read off the matrix $H_\text{BdG}$ from $H$, we *should first symmetrize for momenta $k, -k$*: 
+To diagonalize the Hamiltonian, we *should first symmetrize for momenta $k, -k$*: 
 
 - The already-diagonalized term becomes (note that $\epsilon_k = \epsilon_{-k}$)
 
@@ -214,10 +200,20 @@ $$
         \epsilon_k (c_k^\dagger c_k - c_{-k} c_{-k}^\dagger)
         + 2i\Delta (c_k^\dagger c_{-k}^\dagger - c_{-k} c_k) \sin ka
     \Big] + \frac{1}{2} \sum_k \epsilon_k
+    \\
+    &= \frac{1}{2} \sum_k \Psi_k^\dagger H^\text{BdG}_k \Psi_k
+    + \frac{1}{2} \sum_k \epsilon_k
 \end{align*}
 $$
 
-Thus the bilinear part is given by the matrix
+Here we defined the vector
+
+$$
+\Psi_k = (c_k, c_{-k}^\dagger)^\mathsf{T}
+\Rightarrow \Psi_k^\dagger = (c_k^\dagger, c_{-k})
+$$
+
+with the matrix (the **Bogoliubov-de-Gennes (BdG) Hamiltonian**)
 
 $$
 H^\text{BdG}_k = \begin{pmatrix}
@@ -253,19 +249,142 @@ $$
 
 </div><br>
 
-### Finding the Unitary Matrix $U_k$
+Note that $E_k = E_{-k}$. We then define a new set of operators (**Bogoliubov quasi-particles**) as
 
-The special form of $H^\text{BdG}_k$ impose additional constraints on the unitary matrix $U_k$. Consider a general matrix 
+<div class="result">
+
+**Bogoliubov quasi-particles $a_k, a_k^\dagger$ (fermions):**
 
 $$
-A = \begin{pmatrix}
-    a & ib \\ -ib & -a
-\end{pmatrix} \qquad (a, b \in \R)
+\begin{pmatrix}
+    c_k \\ c_{-k}^\dagger
+\end{pmatrix} = U_k \begin{pmatrix}
+    a_k \\ a_{-k}^\dagger
+\end{pmatrix}
 $$
 
-In $H^\text{BdG}_k$, we have $a = \epsilon_k, \ b = 2\Delta\sin ka$. 
+</div><br>
 
-If $(u,v)^\mathsf{T} \ (u,v\in \mathbb{C})$ is an eigenvector with eigenvalue $E \in \R$:
+Since $U_k$ is unitary, $a_k, a_k^\dagger$ also satisfy the fermion anti-commutation rules. Thus these new particles are still fermions.
+
+### Consistency of Bogoliubov Transformation
+
+One may worry whether the definition of $a_k, a^\dagger_k$ above will lead to problems, since we can obtain two different expressions of $c_{-k}^\dagger$:
+
+$$
+\begin{align*}
+    c^\dagger_{-k} &= U^{11*}_{-k} a^\dagger_{-k} + U^{12*}_{-k} a_k
+    \\ &\overset{!}{=}
+    U^{21}_k a_k + U^{22}_k a^\dagger_{-k}
+\end{align*}
+$$
+
+Thus we need to ensure that
+
+$$
+\boxed{(U^{12*}_{-k}, U^{11*}_{-k}) = (U^{21}_k, U^{22}_k)}
+$$
+
+Fortunately, the special form of $H^\text{BdG}_k$ impose additional constraints on the unitary matrix $U_k$. For convenience, define
+
+$$
+b_k = 2\Delta \sin ka \qquad (b_{-k} = -b_k)
+$$
+
+Then
+
+$$
+H^\text{BdG}_k = \begin{pmatrix}
+    \epsilon_k & ib_k \\ -ib_k & -\epsilon_k
+\end{pmatrix}, \quad
+H^\text{BdG}_{-k} = \begin{pmatrix}
+    \epsilon_k & -ib_k \\ ib_k & -\epsilon_k
+\end{pmatrix}
+$$
+
+Let $(u_k, v_k)^\mathsf{T}$ be an eigenvector of $H^\text{BdG}_k$ with eigenvalue $E_k \in \R$:
+
+$$
+\begin{pmatrix}
+    \epsilon_k & ib_k \\ -ib_k & -\epsilon_k
+\end{pmatrix} \begin{pmatrix}
+    u_k \\ v_k
+\end{pmatrix} = E_k \begin{pmatrix}
+    u_k \\ v_k
+\end{pmatrix}
+$$
+
+Taking complex conjugate and swapping $u_k, v_k$:
+
+$$
+\underbrace{\begin{pmatrix}
+    -\epsilon_k & ib_k \\ -ib_k & \epsilon_k
+\end{pmatrix}}_{-H^\text{BdG}_{-k}} \begin{pmatrix}
+    v_k^* \\ u_k^*
+\end{pmatrix} = E_k \begin{pmatrix}
+    v_k^* \\ u_k^*
+\end{pmatrix}
+$$
+
+We find that $(v_k^*, u_k^*)^\mathsf{T}$ is an eigenvector of $H^\text{BdG}_{-k}$ with eigenvalue $-E_k$. 
+
+Changing $k \to -k$, we see that $(v_{-k}^*, u_{-k}^*)^\mathsf{T}$ is an eigenvector of $H^\text{BdG}_{k}$ with eigenvalue $-E_{-k}$. Thus we have found all two eigenvectors of $H^\text{BdG}_k$; the matrix $U_k$ is therefore
+
+$$
+U_k = \begin{pmatrix}
+    u_k & v^*_{-k} \\ v_k & u^*_{-k}
+\end{pmatrix}
+$$
+
+The boxed requirement is now satisfied:
+
+$$
+(U^{12*}_{-k}, U^{11*}_{-k}) 
+= (v_k, u_{-k}^*) = (U^{21}_k, U^{22}_k)
+$$
+
+### Further Simplification of $U_k$
+
+### The Energy Spectrum
+
+The diagonalized Hamiltonian is (note that $E_k = E_{-k}$) 
+
+$$
+\begin{align*}
+    H &= \frac{1}{2} \sum_k \Psi_k^\dagger H^\text{BdG}_k \Psi_k
+    + \frac{1}{2} \sum_k \epsilon_k
+    \\
+    &= \frac{1}{2} \sum_k (a_k^\dagger, a_{-k})
+    U^\dagger H^\text{BdG}_k U \begin{pmatrix}
+        a_k \\ a_{-k}^\dagger
+    \end{pmatrix} 
+    + \frac{1}{2} \sum_k \epsilon_k \\
+    &= \frac{1}{2} \sum_k (a_k^\dagger, a_{-k})
+    \begin{pmatrix}
+        E_k & \\ & -E_k
+    \end{pmatrix} \begin{pmatrix}
+        a_k \\ a_{-k}^\dagger
+    \end{pmatrix} + \frac{1}{2} \sum_k \epsilon_k
+    \\
+    &= \frac{1}{2} \sum_k E_k (
+        a_k^\dagger a_k
+        - a_{-k} a_{-k}^\dagger
+    ) + \frac{1}{2} \sum_k \epsilon_k
+    \\
+    &= \frac{1}{2} \sum_k E_k (
+        a_k^\dagger a_k
+        + a_{-k}^\dagger a_{-k} 
+    ) - \frac{1}{2} \sum_k (E_k - \epsilon_k)
+    \\
+    &= \sum_k E_k a_k^\dagger a_k
+    + \frac{1}{2} \sum_k (\epsilon_k - E_k)
+\end{align*}
+$$
+
+Now we see the reason of introducing the $1/2$ factor; it makes the eigenvalues $E_k$ of $H_\text{BdG}$ directly equal to the quasi-particle energy. 
+
+
+<!-- In $H^\text{BdG}_k$, we have $a = \epsilon_k, \ b = 2\Delta\sin ka$. If $(u,v)^\mathsf{T} \ (u,v\in \mathbb{C})$ is an eigenvector with eigenvalue $E \in \R$:
 
 $$
 \begin{align*}
@@ -341,78 +460,13 @@ H^\text{BdG}_{-k} = (H^{\text{BdG}}_k)^*
 \end{cases}
 $$
 
-### Quasi-Particles
-
-We then define a new set of operators (**Bogoliubov quasi-particles**) as
-
-<div class="result">
-
-**Bogoliubov quasi-particles $a_k, a_k^\dagger$ (fermions):**
-
-$$
-\begin{pmatrix}
-    c_k \\ c_{-k}^\dagger
-\end{pmatrix} = U_k \begin{pmatrix}
-    a_k \\ a_{-k}^\dagger
-\end{pmatrix} = \begin{pmatrix}
-    u_k a_k + iv_k a_{-k}^\dagger \\
-    iv_k a_k + u_k a_{-k}^\dagger
-\end{pmatrix}
-$$
-
-</div><br>
-
-Since $U_k$ is unitary, $a_k, a_k^\dagger$ also satisfy the fermion anti-commutation rules. Thus these new particles are still fermions.
-
-<div class="remark">
-
-*Remark*: Let us check the self-consistency of this transformation. From the first line 
+We can now verify that the boxed requirement is indeed satisfied:
 
 $$
 \begin{align*}
-    c_{-k}^\dagger 
-    &= u_{-k} a_{-k}^\dagger - i v_{-k} a_k \\
-    &= u_{k} a_{-k}^\dagger + i v_{k} a_k
+    (U^{12*}_{-k}, U^{11*}_{-k}) 
+    &= (-iv_{-k}, u_{-k})
+    \\
+    &= (iv_k, u_k) = (U^{21}_k, U^{22}_k)
 \end{align*}
-$$
-
-which agrees with the second line. 
-
-</div><br>
-
-The diagonalized Hamiltonian is (note that $E_k = E(-k)$) 
-
-$$
-\begin{align*}
-    H &= \frac{1}{2} \sum_k \Psi_k^\dagger H^\text{BdG}_k \Psi_k
-    + \frac{1}{2} \sum_k \epsilon_k
-    \\
-    &= \frac{1}{2} \sum_k (a_k^\dagger, a_{-k})
-    U^\dagger H^\text{BdG}_k U \begin{pmatrix}
-        a_k \\ a_{-k}^\dagger
-    \end{pmatrix} 
-    + \frac{1}{2} \sum_k \epsilon_k \\
-    &= \frac{1}{2} \sum_k (a_k^\dagger, a_{-k})
-    \begin{pmatrix}
-        E_k & \\ & -E_k
-    \end{pmatrix} \begin{pmatrix}
-        a_k \\ a_{-k}^\dagger
-    \end{pmatrix} + \frac{1}{2} \sum_k \epsilon_k
-    \\
-    &= \frac{1}{2} \sum_k E_k (
-        a_k^\dagger a_k
-        - a_{-k} a_{-k}^\dagger
-    ) + \frac{1}{2} \sum_k \epsilon_k
-    \\
-    &= \frac{1}{2} \sum_k E_k (
-        a_k^\dagger a_k
-        + a_{-k}^\dagger a_{-k} 
-    ) - \frac{1}{2} \sum_k (E_k - \epsilon_k)
-    \\
-    &= \sum_k E_k a_k^\dagger a_k
-    + \frac{1}{2} \sum_k (\epsilon_k - E_k)
-\end{align*}
-$$
-
-Now we see the reason of introducing the $1/2$ factor; it makes the eigenvalues $E_k$ of $H_\text{BdG}$ directly equal to the quasi-particle energy. 
-
+$$ -->

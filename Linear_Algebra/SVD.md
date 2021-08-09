@@ -1,15 +1,6 @@
-# Introduction to Linear Algebra 
-
-### **Part 4: Singular Value Decomposition**
+# Singular Value Decomposition
 
 *Note: In this part we consider linear mappings between complex vector spaces; the representation matrices will in general be complex.*
-
-### **Contents**
-
-- [Existence Proof](#existence-proof)
-- [Reduced SVD](#reduced-svd)
-- [Applications](#applications)
-    - [Low-rank Matrix Approximation](#low-rank-matrix-approximation)
 
 Consider two vector spaces $X, Y$. Let $n = \dim X, m = \dim Y$. The theorem of **singular value decomposition** states that for any linear transformations $A: X \to Y$, its representation matrix
 

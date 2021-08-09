@@ -1,28 +1,5 @@
-# Introduction to Linear Algebra 
+# Eigenvalues and Eigenvectors
 
-### **Part 3: Eigenvalues and Eigenvectors**
-
-<center>
-
-![](images/3b1b_LA.png)
-
-</center>
-
-*Credit*: Many ideas of this material come from the [*Essence of Linear Algebra*][LA_3b1b] video series (by Grant Sanderson, a.k.a. 3Blue1Brown).
-
-[LA_3b1b]: https://youtu.be/fNk_zzaMoSs
-
-### **Contents**
-
-- [Invitation: A Collision Problem](#invitation-a-collision-problem)
-- [Eigenvalues and Eigenvectors](#eigenvalues-and-eigenvectors)
-    - [Finding Eigenvalues and Eigenvectors](#finding-eigenvalues-and-eigenvectors)
-    - [The Characteristic Polynomial](#the-characteristic-polynomial)
-    - [Examples in Two Dimensions](#examples-in-two-dimensions)
-- [Eigen-Decomposition](#eigen-decomposition)
-    - [Eigenspace](#eigenspace)
-    - [Diagonalization of Matrix](#diagonalization-of-matrix)
-    - [Return to the Collision Problem](#return-to-the-collision-problem)
 
 ## Invitation: A Collision Problem
 
