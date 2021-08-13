@@ -1,6 +1,6 @@
 # Fourier Series
 
-The **Fourier series** (**continuous Fourier transform in finite space**) is obtained from DFT by taking the continuum limit
+The **continuous Fourier transform in finite space** (usually called **Fourier series**) is obtained from DFT by taking the continuum limit
 
 $$
 (L = Na \ \text{is fixed}) \quad \text{and} \quad (a \to 0)

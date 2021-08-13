@@ -6,17 +6,21 @@
 
 *Notation notes*: For Abelian groups, we shall use additive notation instead of the usual multiplicative notation:
 
-<center>
-
-| General<br>Group | Abelian<br>Group |
-| :--------------: | :--------------: |
-|       $1$        |       $0$        |
-|     $g^{-1}$     |       $-g$       |
-|    $g_1 g_2$     |   $g_1 + g_2$    |
-|  $g_1 g_2^{-1}$  |   $g_1 - g_2$    |
-|      $g^n$       |       $ng$       |
-
-</center>
+$$
+\begin{array}{c|c}
+    \text{Multiplicative} & \text{Additive}
+    \\[3pt] \hline \\[-6pt]
+    1 & 0 
+    \\[4pt]
+    g^{-1} & -g 
+    \\[4pt]
+    g_1 g_2 & g_1 + g_2
+    \\[4pt]
+    g_1 g_2^{-1} & g_1 - g_2
+    \\[4pt]
+    g^n & ng
+\end{array}
+$$
 
 ## Finitely Generated Abelian Groups
 

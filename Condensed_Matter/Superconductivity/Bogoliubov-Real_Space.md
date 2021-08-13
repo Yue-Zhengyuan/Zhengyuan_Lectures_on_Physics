@@ -1,4 +1,10 @@
-# Bogoliubov Transformation
+# Bogoliubov Transformation in Real Space
+
+<font size=5>
+
+**Part 1: Real Space Formulation**
+
+</font>
 
 *Reference*:
 
@@ -7,7 +13,7 @@
 
 ## Bilinear Fermion Hamiltonian
 
-A general bilinear fermion Hamiltonian has the form
+A general bilinear fermion Hamiltonian (in real space) has the form
 
 $$
 H = \frac{1}{2} \sum_{i,j} \Big[
@@ -16,7 +22,11 @@ H = \frac{1}{2} \sum_{i,j} \Big[
 \Big]
 $$
 
-Here these indices refer to the lattice position; they may also include the spin, sub-lattice, etc. of the particle. Writing the h.c. terms explicitly, we obtain
+- The subscripts refer to the lattice position; they may also include the spin, sub-lattice, etc. of the particle. The dimension of the subscripts will be denoted by $N$. 
+- The $A$ matrix corresponds to on-site energy (when $i = j$) and kinetic energy of hopping (when $i \ne j$)
+- The $B$ matrix corresponds to fermion pair creation and annihilation.
+
+Writing the h.c. terms explicitly, we obtain
 
 $$
 \begin{align*}
@@ -34,7 +44,7 @@ $$
 \end{align*}
 $$
 
-Here we redefined $(A + A^\dagger)/2 \to A$ and $B$ have the following notable properties: 
+Here we redefined $(A + A^\dagger)/2 \to A$. Note that
 
 - $A$ is *Hermitian* ($A = A^\dagger$) by definition. 
 - $B$ can always be made *anti-symmetric* ($B = -B^\mathsf{T}$) due to anti-commutativity of fermion operators.
@@ -110,20 +120,28 @@ To simplify the notation further, we assemble the big vector
 
 $$
 \Psi \equiv (c_1,c_2,...,c_1^\dagger,c_2^\dagger...)^\mathsf{T}
-\Rightarrow
-\left\{ \begin{aligned}
-    & H = \frac{1}{2} \Psi^\dagger
-    H^\text{BdG} \Psi + \frac{1}{2} \operatorname{Tr} A
-    \\
-    & H^\text{BdG} \equiv \begin{bmatrix}
-        A & B \\ B^\dagger & -A^\mathsf{T}
-    \end{bmatrix}
-\end{aligned} \right.
 $$
 
-The $2N \times 2N$ matrix $H^\text{BdG}$ is called the **Bogoliubov-de-Gennes (BdG) Hamiltonian**.
+In matrix notation:
 
-## Bogoliubov Transformation
+<div class="result">
+
+**Bogoliubov-de-Gennes (BdG) Hamiltonian in real space:**
+
+$$
+\begin{align*}
+    H &= \frac{1}{2} \Psi^\dagger
+    H^\text{BdG} \Psi + \frac{1}{2} \operatorname{Tr} A
+    \\
+    H^\text{BdG} &\equiv \begin{bmatrix}
+        A & B \\ B^\dagger & -A^\mathsf{T}
+    \end{bmatrix} \in \mathbb{C}^{2N \times 2N}
+\end{align*}
+$$
+
+</div><br>
+
+## Diagonalization of $H^\text{BdG}$
 
 To diagonalize $H^\text{BdG}$, we need its eigenvalues and eigenvectors:
 
@@ -280,102 +298,3 @@ $$
 
 where $\epsilon_j \ (j=1,...,N)$ are eigenvalues of $A$.
 
-## Bogoliubov Transformation in Momentum Space
-
-One may think that simply regarding subscripts $i,j$ as momentum labels, we can directly obtain the Bogoliubov transformation in momentum space. However in practice, the transformation procedure is a little bit different to make use of the translation symmetry of the system. 
-
-We separate the subscript of $c_j$ to two parts: 
-
-$$
-c_j \to c_R^j \quad \left\{\begin{aligned}
-    & R: \text{Lattice (unit cell) position}
-    \\
-    & j: \text{Other labels (spin, sub-lattice, etc)}
-\end{aligned} \right.
-$$
-
-The Fourier transform of the fermion operators is
-
-$$
-c^j_R = \frac{1}{\sqrt{N}} \sum_k c^j_k e^{ik(R+x_j)}
-$$
-
-where $x_j$ is some relative position within one unit cell. Then the bilinear part of $H$ is transformed to
-
-$$
-\begin{align*}
-    & \frac{1}{2} \sum_{i,j} \sum_{R,R'} 
-    (c^{i\dagger}_R, c^i_R)
-    \mathcal{H}^{ij}_{RR'} \begin{bmatrix}
-        c^j_{R'} \\ c^{j\dagger}_{R'}
-    \end{bmatrix}
-    \\
-    &= \frac{1}{2N} \sum_{R,R'} \sum_{k,k'}
-    (c^{i\dagger}_k, c^i_{-k})
-    \mathcal{H}^{ij}_{RR'} \begin{bmatrix}
-        c^j_{k'} \\ c^{j\dagger}_{-k'}
-    \end{bmatrix} 
-    e^{i[-k(R+x_i) + k'(R'+x_j)]}
-\end{align*}
-$$
-
-Now we define the $2\times 2$ matrix $\mathcal{H}$ in momentum space as
-
-$$
-\mathcal{H}^{ij}_{kk'}
-\equiv \frac{1}{N} \sum_{R,R'} \mathcal{H}^{ij}_{RR'} 
-e^{i[-k(R+x_i) + k'(R'+x_j)]}
-$$
-
-and we construct the big vector
-
-$$
-\Psi_k \equiv (
-    c_k^1, c_k^2,..., 
-    c_{-k}^{1\dagger}, c_{-k}^{2\dagger}, ...
-)^\mathsf{T}
-$$
-
-Then
-
-$$
-\begin{align*}
-    H &= \frac{1}{2} \sum_{k,k'} \Psi^\dagger_k 
-    H^\text{BdG}_{kk'} \Psi_{k'} 
-    + \frac{1}{2} \operatorname{Tr} A
-\end{align*}
-$$
-
-The BdG Hamiltonian in momentum space is thus given by
-
-$$
-\begin{align*}
-    H^\text{BdG}_{kk'}
-    &= \begin{bmatrix}
-        A_{kk'} & B_{kk'} \\ B^\dagger_{kk'} & -A^\mathsf{T}_{kk'}
-    \end{bmatrix}
-\end{align*}
-$$
-
-Here the matrices $A_{kk'}, B_{kk'}$ are defined similarly to $\mathcal{H}_{kk'}$:
-
-$$
-\begin{align*}
-    A^{ij}_{kk'}
-    &\equiv \frac{1}{N} \sum_{R,R'} A^{ij}_{RR'} 
-    e^{i[-k(R+x_i) + k'(R'+x_j)]}
-    \\
-    B^{ij}_{kk'}
-    &\equiv \frac{1}{N} \sum_{R,R'} B^{ij}_{RR'} 
-    e^{i[-k(R+x_i) + k'(R'+x_j)]}
-\end{align*}
-$$
-
-In the original real-space formulation, $A$ is Hermitian and $B$ is anti-symmetric:
-
-$$
-\begin{align*}
-    A^{ij}_{RR'} = (A^\dagger)^{ij}_{RR'}, \quad
-    B^{ij}_{RR'} = -(B^\mathsf{T})^{ij}_{RR'}
-\end{align*}
-$$

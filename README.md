@@ -21,14 +21,13 @@ This repository is a collection of lecture notes on physics and related mathemat
 None of the following is now complete or has reached my standard. 
 
 - **Classical Mechanics**. Based on
-    - *Essence of Linear Algebra* by Grant Sanderson (3Blue1Brown)
-    - *Mechanics* by Lev Landau and Evgeny Lifshitz
-    - Course *Engineering Physics: Mechanics* (PHYS1110, Fall 2020) at The Chinese University of Hong Kong (CUHK)
+    - [*Essence of Linear Algebra*](https://youtu.be/fNk_zzaMoSs) by Grant Sanderson (3Blue1Brown)
+    - *Mechanics (Course of Theoretical Physics, Vol. 1)* by Lev Landau and Evgeny Lifshitz
 
 - **Condensed Matter Physics**. Based on
-    - *Statistical Physics (Part 1)* by Lev Landau and Evgeny Lifshitz
-    - *Introduction to Many-Body Physics* by Piers Coleman
-    - Course *Advanced Statistical Physics* (PHYS5510, Spring 2020) at CUHK
+    - *Statistical Physics Part 1 (Course of Theoretical Physics, Vol. 5)* by Lev Landau and Evgeny Lifshitz
+    - *Many-body Theory Exposed* by Willem Dickhoff and Dimitri van Neck
+    - Course *Solid State Theory* (PHYS5430, Spring 2020) at CUHK
     - Course *Many-Body Theory* (PHYS5520, Spring 2021) at CUHK
     - Course *Thermodynamics and Statistical Physics II* (Fall 2018) at Fudan University (FDU)
 
@@ -50,6 +49,9 @@ None of the following is now complete or has reached my standard.
 
 - **Group Theory**. Based on
     - *Group Theory in a Nutshell for Physicists* by Anthony Zee
+    - *A Course in the Theory of Groups* by Derek Robinson
+    - [*Group Theory*](https://www.jmilne.org/math/CourseNotes) by J.S. Milne
+    - [A series of notes](https://wordpress.nmsu.edu/pamorand/mathematical-notes/) by Patrick J. Morandi
 
 ## File Structure
 

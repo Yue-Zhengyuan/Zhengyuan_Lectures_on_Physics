@@ -140,13 +140,8 @@ $$
 Since the spin chain contains only nearest neighbor interaction, the only boundary term is $H_N$:
 
 $$
-\begin{align*}
-    H^P_N &= + t(S_N^+ S_1^- + h.c.)
-    + \Delta (S_N^+ S_1^+ + h.c.) + J_z S^z_N S^z_1 - h S^z_N
-    \\
-    H^A_N &= - t(S_N^+ S_1^- + h.c.)
-    - \Delta (S_N^+ S_1^+ + h.c.) + J_z S^z_N S^z_1 - h S^z_N
-\end{align*}
+H^{P/A}_N = \pm t(S_N^+ S_1^- + h.c.)
+\pm \Delta (S_N^+ S_1^+ + h.c.) + J_z S^z_N S^z_1 - h S^z_N
 $$
 
 The $h$-term can be transformed ordinarily. We focus on $S_N S_1$-like terms:
@@ -191,7 +186,7 @@ $$
     - h \left(n_N - \tfrac{1}{2} \right)
     \\ &\Downarrow \\
     c_N^\dagger c_{N+1}^{(\dagger)} &\overset{\text{def}}{=}
-    (\mp 1)_\text{Spin BC} c_N^\dagger c_1^{(\dagger)} P
+    \mp c_N^\dagger c_1^{(\dagger)} P
 \end{align*}
 $$
 

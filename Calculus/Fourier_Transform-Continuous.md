@@ -4,7 +4,7 @@ The **continuous Fourier transform (in infinite space)** is obtained from the Fo
 
 $$ L \to \infty $$ 
 
-(i.e. from DFT by taking a *two-step* limit of *first* sending $a \to 0$, *then* $N \to \infty$). Now both $x, k$ will become continuous labels. Define the increment in $x, k$:
+(or equivalently from DFT by taking a *two-step* limit: *first* $a \to 0$, *then* $N \to \infty$). Now both $x, k$ will become continuous labels. Define the increment in $x, k$:
 
 $$
 \Delta x = a, \quad \Delta k = \frac{2\pi}{L} = \frac{2\pi}{Na}

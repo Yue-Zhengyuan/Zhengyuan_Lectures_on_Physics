@@ -5,23 +5,25 @@
 - **Homomorphism (同态)**: a map $f: G_1 \to G_2$ such that
 
     $$
-    \forall x, y \in G_1 \quad \begin{align*}
-        &f(xy)  = f(x) f(y)     & \text{(General)}\\
-        &f(x+y) = f(x) + f(y)   & \text{(Abelian)}
-    \end{align*} 
+    \forall x, y \in G_1 \quad 
+    f(xy)  = f(x) f(y) 
     $$
 
     - **Endomorphism (自同态)**: a homomorphism from a group to *itself*.
 
 - **Isomorphism (同构)**: an homomorphism from one group to another which is *also injective (one-to-one)*, and therefore preserves group structure.
 
-    - **Automorphism (自同构)**: an isomorphism from a group to *itself* ("symmetries" of a group)
-
     - **Isomorphic Groups**: Two groups between which exists an isomorphism (and therefore are essentially the *same* group), denoted by
 
         $$
         G_1 \cong G_2
         $$
+    
+    - **Automorphism (自同构)**: an isomorphism from a group to *itself* ("symmetries" of a group)
+        
+        - **Automorphism group** $\Aut(G)$: the group consisting of all automorphisms of a group $G$.
+
+## Theorems on Group Homomorphisms
 
 <div class="result">
 

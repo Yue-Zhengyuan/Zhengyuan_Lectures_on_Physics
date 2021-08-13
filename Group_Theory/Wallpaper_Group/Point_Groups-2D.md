@@ -1,7 +1,12 @@
 # Point Groups in 2D
 
-*Definition*:
+For a subset $W$ of $\R^n$, its **symmetry group** is the set of all isometries of $\R^n$ that leave $W$ invariant:
 
-- **Point group**:
+$$
+\Sym(W) = \{
+    \phi \in \Isom(\R^n) \mid
+    \phi(W) = W
+\}
+$$
 
-Discrete point groups in 2D are 
+## Symmetry Groups of Bounded Objects

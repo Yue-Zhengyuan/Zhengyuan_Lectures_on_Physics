@@ -40,7 +40,7 @@ which can be briefly written as $\forall g \in G \Rightarrow Hg = gH$. This lead
 - **Normal (invariant) subgroup**: a subgroup $H \in G$ which is invariant under *conjugation* by any elements in $G$:
 
     $$
-    (H \triangleleft G) := 
+    (H \lhd G) := 
     \forall \, h \in H, g \in G : g^{-1} h g \in H
     $$
 

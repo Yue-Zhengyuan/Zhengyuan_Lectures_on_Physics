@@ -1,10 +1,10 @@
 # XY Spin Chain
 
-*Reference*:
+<!-- *Reference*:
 
 - Lieb, E., Schultz, T., & Mattis, D. (1961). Two soluble models of an antiferromagnetic chain. Annals of Physics, 16(3), 407-466.
 - Parkinson, J. B., & Farnell, D. J. (2010). An introduction to quantum spin systems (Vol. 816). Springer.
-- Bernevig, B. A. (2013). Topological insulators and topological superconductors. Princeton university press.
+- Bernevig, B. A. (2013). Topological insulators and topological superconductors. Princeton university press. -->
 
 <div class="result">
 
@@ -326,9 +326,20 @@ $$
 \end{pmatrix}
 $$
 
-We find that $(v_k^*, u_k^*)^\mathsf{T}$ is an eigenvector of $H^\text{BdG}_{-k}$ with eigenvalue $-E_k$. 
+We find that $(v_k^*, u_k^*)^\mathsf{T}$ is an eigenvector of $H^\text{BdG}_{-k}$ with eigenvalue $-E_k$. Changing $k \to -k$, we obtain
 
-Changing $k \to -k$, we see that $(v_{-k}^*, u_{-k}^*)^\mathsf{T}$ is an eigenvector of $H^\text{BdG}_{k}$ with eigenvalue $-E_{-k}$. Thus we have found all two eigenvectors of $H^\text{BdG}_k$; the matrix $U_k$ is therefore
+<div class="result">
+<center>
+<b>
+
+If $(u_k,v_k)^\mathsf{T}$ is an eigenvector of $H^\text{BdG}_k$ with eigenvalue $E_k$,<br>
+then $(v_{-k}^*, u_{-k}^*)^\mathsf{T}$ is also an eigenvector with eigenvalue $-E_{-k}$. 
+
+</b>
+</center>
+</div><br>
+
+Thus we have found all two eigenvectors of $H^\text{BdG}_k$; the matrix $U_k$ is therefore
 
 $$
 U_k = \begin{pmatrix}
@@ -336,12 +347,7 @@ U_k = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-The boxed requirement is now satisfied:
-
-$$
-(U^{12*}_{-k}, U^{11*}_{-k}) 
-= (v_k, u_{-k}^*) = (U^{21}_k, U^{22}_k)
-$$
+Each column correspond to eigenvalues $(E_k, -E_{-k})$. The boxed requirement is now automatically satisfied.
 
 ### Further Simplification of $U_k$
 
