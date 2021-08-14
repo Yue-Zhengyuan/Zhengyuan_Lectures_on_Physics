@@ -144,7 +144,7 @@ i.e. matrices in $SL(2,\mathbb{Z})$ only differing by a sign change are identifi
 
 <center>
 
-![modular_transformation](Fig-10_1.png)   
+![modular_transformation](images/Fig-10_1.png)   
 *Basic modular transformations*
 
 </center>

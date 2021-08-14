@@ -4,7 +4,7 @@
 
 <center>
 
-![](Fig-5_2.png)   
+![](images/Fig-5_2.png)   
 *Manifold and atlas*
 
 </center>
@@ -39,7 +39,7 @@
 
 <center>
 
-![](Fig-5_3.png)   
+![](images/Fig-5_3.png)   
 *Manifold with a boundary*
 
 </center>

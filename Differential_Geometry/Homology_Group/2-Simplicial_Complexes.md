@@ -29,7 +29,7 @@
 
     <center>
 
-    ![](Fig-3_2.png)   
+    ![](images/Fig-3_2.png)   
     *0-, 1-, 2-, and 3-simplexes*
 
     </center>
@@ -57,13 +57,13 @@
 
     <center>
 
-    ![](Fig-3_5a-Cylinder.png)   
+    ![](images/Fig-3_5a-Cylinder.png)   
     *Triangulation of a cylinder*
 
-    ![](Fig-3_8-MobiusStrip.png)   
+    ![](images/Fig-3_8-MobiusStrip.png)   
     *Triangulation of a Möbius strip*
 
-    ![](Fig-3_12-KleinBottle.png)   
+    ![](images/Fig-3_12-KleinBottle.png)   
     *Triangulation of a Klein bottle*
 
     </center>

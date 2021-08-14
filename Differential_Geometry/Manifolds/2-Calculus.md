@@ -4,7 +4,7 @@
 
 <center>
 
-![](Fig-5_6.png)   
+![](images/Fig-5_6.png)   
 *Coordinate representation of map between two manifolds*
 
 </center>
@@ -292,7 +292,7 @@ Instead of $dx^\mu$, we may change to another basis of the one-forms.
 
 <center>
 
-![](Fig-5_10.png)   
+![](images/Fig-5_10.png)   
 *Inducing $f_*: T_p M \to T_{f(p)} N$ from $f: M \to N$*
 
 </center>

@@ -227,7 +227,7 @@ $$
 
 <center>
 
-![](Fig-5_12.png)   
+![](images/Fig-5_12.png)   
 *Comparing tangent vectors at two points along a flow*
 
 </center>
@@ -390,7 +390,7 @@ $$
 
 <center>
 
-![](Fig-5_13.png)   
+![](images/Fig-5_13.png)   
 *Lie bracket measures the failure of the closure of parallelograms*
 
 </center>

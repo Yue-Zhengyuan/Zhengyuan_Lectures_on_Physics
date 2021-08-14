@@ -28,7 +28,7 @@ $$G_1 / \ker{f} \cong \text{im }f$$
 
 <center>
 
-![](Fig-3_7b.png)   
+![](images/Fig-3_7b.png)   
 *The simplicial complex in Example 1*
 
 </center>
@@ -142,7 +142,7 @@ $$
 
 <center>
 
-![](Fig-3_2-eg2.png)   
+![](images/Fig-3_2-eg2.png)   
 *The simplicial complex in Example 2*
 
 </center>

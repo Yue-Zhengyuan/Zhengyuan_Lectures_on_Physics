@@ -112,11 +112,7 @@ In this case $G$ is said to be the **inner semi-direct product** of $N, H$ (deno
 
 <div class="result">
 
-*Theorem*: The inner semi-direct product $G$ is *isomorphic* to the outer semi-direct product $G' \equiv N \rtimes_\phi H$ with the following homomorphism $\phi: H \to \Aut(N)$:
-
-$$
-\phi_h(n) = h n h^{-1}
-$$
+*Theorem*: The inner semi-direct product $G$ is *isomorphic* to the outer semi-direct product $G' \equiv N \rtimes_\phi H$.
 
 </div>
 
@@ -145,7 +141,13 @@ $$
 Thus we can choose the isomorphism between $G, G'$ as
 
 $$
-(n,h) \mapsto nh \ \Rightarrow\ \phi_h(n') = h n' h^{-1} 
+(n,h) \mapsto nh
+$$
+
+The homomorphism $\phi$ can then be determined as
+
+$$
+\phi_h(n') = h n' h^{-1} 
 \quad \blacksquare
 $$
 

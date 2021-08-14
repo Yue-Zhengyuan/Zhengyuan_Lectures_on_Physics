@@ -40,7 +40,7 @@
 
     <center>
 
-    ![](Fig-6_1.png)   
+    ![](images/Fig-6_1.png)   
     *Standard 2-simplex (triangle, left) and 3-simplex (tetrahedron, right)*
 
     </center>
@@ -327,7 +327,7 @@ $$
 
     <center>
 
-    ![](Fig-6_1.png)   
+    ![](images/Fig-6_1.png)   
     *Standard 2-simplex and 3-simplex*
 
     </center>

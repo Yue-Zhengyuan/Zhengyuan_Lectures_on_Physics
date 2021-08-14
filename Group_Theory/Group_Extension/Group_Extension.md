@@ -34,8 +34,6 @@
 
 ## An Elementary Example
 
-*Reference*: https://youtu.be/NRg9NlWPU54
-
 Consider the quotient group $\mathbb{Z}/n\mathbb{Z} \ (n \in \mathbb{N})$, representing the cyclic group of order $n$ (up to group isomorphisms):
 
 $$
