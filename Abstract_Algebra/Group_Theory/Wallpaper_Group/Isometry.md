@@ -30,7 +30,7 @@ $$
 
 3. Isometries from a metric space $X$ to *itself* are automatically bijective; thus they form a *group* (denoted by $\Isom(X)$) under the composition of mappings.
 
-## Group Structure of $\mathbb{E}$
+## Euclidean Group $\mathbb{E}$
 
 From now on we consider the group $\Isom(\R^n)$ of isometries between $\R^n$ and itself. This group is also called the **Euclidean group** $\mathbb{E}$. 
 
@@ -89,6 +89,8 @@ $$
 $$
 
 </div><br>
+
+### Group Structure of $\mathbb{E}$
 
 It turns out that the entire $\mathbb{E}$ can be obtained from the subgroups $G_0$ and $\mathbb{T}$:
 

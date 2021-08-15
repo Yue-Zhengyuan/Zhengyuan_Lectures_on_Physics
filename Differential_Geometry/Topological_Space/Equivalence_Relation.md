@@ -23,12 +23,10 @@
 - **Equivalence class**: set of elements all equivalent to each other; the equivalence class containing element $a \in X$ is denoted by
     
     $$
-    [a] \equiv \{x \in X | x \sim a\}
+    [a] \equiv \{x \in X \mid x \sim a\}
     $$
 
-- **Representative of an equivalence class**: any element in this class
-
-- **Quotient space**: the set of all equivalence classes in $X$ with $\sim$, denoted by $X / \sim$
+    - **Representative of an equivalence class**: any element in this class
 
 <div class="result">
 
@@ -36,4 +34,35 @@
 
 Given a set $X$ with an equivalence relation $\sim$, it can always be partitioned into *mutually disjoint* equivalence classes. 
 
-</div><br>
+</div>
+
+----
+
+*Proof*: We want to prove that for any two classes $[a], [b]$
+    
+$$
+[a] \cap [b] \ne \varnothing \Rightarrow [a] = [b]
+$$
+
+which is equivalent to the statement
+
+$$
+[a] \ne [b] \Rightarrow [a] \cap [b] = \varnothing
+$$
+
+Suppose $c \in [a] \cap [b]$. Using the transitive property
+
+$$
+(a \sim c) \land (b \sim c) \Rightarrow a \sim b
+$$
+
+Thus any element equivalent to $a$ must be equivalent to $b$, i.e. $[a] \subset [b]$. For the same reason $[b] \subset [a]$. Therefore $[a] = [b]$. $\blacksquare$
+
+----
+
+## Quotient Space
+
+*Definition*: Let $X$ be a topological space.
+
+- **Quotient space**: the set of all equivalence classes in $X$ with $\sim$, denoted by $X / \sim$
+
