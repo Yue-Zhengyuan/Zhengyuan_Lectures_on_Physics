@@ -1,38 +1,36 @@
 # Group Extension
 
-*Definition*: 
+*Definition*: Let $A, B$ be two groups.
 
-- **Group extension:** Let $B, A$ be two groups. Then $G$ is an **extension** of $B$ by $A$ if there is a short exact sequence 
+- **Group extension:**  A group $G$ related to $A,B$ by a short exact sequence 
     
     $$
     1 \to A \xrightarrow{i} G \xrightarrow{\pi} B \to 1
     $$
 
-    Later we prove that $G$ is also a group.
+- **Equivalent group extensions**: Two group extensions $G, G'$ are **equivalent** if there is a commutative diagram
 
-    - **Equivalent group extensions**: Two group extensions $G, G'$ are **equivalent** if there is a commutative diagram
+    $$
+    \begin{CD}
+        1 @>>> A @>{i}>> G @>{\pi}>> B @>>> 1
+        \\
+        @. @VV{\text{id}}V @VV{\varphi}V @VV{\text{id}}V @.
+        \\
+        1 @>>> A @>>{i'}> G' @>>{\pi'}> B @>>> 1
+    \end{CD}
+    $$
 
-        $$
-        \begin{CD}
-            1 @>>> A @>{i}>> G @>{\pi}>> B @>>> 1
-            \\
-            @. @VV{\text{id}}V @VV{\varphi}V @VV{\text{id}}V @.
-            \\
-            1 @>>> A @>>{i'}> G' @>>{\pi'}> B @>>> 1
-        \end{CD}
-        $$
-
-        where $\varphi: G \to G'$ is a group *isomorphism*.
+    where $\varphi: G \to G'$ is a group *isomorphism*.
 
 ## Properties of Group Extension
 
-- $i(A)$ is a normal subgroup of $G$.
+1. $i(A)$ is a normal subgroup of $G$.
 
     *Proof*: By definition of exact sequence, $i(A) = \ker G$
 
-- $B$ is isomorphic to the quotient group $G/i(A)$.
+2. $B$ is isomorphic to the quotient group $G/i(A)$.
 
-## An Elementary Example
+## Example
 
 Consider the quotient group $\mathbb{Z}/n\mathbb{Z} \ (n \in \mathbb{N})$, representing the cyclic group of order $n$ (up to group isomorphisms):
 

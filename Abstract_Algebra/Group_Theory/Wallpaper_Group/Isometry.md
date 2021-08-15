@@ -1,18 +1,23 @@
 # Isometries of $\R^n$
 
+*Definition*: Let $X, Y$ be two metric spaces with metrics $d_X, d_Y$. 
+
+- **Isometry**: a *distance-preserving* map $f:X \to Y$ such that
+
+$$
+d_X(a,b) = d_Y(f(a), f(b)) \quad
+\forall a,b \in X
+$$
+
+<div class="remark">
+
+*Remark*: SOmetimes people write the mapping $f$ on the *right* of its argument ($af \equiv f(a)$), so that compositions will be presented in left-to-right order. 
+
+</div><br>
+
 ## General Properties of Isometries
 
-In general, given two metric spaces $X, Y$ with metrics (distances) $d_X, d_Y$, an **isometry** is a *distance-preserving* map between them:
-
-$$
-f: X \to Y \quad 
-\forall a,b \in X, \quad
-d_X(a,b) = d_Y(f(a), f(b))
-$$
-
-Below we list some general properties of isometries that follow immediately from the definition, without giving a rigorous proof.
-
-- $f$ is *injective*, i.e. 
+1. $f$ is *injective*, i.e. 
 
     $$
     \forall a, b \in X, \quad
@@ -21,13 +26,13 @@ Below we list some general properties of isometries that follow immediately from
 
     Otherwise the distance between $a, b$ cannot be preserved.
 
-- The composition of two isometries, and the inverse of an isometry (if it is also bijective) are still isometries.
+2. The composition of two isometries, and the inverse of an isometry (if it is also bijective) are still isometries.
 
-From these properties, all isometries from a metric space $X$ to *itself* are automatically bijective; thus they form a *group* under the composition of mappings.
+3. Isometries from a metric space $X$ to *itself* are automatically bijective; thus they form a *group* (denoted by $\Isom(X)$) under the composition of mappings.
 
-## Important Subgroups of $\mathbb{R}^n$
+## Group Structure of $\mathbb{E}$
 
-From now on we consider isometries between $\R^n$ and itself, which are automatically *bijective*. The set of all such isometries (denoted by $\Isom(\R^n)$) is then a *group* under the usual composition of mappings. 
+From now on we consider the group $\Isom(\R^n)$ of isometries between $\R^n$ and itself. This group is also called the **Euclidean group** $\mathbb{E}$. 
 
 We first make $\R^n$ into a *vector space* with an inner product; then the metric $d(x,y)$ on $\R^n$ is directly chosen as the square root the inner product of $x - y$ and itself. 
 
@@ -41,7 +46,7 @@ $$
 h(0) = 0
 $$
 
-All origin-preserving isometries form a *subgroup* $G_0$ (called the **point group** of $\R^n$) of $\Isom(\R^n)$. It turns out that these isometries are *linear*; ultimately:
+All origin-preserving isometries form a *subgroup* $G_0$ (called the **point group** of $\R^n$) of $\mathbb{E}$. It turns out that these isometries are *linear*; ultimately:
 
 <div class="result">
 
@@ -73,40 +78,38 @@ $$
 \tau_a^{-1} = \tau_{-a}
 $$
 
-Thus all translations form an *Abelian* subgroup $T$ of $\Isom(\R^n)$. Obviously:
+Thus all translations form an *Abelian* subgroup $\mathbb{T}$ of $\mathbb{E}$. Obviously:
 
 <div class="result">
 
-*Theorem*: The translation group $T$ is *isomorphic* to $\R^n$ endowed with the usual vector addition; the isomorphism is simply
+*Theorem*: The translation group $\mathbb{T}$ is *isomorphic* to $\R^n$ endowed with the usual vector addition; the isomorphism is simply
 
 $$
-\tau_a \in T \mapsto a \in \R^n
+\tau_a \in \mathbb{T} \mapsto a \in \R^n
 $$
 
 </div><br>
 
-## Group Structure of $\Isom(\R^n)$
-
-It turns out that the entire $\Isom(\R^n)$ can be obtained from the subgroups $G_0$ and $T$:
+It turns out that the entire $\mathbb{E}$ can be obtained from the subgroups $G_0$ and $\mathbb{T}$:
 
 <div class="result">
 
-*Theorem*: Any isometry $g \in \Isom(\R^n)$ can be expressed as the composition of an origin-preserving one $h \in G_0$ and a translation $\tau_a \in T$, i.e.
+*Theorem*: Any isometry $g \in \mathbb{E}$ can be expressed as the composition of an origin-preserving one $h \in G_0$ and a translation $\tau_a \in \mathbb{T}$, i.e.
 
 $$
-\Isom(\R^n) = T G_0 
-= \{\tau_a h \mid \tau_a \in T, h \in G_0\}
+\mathbb{E} = \mathbb{T} G_0 
+= \{\tau_a h \mid \tau_a \in \mathbb{T}, h \in G_0\}
 $$
 
 </div><br>
 
-The group multiplication in $\Isom(\R^n)$ is defined based on the action on a vector $x \in \R^n$: for an arbitrary $g = \tau_a h$
+The group multiplication in $\mathbb{E}$ is defined based on the action on a vector $x \in \R^n$: for an arbitrary $g = \tau_a h$
 
 $$
 g(x) = \tau_a (hx) = a + hx
 $$
 
-Then the action of the composition of two elements in $\Isom(\R^n)$ is
+Then the action of the composition of two elements in $\mathbb{E}$ is
 
 $$
 \begin{align*}
@@ -121,7 +124,7 @@ From this result:
 
 <div class="result">
 
-**Multiplication and inverse in $\Isom(\R^n)$:**
+**Multiplication and inverse in $\mathbb{E}$:**
 
 $$
 (\tau_a h) (\tau_{a'} h') 
@@ -151,38 +154,38 @@ With this multiplication, we can show that
 
 <div class="result">
 
-*Theorem*: $T \lhd \Isom(\R^n)$ (the translation group is a *normal* subgroup of $\Isom(\R^n)$).
+*Theorem*: $\mathbb{T} \lhd \mathbb{E}$ (the translation group is a *normal* subgroup of $\mathbb{E}$).
 
 </div>
 
 ----
 
-*Proof*: For any $\tau_a \in T$ and any $\tau_b h \in \Isom(\R^n)$
+*Proof*: For any $\tau_a \in \mathbb{T}$ and any $\tau_b h \in \mathbb{E}$
 
 $$
 \begin{align*}
     &(\tau_b h)^{-1} \tau_a (\tau_b h)
     = \tau_{-h^{-1}b} h^{-1} \tau_{a+b} h \\
     &= \tau_{-h^{-1}b} \tau_{h^{-1}(a+b)} h^{-1} h
-    = \tau_{h^{-1}a} \in T
+    = \tau_{h^{-1}a} \in \mathbb{T}
     & \blacksquare
 \end{align*}
 $$
 
 ----
 
-From the above analysis, we find that $\Isom(\R^n)$ is (strictly speaking, isomorphic to) the *semi-direct product* of the translation group $T$ and the point group $G_0$:
+From the above analysis, we find that $\mathbb{E}$ is (strictly speaking, isomorphic to) the *semi-direct product* of the translation group $\mathbb{T}$ and the point group $G_0$:
 
 $$
 \left. \begin{aligned}
-    \Isom(\R^n) = T G_0 & \\
-    T \lhd \Isom(\R^n) & \\
-    T \cap G_0 = \{1\} & \\
+    \mathbb{E} = \mathbb{T} G_0 & \\
+    \mathbb{T} \lhd \mathbb{E} & \\
+    \mathbb{T} \cap G_0 = \{1\} & \\
 \end{aligned} \right\} \Rightarrow
-\Isom(\R^n) \cong T \rtimes G_0 \cong \R^n \rtimes O(n)
+\mathbb{E} \cong \mathbb{T} \rtimes G_0 \cong \R^n \rtimes O(n)
 $$
 
-The isomorphism is simply $\tau_a h \mapsto (\tau_a,h)$. The homomorphism $\phi: G_0 \to \Aut(T)$ in the semi-direct product can be found by comparing with the general definition:
+The isomorphism is simply $\tau_a h \mapsto (\tau_a,h)$. The homomorphism $\phi: G_0 \to \Aut(\mathbb{T})$ in the semi-direct product can be found by comparing with the general definition:
 
 $$
 \begin{gather*}

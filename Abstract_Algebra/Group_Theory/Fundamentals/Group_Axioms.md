@@ -1,10 +1,12 @@
 # Group Axioms
 
-A **group** is a set $G$ endowed with a binary relation (**group multiplication**) that has the following properties: for all $a,b,c \in G$
+*Definition*:
 
-- **Associativity**: $a(bc) = (ab)c$
-- **Existence of (left) identity**: $\exist\ 1 \in G \Rightarrow 1a = a$
-- **Existence of (left) inverse**: $\exist\ a^{-1} \in G \Rightarrow a^{-1}a = 1$
+- **Group**: a set $G$ endowed with a binary relation (**group multiplication**) that has the following properties: for all $a,b,c \in G$
+
+    1. *Associativity*: $a(bc) = (ab)c$
+    2. *Existence of (left) identity*: $\exist\ 1 \in G \Rightarrow 1a = a$
+    3. *Existence of (left) inverse*: $\exist\ a^{-1} \in G \Rightarrow a^{-1}a = 1$
 
 <div class="remark">
 

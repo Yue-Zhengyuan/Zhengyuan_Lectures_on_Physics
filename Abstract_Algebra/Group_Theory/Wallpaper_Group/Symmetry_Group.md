@@ -1,25 +1,33 @@
-# Point Groups in 2D
+# Symmetry Group
+
+*Definition*: Let $X$ be a metric space, and $W$ a subset of $X$. 
+
+- **Symmetry** of $W$: isometries of $X$ that leave the set $W$ invariant, i.e.
+
+    $$
+    u(W) = \{u(x) \mid x \in W\} = W
+    $$
+
+- **Symmetry group** of $W$: the group of all symmetries of $W$
+    
+    $$
+    \Sym(W) = \{
+        u \in \Isom(X) \mid
+        u(W) = W
+    \}
+    $$
 
 <div class="remark">
-<center>
-<i>
 
-This section is restricted to two-dimensions ($\R^2$).
+*Remark*: In the following, we choose $X = \R^n$.
 
-</i>
-</center>
 </div><br>
 
 In considering the wallpaper group (2D space group), we do not only want $\R^2$ to be invariant under the action of the group elemets, but also some of its subsets (e.g. a set of discrete points on a lattice ).
 
 For a subset $W$ of $\R^2$, its **symmetry group** is the set of all isometries of $\R^2$ that leave $W$ invariant, which is also a subgroup of $\Isom(\R^2)$:
 
-$$
-\Sym(W) = \{
-    \phi \in \Isom(\R^2) \mid
-    \phi(W) = W
-\}
-$$
+
 
 Its **point group** is the collection of all isometries that keeps one point of $W$ invariant (this point will be placed at the origin), which is a subgroup of $O(2)$.
 

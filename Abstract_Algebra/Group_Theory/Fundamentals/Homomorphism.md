@@ -1,53 +1,81 @@
 # Group Homomorphism
 
-*Definition*: Let $G_1, G_2$ be two groups.
+*Definition*: Let $G, H$ be two groups, and $f: G \to H$ a map between them.
 
-- **Homomorphism (同态)**: a map $f: G_1 \to G_2$ such that
+- **Homomorphism (同态)**: the map $f$ with the property
 
     $$
-    \forall x, y \in G_1 \quad 
+    \forall x, y \in G \quad 
     f(xy)  = f(x) f(y) 
     $$
 
-    - **Endomorphism (自同态)**: a homomorphism from a group to *itself*.
+    The set of all homomorphisms between $G, H$ is denoted by $\Hom(G, H)$.
 
-- **Isomorphism (同构)**: an homomorphism from one group to another which is *also injective (one-to-one)*, and therefore preserves group structure.
+- **Endomorphism (自同态)**: a homomorphism from a group to *itself*.
 
-    - **Isomorphic Groups**: Two groups between which exists an isomorphism (and therefore are essentially the *same* group), denoted by
+    The set of all endomorphisms of $G$ is denoted by $\End(G)$.
 
-        $$
-        G_1 \cong G_2
-        $$
-    
-    - **Automorphism (自同构)**: an isomorphism from a group to *itself* ("symmetries" of a group)
-        
-        - **Automorphism group** $\Aut(G)$: the group consisting of all automorphisms of a group $G$.
-
-## Theorems on Group Homomorphisms
+## Kernel and Image of A Group Homomorphism
 
 <div class="result">
 
-*Theorem*: (**Group homomorphism lemma**)
+*Theorem*: Let $f: G \to H$ be a group homomorphism.
 
-Let $f: G_1 \to G_2$ be a group homomorphism. Then
-
-- $\ker{f} = \{x|x\in G_1, f(x) = 0\}$ is a subgroup of $G_1$
-- $\im{f} = \{y|y \in f(G_1) \subset G_2\}$ is a subgroup of $G_2$
+- $\ker{f} = \{x \mid x\in G, f(x) = 1_H\}$ is a *normal* subgroup of $G$
+- $\im{f} = \{y \mid y \in f(G) \subset H\}$ is a subgroup of $H$
 
 </div>
 
 ----
+
 *Proof*:
 
 ----
 
+The kernel and the image can be used to classify homomorphisms. We first give some definitions, which are group theory versions of corresponding concepts in general theory of maps.
+
+*Definition*:
+
+- **Monomorphism (单同态)**: an *injective* homomorphism
+- **Epimorphism (满同态)**: a *surjective* homomorphism $\im f = H$
+- **Isomorphism (同构)**: a *bijective* homomorphism, which preserves group structure.
+    - **Isomorphic Groups**: Two groups between which exists an isomorphism (and therefore are essentially the *same* group), denoted by $G \cong H$
+
 <div class="result">
 
-*Theorem*: (**Fundamental theorem of homomorphism**)
+*Theorem*: For a group homomorphism $f: G \to H$
 
-Let $f: G_1 \to G_2$ be a group homomorphism. Then
+- $f$ is a monomorphism $\Leftrightarrow$ $\ker f = \{1_G\}$
+- $f$ is an epimorphism $\Leftrightarrow$ $\im f = H$
+- $f$ is an isomorphism $\Leftrightarrow$ $\ker f = \{1_G\}$ *and* $\im f = H$
 
-$$G_1 / \ker{f} \cong \im{f}$$
+</div><br>
+
+## Isomorphism Theorems
+
+<div class="result">
+
+*Theorem*: (Fundamental theorem of homomorphism)
+
+Let $f: G \to H$ be a group homomorphism. Then
+
+$$G / \ker{f} \cong \im{f}$$
 
 </div>
+
 ----
+
+*Proof*:
+
+----
+
+## Automorphism
+
+*Definition*:
+
+- **Automorphism (自同构)**: an isomorphism from a group to *itself* ("symmetries" of a group)
+    
+- **Automorphism group** $\Aut(G)$: the group consisting of all automorphisms of a group $G$.
+
+### Conjugation and Inner Automorphism
+
