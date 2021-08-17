@@ -2,9 +2,63 @@
 
 ## Vectors and Vector Spaces
 
+*Definition*: Let $F$ be a field.
+
+- **Vector space**: a set $V$ (its elements $v \in V$ are then called **vectors**) with the following two operations satisfying given axioms.
+    
+    - **Vector addition** $+: V \times V \to V$
+        
+        For any $u,v,w \in V$:
+
+        $$
+        \begin{array}{r|l}
+            \text{Commutativity} & u+v=v+u
+            \\[6pt] \hline \\[-6pt]
+            \text{Associativity} & u+(v+w) = (u+v)+w
+            \\[6pt] \hline \\[-6pt]
+            \begin{aligned}
+                \text{Existence of zero} \\
+                \text{(additive identity)}
+            \end{aligned} & \exists 0 \in V, \ v + 0 = v
+            \\[6pt] \hline \\[-6pt] 
+            \begin{aligned}
+                \text{Existence of} \\
+                \text{additive inverse}
+            \end{aligned} & \exists (-a) \in R, \ a + (-a) = 0
+        \end{array}
+        $$
+    
+    - **Scalar multiplication** $F \times V \to V$ 
+
+        For any $a,b \in F$ and $u,v \in V$:
+
+        $$
+        \begin{array}{r|l}
+            \begin{aligned}
+                \text{Compatibility with} \\
+                \text{field multiplication}
+            \end{aligned} & a(bv) = (ab)v
+            \\[6pt] \hline \\[-6pt]
+            \begin{aligned}
+                \text{Identity of scalar} \\
+                \text{multiplication}
+            \end{aligned} & 1v = v \ (1 \in F)
+            \\[6pt] \hline \\[-6pt]
+            \begin{aligned}
+                \text{Distributivity with} \\
+                \text{respect to vector addition}
+            \end{aligned} & a(u+v) = au+av
+            \\[6pt] \hline \\[-6pt] 
+            \begin{aligned}
+                \text{Distributivity with} \\
+                \text{respect to scalar addition}
+            \end{aligned} & (a+b)v = av + bv
+        \end{array}
+        $$
+
 ## Linear Maps, Images and Kernels
 
-*Definition*: Let $V, W$ be two vector spaces over the field $K$ (such as $\mathbb{C}, \mathbb{R}$).
+*Definition*: Let $V, W$ be two vector spaces over the field $K$ (common examples are $\mathbb{C}, \mathbb{R}$).
 
 - **Linear maps**: a map $f: V \to W$ satisfying
 
@@ -20,7 +74,7 @@
 
 - **Isomorphic vector spaces**
 
-----
+<div class="result">
 
 *Theorem*: (**Relation between $\ker{f}$ and $\text{im }f$**)
 
@@ -30,7 +84,7 @@ $$
 \dim{V} = \dim{\ker{f}}  + \dim{\text{im }f}
 $$
 
-----
+</div><br>
 
 ## Dual Vector Space
 
@@ -41,7 +95,7 @@ $$
 - **Inner product**
 - **Adjoint of linear maps**
 
-----
+<div class="result">
 
 *Theorem*: (**Dimension of $\tilde{f}$**)
 
@@ -49,7 +103,9 @@ $$
 \dim{\text{im }f} = \dim{\text{im }\tilde{f}}
 $$
 
-----
+</div><br>
+
+<div class="result">
 
 *Theorem*: (**Toy index theorem**)
 
@@ -59,7 +115,7 @@ $$
 \dim{\ker{f}} - \dim{\ker{\tilde{f}}} = \dim{V} - \dim{W}
 $$
 
-----
+</div><br>
 
 ## Tensors
 

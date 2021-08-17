@@ -35,7 +35,7 @@
         &= \{
             \omega \in \Omega^r(M) \mid
             \omega = d_{r-1} \xi , \,
-            \exist \xi \in \Omega^{r-1}(M)
+            \exists \xi \in \Omega^{r-1}(M)
         \}
     \end{align*}
     $$

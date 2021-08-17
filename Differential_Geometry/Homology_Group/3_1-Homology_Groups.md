@@ -127,7 +127,7 @@
         &= \{
             c \in C_r(K) \mid 
             c = \partial_{r+1}d, \,
-            \exist d \in C_{r+1}(K)
+            \exists d \in C_{r+1}(K)
         \}
     \end{align*}
     $$

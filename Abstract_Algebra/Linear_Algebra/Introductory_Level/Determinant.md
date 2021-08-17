@@ -172,7 +172,7 @@ $$
 = A_n^{-1} \cdots A_2^{-1} A_1^{-1}
 $$
 
-This is easy to understand if you think in terms of the transformations they represent. For example, consider the problem of putting an elephant into a refrigerator with closed doors. We need to do it in 3 steps:
+This is easy to understand in terms of the transformations they represent. For example, consider the problem of putting an elephant into a refrigerator with closed doors. We need to do it in 3 steps:
 
 <center>
 

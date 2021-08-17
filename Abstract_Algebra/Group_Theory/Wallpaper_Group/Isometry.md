@@ -32,11 +32,7 @@ $$
 
 ## Euclidean Group $\mathbb{E}$
 
-From now on we consider the group $\Isom(\R^n)$ of isometries between $\R^n$ and itself. This group is also called the **Euclidean group** $\mathbb{E}$. 
-
-We first make $\R^n$ into a *vector space* with an inner product; then the metric $d(x,y)$ on $\R^n$ is directly chosen as the square root the inner product of $x - y$ and itself. 
-
-Two types of isometries of $\R^n$ are of special importance.
+From now on we consider the group $\Isom(\R^n)$ of isometries between $\R^n$ and itself. This group is also called the **Euclidean group** $\mathbb{E}$. Two types of isometries are of special importance:
 
 ### Origin-Preserving Isometries (Point Group)
 
@@ -50,17 +46,23 @@ All origin-preserving isometries form a *subgroup* $G_0$ (called the **point gro
 
 <div class="result">
 
-*Theorem*: The subgroup $G_0$ of origin-preserving isometries of $\R^n$ is *isomorphic* to the orthogonal group $O(n)$.
+*Theorem*: The subgroup $G_0$ of origin-preserving isometries of $\R^n$ is *isomorphic* to the orthogonal group $\O(n)$.
 
-</div><br>
+</div>
 
-Then the action of $h \in G_0$ on any $x \in \R^n$ is directly given by the matrix multiplication
+----
+
+*Proof*:
+
+----
+
+The action of $h \in G_0$ on any $x \in \R^n$ is directly given by the matrix multiplication
 
 $$
 h(x) = \mathcal{D}(h) x
 $$
 
-where $\mathcal{D}(h)$ is the matrix in $O(n)$ corresponding to $h \in G_0$. Usually we simply write $D(h)x = hx$.
+where $\mathcal{D}(h)$ is the matrix in $\O(n)$ corresponding to $h \in G_0$. Usually we simply write $D(h)x = hx$.
 
 ### Translation Group
 
@@ -103,7 +105,13 @@ $$
 = \{\tau_a h \mid \tau_a \in \mathbb{T}, h \in G_0\}
 $$
 
-</div><br>
+</div>
+
+----
+
+*Proof*:
+
+----
 
 The group multiplication in $\mathbb{E}$ is defined based on the action on a vector $x \in \R^n$: for an arbitrary $g = \tau_a h$
 
@@ -180,11 +188,11 @@ From the above analysis, we find that $\mathbb{E}$ is (strictly speaking, isomor
 
 $$
 \left. \begin{aligned}
-    \mathbb{E} = \mathbb{T} G_0 & \\
-    \mathbb{T} \lhd \mathbb{E} & \\
-    \mathbb{T} \cap G_0 = \{1\} & \\
+    \mathbb{E} &= \mathbb{T} G_0 \\
+    \mathbb{T} &\lhd \mathbb{E} \\
+    \mathbb{T} \cap G_0 &= \{1\} \\
 \end{aligned} \right\} \Rightarrow
-\mathbb{E} \cong \mathbb{T} \rtimes G_0 \cong \R^n \rtimes O(n)
+\mathbb{E} \cong \mathbb{T} \rtimes G_0 \cong \R^n \rtimes \O(n)
 $$
 
 The isomorphism is simply $\tau_a h \mapsto (\tau_a,h)$. The homomorphism $\phi: G_0 \to \Aut(\mathbb{T})$ in the semi-direct product can be found by comparing with the general definition:

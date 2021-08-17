@@ -99,9 +99,9 @@ A finitely generated abelian group can also be related to the cyclic groups $\ma
 
 <div class="result">
 
-*Theorem*: (**Fundamental theorem of finitely generated Abelian groups**)
+*Theorem*: (Fundamental theorem of finitely generated Abelian groups)
 
-Let $G$ be a finitely generated Abelian group with $m$ generators. Then $G$ is (isomorphic to) a direct sum (product) of $m$ cyclic groups:
+Let $G$ be a finitely generated Abelian group with $m$ generators. Then $G$ is (isomorphic to) a direct sum (in additive notation) of $m$ cyclic groups:
 
 $$
 G \cong 

@@ -2,11 +2,18 @@
 
 *Definition*:
 
-- **Group**: a set $G$ endowed with a binary relation (**group multiplication**) that has the following properties: for all $a,b,c \in G$
+- **Group**: a set $G$ endowed with a binary relation (**group multiplication**) 
+
+    $$
+    \circ: G \times G \to G \quad
+    (a, b) \mapsto a \circ b \equiv ab \in G
+    $$
+    
+    that has the following properties: for all $a,b,c \in G$
 
     1. *Associativity*: $a(bc) = (ab)c$
-    2. *Existence of (left) identity*: $\exist\ 1 \in G \Rightarrow 1a = a$
-    3. *Existence of (left) inverse*: $\exist\ a^{-1} \in G \Rightarrow a^{-1}a = 1$
+    2. *Existence of (left) identity*: $\exists\ 1 \in G, \ 1a = a$
+    3. *Existence of (left) inverse*: $\exists\ a^{-1} \in G, \ a^{-1}a = 1$
 
 <div class="remark">
 
