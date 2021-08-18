@@ -1534,7 +1534,7 @@ Cell[BoxData[
 
 Cell["\<\
 Due to the linearity of quantum mechanics, the old set and the new set of \
-ensemble states must be related by a linear transformation:\
+ensemble states must be related by a linear map:\
 \>", "Text",
  CellChangeTimes->{{3.789717943449581*^9, 
   3.789717975836605*^9}},ExpressionUUID->"54ea7325-a99d-4f39-82f3-\

@@ -151,14 +151,10 @@ The terminologies for special permutation groups can be applied to the group act
 
 ## Cayley's Theorem
 
-It turns out that every abstractly defined group can be realized as the group of symmetries of some set, at least itself.
+Every abstractly defined group can be realized as the group of symmetries of some set, at least itself.
 
 <div class="result">
 
-*Theorem*: (Cayley) Every group $G$ is *isomorphic* to a subgroup of its own group of symmetries $\Sym(G)$.
-
-$$
-G \le \Sym(G)
-$$
+*Theorem*: (Cayley) Every group $G$ is *isomorphic* to a subgroup of $\Sym(G)$, i.e. a permutation group of $G$ itself.
 
 </div><br>

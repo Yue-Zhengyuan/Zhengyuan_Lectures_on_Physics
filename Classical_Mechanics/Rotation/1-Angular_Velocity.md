@@ -41,7 +41,7 @@ $\alpha (t)$), the **angular velocity** $\boldsymbol{\omega}(t)$ is a *vector* o
     $$
 
 
-To really understand how people "invented" the angular velocity vector and cross product, you must use the correct mathematical language to describe rotations. You know that rotations are *linear transformations*, so we should speak in terms of matrices and vectors.
+To really understand how people "invented" the angular velocity vector and cross product, you must use the correct mathematical language to describe rotations. You know that rotations are *linear maps*, so we should speak in terms of matrices and vectors.
 
 After going through this material, the *most important* (and maybe surprising to you, or any starters) thing you should remember is:
 

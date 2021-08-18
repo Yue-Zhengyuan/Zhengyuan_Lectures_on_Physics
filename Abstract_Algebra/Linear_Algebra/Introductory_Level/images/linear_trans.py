@@ -1,5 +1,5 @@
 """
-    Demostration of linear transformation
+    Demostration of linear map
     =====================================
     Author: Yue Zhengyuan
 
@@ -57,7 +57,7 @@ ax2.axis('off')
 text_kw = dict(fontsize=14)
 text_kw2 = dict(fontsize=14)
 
-ax.set_title('Linear Transformation Demostration', fontsize=16)
+ax.set_title('Linear Map Demostration', fontsize=16)
 ax.set_xlim(-9, 9)
 ax.set_ylim(-5, 13)
 ax.set_aspect(1)
@@ -94,7 +94,7 @@ def vecLabelXY(v, start=(0,0)):
 
 arrow_kw = {'head_width': 0.2, 'head_length': 0.3, 'width': 0.03, 'length_includes_head': True}
 
-# linear transformation
+# linear map
 ## components of basis vec after transform
 e1New = FancyArrow(0, 0, *init_e1, **arrow_kw, color='red')
 e1Label = ax.text(*(1.1*init_e1), '$e_1$', **text_kw, color='red')

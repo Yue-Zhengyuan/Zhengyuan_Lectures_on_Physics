@@ -4,13 +4,13 @@
 Sometimes the standard basis may not be very convenient. Thus we naturally face the question of how to describe things using another set of basis vectors. It is expected that if we change to a new set of basis vectors:
 
 - A vector will have different components 
-- A linear transformation will be represented by a different matrix
+- A linear map will be represented by a different matrix
 
-In this section we shall show, in two dimensions, how to find the components of vectors and representation matrices of linear transformations under a new set of basis vectors. The generalization to higher dimensions is straightforward.
+In this section we shall show, in two dimensions, how to find the components of vectors and representation matrices of linear maps under a new set of basis vectors. The generalization to higher dimensions is straightforward.
 
 ## Description of the New Basis
 
-The new basis $e'_1, e'_2$ can always be described by their components along the old basis $e_1, e_2$ (which need not be the standard basis). In other words, the new basis is related to the old basis by a linear transformation $\mathcal{D}$:
+The new basis $e'_1, e'_2$ can always be described by their components along the old basis $e_1, e_2$ (which need not be the standard basis). In other words, the new basis is related to the old basis by a linear map $\mathcal{D}$:
 
 $$
 e'_1 = \mathcal{D} e_1 
@@ -81,9 +81,9 @@ $$
 
 where $v' \equiv v'_1 e_1 + v'_2 e_2$ is the vector constructed using the *new* components and the *old* basis vectors.
 
-## Matrix of Linear Transformation under the New Basis
+## Matrix of Linear Map under the New Basis
 
-In the *basis-free* language, for an arbitrary vector $v \in V$, a linear transformation $A$ sends it to another vector $w \in V$:
+In the *basis-free* language, for an arbitrary vector $v \in V$, a linear map $A$ sends it to another vector $w \in V$:
 
 $$
 w = A v

@@ -56,7 +56,7 @@
         \end{array}
         $$
 
-## Linear Maps, Images and Kernels
+## Linear Maps
 
 *Definition*: Let $V, W$ be two vector spaces over the field $K$ (common examples are $\mathbb{C}, \mathbb{R}$).
 
@@ -64,15 +64,26 @@
 
     $$
     f(a_1 v_1 + a_2 v_2) = a_1 f(v_1) + a_2 f(v_2)
-    \quad \forall a_1, a_2 \in K, v_1 v_2 \in V
+    \quad \forall a_1, a_2 \in K, v_1, v_2 \in V
     $$
 
     which is a *homomorphism* preserving the algebraic structure (vector addition and scalar multiplication) of the vector space $V$.
 
-    - **Image and kernel of the map $f$**
-    - **Linear functions**
+- **Isomorphic vector spaces**: two vector spaces $V, W$ between which exists an isomorphism (*bijective* linear map $f: V \to W$)
 
-- **Isomorphic vector spaces**
+<div class="result">
+
+*Theorem*: All $n$-dimensional vector spaces are isomorphic to $K^n$.
+
+</div><br>
+
+### Images and Kernels of Linear Maps
+
+*Definition*: Let $f: V \to W$ be a linear map. 
+
+- **Image** of $f$: $\im f = \{f(v) \in W \mid v \in V\}$
+
+- **Kernel** of $f$: $\ker f = \{v \in V \mid f(v) = 0_W\}$
 
 <div class="result">
 

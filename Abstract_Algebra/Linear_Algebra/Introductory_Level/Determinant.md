@@ -103,9 +103,9 @@ is a right-hand basis.
 
 When $\det A = 0$, it means that $a, b, c$ are *on the same plane*.
 
-## Inverse of Linear Transformation and Matrix
+## Inverse of Linear Map and Matrix
 
-For a given linear transformation $A$, *if we can find* another transformation $B$ that completely *cancels* the effect of $A$, *and* $A$ completely cancels the effect of $B$, then we say that $A$ and $B$ are the **inverse of each other**. 
+For a given linear map $A$, *if we can find* another transformation $B$ that completely *cancels* the effect of $A$, *and* $A$ completely cancels the effect of $B$, then we say that $A$ and $B$ are the **inverse of each other**. 
 
 The matrix representation of $B$ is called the **inverse** of the matrix $A$. We shall use the notation $A^{-1}$ to denote both the inverse transformation and the inverse matrix.
 
@@ -131,21 +131,21 @@ $$
 
 - Do *not* use $1/A$ to denote the inverse of $A$.
 
-- Note that we used the expression "if we can find". This means that some linear transformation does *not* have its inverse.
+- Note that we used the expression "if we can find". This means that some linear map does *not* have its inverse.
 
-- We state without proof that if a linear transformation is invertible, then *its inverse is unique*. 
+- We state without proof that if a linear map is invertible, then *its inverse is unique*. 
 
 Here we shall not teach you how to calculate the inverse of an arbitrary invertible matrix, which can be done by computers. 
 
 ### Determinant and Matrix Invertibility
 
-Consider a linear transformation $A$.
+Consider a linear map $A$.
 
 <center>
 
 ![](images/non_invertible_trans.png)   
-*A non-invertible 2D linear transformation*   
-*(Screenshot from the linear transformation demo)*
+*A non-invertible 2D linear map*   
+*(Screenshot from the linear map demo)*
 
 </center>
 

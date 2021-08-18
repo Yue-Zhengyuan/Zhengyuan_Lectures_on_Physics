@@ -1,8 +1,8 @@
-# Linear Transformation and Matrix
+# Linear Map and Matrix
 
-## Linear Transformations
+## Linear Maps
 
-A **linear transformation** (denoted by $A$) on a vector space $V$ maps a vector $u \in V$ to another vector $v = Au \in V$:
+A **linear map** (denoted by $A$) on a vector space $V$ maps a vector $u \in V$ to another vector $v = Au \in V$:
 
 $$
 A: V \to V
@@ -14,13 +14,13 @@ The transformation must satisfy the following two *defining* requirements (calle
 
 - $\forall \, v\in V, c\in \mathbb{C} \quad A(c u) = c (A u)$
 
-In other words, it does not matter whether you perform linear transformations before or after vector addition and scalar multiplication. 
+In other words, it does not matter whether you perform linear maps before or after vector addition and scalar multiplication. 
 
-## Matrix Representation of Linear Transformations
+## Matrix Representation of Linear Maps
 
 The above definition is somewhat abstract. Let us represent it by something more concrete: the **matrix**. 
 
-Due to the linearity, a linear transformation $A$ can be *fully* described by specifying its action on *each* basis vector ($i = 1, ..., n$):
+Due to the linearity, a linear map $A$ can be *fully* described by specifying its action on *each* basis vector ($i = 1, ..., n$):
 
 $$
 e_i \to e'_i \equiv A e_i
@@ -49,7 +49,7 @@ We note that components of $v'$ along the new basis are the same as the componen
 <center>
 
 ![](images/linear_trans.svg)   
-*An arbitrary linear transformation in 2D. In this figure $v = 2 e_1 + 2 e_2$.*
+*An arbitrary linear map in 2D. In this figure $v = 2 e_1 + 2 e_2$.*
 
 </center>
 
@@ -77,7 +77,7 @@ $$
 \end{align*}
 $$
 
-Then we combine this two column vectors to form a **matrix** that represents the linear transformation $A$ (it does not matter whether you use usual or square brackets):
+Then we combine this two column vectors to form a **matrix** that represents the linear map $A$ (it does not matter whether you use usual or square brackets):
 
 $$
 A = \begin{bmatrix}
@@ -116,7 +116,7 @@ $$
 
 This is called a **row vector**.
 
-### Examples of 2D Linear Transformations
+### Examples of 2D Linear Maps
 
 In all the following examples, we use the standard basis to describe the transformation. 
 
@@ -178,7 +178,7 @@ In all the following examples, we use the standard basis to describe the transfo
 
     </center>
 
-*Remark*: **Translation** ($T: v \to v + t$, where $t$ is the translation vector) is not a linear transformation! You can easily verify, for two vectors $v, w \in V$
+*Remark*: **Translation** ($T: v \to v + t$, where $t$ is the translation vector) is not a linear map! You can easily verify, for two vectors $v, w \in V$
 
 $$
 \left.
@@ -201,7 +201,7 @@ Write down the transformation matrices of the reflection, the scaling, and the s
 
 ## Matrix-Vector Multiplication
 
-Using the linearity $A$, we can find the new vector $A v$ to which the vector $v$ is sent by the linear transformation $A$: 
+Using the linearity $A$, we can find the new vector $A v$ to which the vector $v$ is sent by the linear map $A$: 
 
 $$
 \begin{align*}
@@ -272,9 +272,9 @@ $$
 
 - Can you directly read off the answer from the figure above?
 
-## Composition of Linear Transformation
+## Composition of Linear Map
 
-Suppose we have two linear transformations $A, B$. We first apply $B$ onto a vector $v$, then apply $A$. The result of the combined transformation is denoted by $A B v$ (the transformations are written from right to left according to the order).
+Suppose we have two linear maps $A, B$. We first apply $B$ onto a vector $v$, then apply $A$. The result of the combined transformation is denoted by $A B v$ (the transformations are written from right to left according to the order).
 
 Now let us find its components: using the representation matrices of $A,B$ under the same (original) basis, we have
 
@@ -405,11 +405,17 @@ $$
 
 We emphasize that **this formula is valid only when we are using the components of $u,v$ along an orthonormal basis**.
 
+From this relation, we can choose $v = e_j$ and express the $j$th components of $u$ along $e_j$ as the inner product of $u$ and $e_j$:
+
+$$
+u \cdot e_j = u_i \delta_{ij} = u_j
+$$
+
 *Remark*: Even the choice of orthonormal basis is *not unique*. For example, you can easily *rotate* the basis to obtain a new one. This is easy to understand intuitively, but a rigorous mathematical proof of this statement is not very trivial.
 
-### Inner Product under Linear Transformation
+### Inner Product under Linear Map
 
-After the linear transformation $A$, the inner product $u \cdot v$ is transformed to 
+After the linear map $A$, the inner product $u \cdot v$ is transformed to 
 
 $$
 \begin{align*}

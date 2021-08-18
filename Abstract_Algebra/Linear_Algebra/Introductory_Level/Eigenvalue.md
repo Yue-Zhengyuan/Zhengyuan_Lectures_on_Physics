@@ -146,7 +146,7 @@ How can we calculate $S^k$? Although you may be tempted to directly calculate by
 
 ## Eigenvalues and Eigenvectors
 
-First let us go through some formal math. Let $V$ be a vector space. Given a linear transformation $A: V \to V$, a (nonzero) vector $v \in V$ is called an **eigenvector** of $A$ with **eigenvalue** $\lambda$ if
+First let us go through some formal math. Let $V$ be a vector space. Given a linear map $A: V \to V$, a (nonzero) vector $v \in V$ is called an **eigenvector** of $A$ with **eigenvalue** $\lambda$ if
 
 $$
 A v = \lambda v
@@ -182,7 +182,7 @@ $$
 
 where 1 is the identity matrix. 
 
-Now consider $A - \lambda 1$ as a new transformation. We know that *any invertible linear transformation cannot send a nonzero vector to zero* (prove it by yourself!). Therefore, if the equation $(A - \lambda 1) v = 0$ have nonzero solutions of $v$, $A - \lambda 1$ cannot be invertible, which is equivalent to saying that its determinant vanishes. Thus, a *sufficient* condition for $\lambda$ to be an eigenvalue of $A$ is
+Now consider $A - \lambda 1$ as a new transformation. We know that *any invertible linear map cannot send a nonzero vector to zero* (prove it by yourself!). Therefore, if the equation $(A - \lambda 1) v = 0$ have nonzero solutions of $v$, $A - \lambda 1$ cannot be invertible, which is equivalent to saying that its determinant vanishes. Thus, a *sufficient* condition for $\lambda$ to be an eigenvalue of $A$ is
 
 $$
 \det (A-\lambda 1) = 0
@@ -194,11 +194,11 @@ Finally, we return to the equation $(A - \lambda 1) v = 0$ to determine the eige
 
 ### The Characteristic Polynomial
 
-The expression $\det (A - \lambda 1)$ is called the **characteristic polynomial** of the linear transformation (matrix) $A$, because it is indeed a polynomial of the eigenvalue $\lambda$, and is of degree $n = \dim{V}$. 
+The expression $\det (A - \lambda 1)$ is called the **characteristic polynomial** of the linear map (matrix) $A$, because it is indeed a polynomial of the eigenvalue $\lambda$, and is of degree $n = \dim{V}$. 
 
 Some consequences immediately follow:
 
-- A linear transformation in $n$-dimensions (an $n \times n$ matrix) will have $n$ eigenvalues (in the *complex plane*), which are the roots of the characteristic polynomial (due to the [**fundamental theorem of algebra**](https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra)).
+- A linear map in $n$-dimensions (an $n \times n$ matrix) will have $n$ eigenvalues (in the *complex plane*), which are the roots of the characteristic polynomial (due to the [**fundamental theorem of algebra**](https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra)).
 
     - Even if the matrix of $A$ is real, *its eigenvalues can still be complex*. 
 
@@ -419,7 +419,7 @@ Some consequences immediately follow:
 
 ### Eigenspace
 
-For a linear transformation (matrix) $A$, the vector space formed by the linear combination of all eigenvectors (called the **span** of these vectors) corresponding to the eigenvalue $\lambda$ is called the **eigenspace** of $A$ associated with $\lambda$. 
+For a linear map (matrix) $A$, the vector space formed by the linear combination of all eigenvectors (called the **span** of these vectors) corresponding to the eigenvalue $\lambda$ is called the **eigenspace** of $A$ associated with $\lambda$. 
 
 The dimension of the eigenspace $m_i$ is called the **geometric multiplicity** of the eigenvalue $\lambda_i$. Equivalently, $m_i$ is the number of *linearly-independent* eigenvectors associated with $\lambda_i$.
 
@@ -437,7 +437,7 @@ Besides, as we have seen in the example of shear matrix, the eigenvalue $\lambda
 
 When the algebraic multiplicity and geometric multiplicity are equal for all eigenvalues of a matrix $A$, we can directly use the eigenvectors as a set of basis vectors of the vector space $V$. 
 
-Since the action of a linear transformation $A$ on its eigenvectors is simply scaling, the representation matrix (denoted by $\Lambda$) is very simple: it is just a diagonal matrix, whose diagonal elements are just its eigenvalues:
+Since the action of a linear map $A$ on its eigenvectors is simply scaling, the representation matrix (denoted by $\Lambda$) is very simple: it is just a diagonal matrix, whose diagonal elements are just its eigenvalues:
 
 $$
 \Lambda = \text{diag } (\lambda_1, ..., \lambda_n)

@@ -193,7 +193,7 @@ $$
 
 </div><br>
 
-Based on these property, we can determine how the $a, a^\dagger$ operators transform as we change the basis vectors: suppose two sets of basis vectors (not necessarily orthonormal) $\{\ket{u}\}, \{\ket{v}\}$ are related by the linear transformation $\mathcal{D}$
+Based on these property, we can determine how the $a, a^\dagger$ operators transform as we change the basis vectors: suppose two sets of basis vectors (not necessarily orthonormal) $\{\ket{u}\}, \{\ket{v}\}$ are related by the linear map $\mathcal{D}$
 
 $$
 \ket{v} = \sum_u \ket{u} \mathcal{D}_{uv}

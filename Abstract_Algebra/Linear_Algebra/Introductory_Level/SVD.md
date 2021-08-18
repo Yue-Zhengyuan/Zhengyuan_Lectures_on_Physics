@@ -2,7 +2,7 @@
 
 *Note: In this part we consider linear mappings between complex vector spaces; the representation matrices will in general be complex.*
 
-Consider two vector spaces $X, Y$. Let $n = \dim X, m = \dim Y$. The theorem of **singular value decomposition** states that for any linear transformations $A: X \to Y$, its representation matrix
+Consider two vector spaces $X, Y$. Let $n = \dim X, m = \dim Y$. The theorem of **singular value decomposition** states that for any linear maps $A: X \to Y$, its representation matrix
 
 $$
 A \in \mathbb{C}^{m \times n} 

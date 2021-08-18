@@ -1869,7 +1869,7 @@ Cell["", "Text",
 Cell[CellGroupData[{
 
 Cell["\<\
-Remark: Invariance of Geodesic Equation under Linear Transformations\
+Remark: Invariance of Geodesic Equation under Linear Maps\
 \>", "Subsubsection",
  CellChangeTimes->{{3.784171308207734*^9, 3.7841713604286203`*^9}, {
    3.7846101979858294`*^9, 3.7846101998048363`*^9}, 3.784610487433063*^9, {
@@ -1887,7 +1887,7 @@ Cell[TextData[{
   FormatType->"TraditionalForm",ExpressionUUID->
   "1a38c627-da6a-472b-8dcc-1def2b3b725b"],
  "), instead of the time, as the parameter. Since the velocity is constant, \
-the length is related to the time by a linear transformation:"
+the length is related to the time by a linear map:"
 }], "Text",
  CellChangeTimes->{{3.784171308207734*^9, 3.7841713604286203`*^9}, {
   3.7846101979858294`*^9, 3.78461026176219*^9}, {3.784675369435306*^9, 
@@ -1948,7 +1948,7 @@ Cell[BoxData[
 
 Cell[TextData[{
  "Put it more mathematically, we have shown that the geodesic equation is ",
- StyleBox["invariant under linear transformation of the independent variable. \
+ StyleBox["invariant under linear map of the independent variable. \
 ",
   FontSlant->"Italic"]
 }], "Text",

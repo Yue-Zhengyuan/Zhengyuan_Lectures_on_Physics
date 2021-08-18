@@ -9,12 +9,6 @@ d_X(a,b) = d_Y(f(a), f(b)) \quad
 \forall a,b \in X
 $$
 
-<div class="remark">
-
-*Remark*: SOmetimes people write the mapping $f$ on the *right* of its argument ($af \equiv f(a)$), so that compositions will be presented in left-to-right order. 
-
-</div><br>
-
 ## General Properties of Isometries
 
 1. $f$ is *injective*, i.e. 
@@ -30,19 +24,39 @@ $$
 
 3. Isometries from a metric space $X$ to *itself* are automatically bijective; thus they form a *group* (denoted by $\Isom(X)$) under the composition of mappings.
 
-## Euclidean Group $\mathbb{E}$
+## The Euclidean Group
 
-From now on we consider the group $\Isom(\R^n)$ of isometries between $\R^n$ and itself. This group is also called the **Euclidean group** $\mathbb{E}$. Two types of isometries are of special importance:
+From now on we consider the group $\Isom(\R^n)$ of isometries between $\R^n$ and itself, also called the **Euclidean group** $\mathbb{E}$. 
+
+The set $\R^n$ as a vector space can be endowed with an *inner product* defined as
+
+$$
+u \cdot v = \sum_{j=1}^n u_j v_j
+$$
+
+where $u_j, v_j$ are components of $u, v$ along the $j$th vector $e_j$ of an *orthonormal* basis. Based on the inner product, the metric on $\R^n$ is:
+
+$$
+d(x,y) = \sqrt{(x-y)\cdot(x-y)} = |x - y|
+$$
+
+The angle $\theta$ between two vectors $u,v$ is then defined as
+
+$$
+u \cdot v = |u||v| \cos \theta
+$$
+
+Two types of isometries are of special importance:
 
 ### Origin-Preserving Isometries (Point Group)
 
-Such an isometry $h$ keeps the origin invariant: its action on the zero vector is
+Such an isometry $h$ keeps the origin (the zero vector) invariant: 
 
 $$
 h(0) = 0
 $$
 
-All origin-preserving isometries form a *subgroup* $G_0$ (called the **point group** of $\R^n$) of $\mathbb{E}$. It turns out that these isometries are *linear*; ultimately:
+All origin-preserving isometries form a *subgroup* $G_0$ (called the **point group** of $\R^n$) of $\mathbb{E}$. It turns out that these isometries are *linear* and *orthogonal* maps:
 
 <div class="result">
 
@@ -52,7 +66,74 @@ All origin-preserving isometries form a *subgroup* $G_0$ (called the **point gro
 
 ----
 
-*Proof*:
+*Proof*: Let $h \in G_0$. 
+
+- An important observation is that *$h$ preserves the inner product*: for any $u,v \in \R^n$
+
+    $$
+    u \cdot v = h(u) \cdot h(v)
+    $$
+
+    To show this, first note that $h$ preserves the norm of any vector:
+
+    $$
+    |v - 0| = |h(v) - h(0)| \Rightarrow 
+    |v| = |h(v)|
+    $$
+
+    Then
+
+    $$
+    \begin{align*}
+        2u \cdot v &= |u|^2 + |v|^2 - |u - v|^2
+        \\
+        2h(u) \cdot h(v)
+        &= |h(u)|^2 + |h(v)|^2 - |h(u) - h(v)|^2
+        \\
+        &= |u|^2 + |v|^2 - |u - v|^2 = 2u \cdot v
+    \end{align*}
+    $$
+
+- Next, we prove that $h$ is a linear map, i.e. for any $u,v  \in \R^n$ and $a \in \R$
+
+    $$
+    h(u+v) = h(u) + h(v), \quad h(av) = ah(v)
+    $$
+
+    Introduce an orthonormal set of basis vectors $\{e_1,...,e_n\}$. Then $v$ can be expressed as
+
+    $$
+    v = (v \cdot e_j) e_j \equiv v_j e_j
+    $$
+
+    Since $h$ preserves the inner product:
+    
+    - $\{e'_1,...,e'_n\}$ (with $e'_j \equiv h(e_j)$) is also an orthonormal basis, allowing us to write
+
+    $$
+    v = (v \cdot e'_j) e'_j \equiv v'_j e'_j
+    $$
+
+    - The components of $h(v)$ along the new basis are the same as those of $v$ along the old basis:
+
+        $$
+        h(v) = \underbrace{[h(v) \cdot e'_j]}_{v \cdot e_j} e'_j = v_j e'_j
+        $$
+
+    Then
+
+    $$
+    \begin{align*}
+        h(u+v) &= (u + v)_j e'_j 
+        = (u_j + v_j) e'_j \\
+        &= u_j e'_j + v_j e'_j = h(u) + h(v)
+        \\
+        h(av) &= (av)_j e'_j 
+        = a v_j e'_j = a h(v)
+    \end{align*}
+    $$
+
+- Obviously linear maps preserving the inner product are orthogonal maps. They are represented by $n \times n$ orthogonal matrices (in the group $\O(n)$) under any orthonormal basis. $\blacksquare$
 
 ----
 
@@ -94,7 +175,7 @@ $$
 
 ### Group Structure of $\mathbb{E}$
 
-It turns out that the entire $\mathbb{E}$ can be obtained from the subgroups $G_0$ and $\mathbb{T}$:
+The following theorem is now obvious:
 
 <div class="result">
 
@@ -109,7 +190,7 @@ $$
 
 ----
 
-*Proof*:
+*Proof*: For each $g$, simply choose the translation $a = g(0)$. $\blacksquare$
 
 ----
 
@@ -184,7 +265,7 @@ $$
 
 ----
 
-From the above analysis, we find that $\mathbb{E}$ is (strictly speaking, isomorphic to) the *semi-direct product* of the translation group $\mathbb{T}$ and the point group $G_0$:
+From the above analysis, we find that $\mathbb{E}$ is (isomorphic to) the *semi-direct product* of the translation group $\mathbb{T}$ and the point group $G_0$:
 
 $$
 \left. \begin{aligned}
@@ -209,3 +290,38 @@ $$
 \end{gather*}
 $$
 
+## Isometries of 2D Plane
+
+<div class="result">
+
+*Theorem*: The isometries $g = \tau_a h$ (except the identity isometry) of 2D Euclidean plane $\R^2$ must be one of the following four types:
+
+$$
+\begin{array}{c|c|c|c}
+    \text{Isometry} & a = 0\ ? & h = 1 ? & \det h
+    \\[6pt] \hline \\[-6pt]
+    \text{Translation} & \text{No} & \text{Yes} & +1
+    \\[6pt] \hline \\[-6pt]
+    \text{Rotation} & \text{Yes} & \text{No} & +1
+    \\[6pt] \hline \\[-6pt]
+    \text{Reflection} & \text{Yes} & \text{No} & -1
+    \\[6pt] \hline \\[-6pt]
+    \text{Glide Reflection} & \text{No} & \text{No} & -1
+\end{array}
+$$
+
+</div>
+
+----
+
+*Proof*: It suffices to show that it is impossible have the following type of isometry in 2D
+
+$$
+\begin{array}{c|c|c|c}
+    \text{Isometry} & a = 0\ ? & h = 1 ? & \det h
+    \\[6pt] \hline \\[-6pt]
+    \text{?} & \text{No} & \text{No} & +1
+\end{array}
+$$
+
+----
