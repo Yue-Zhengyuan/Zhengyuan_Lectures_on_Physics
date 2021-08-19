@@ -124,7 +124,7 @@ $$
 \end{array}
 $$
 
-i.e. the transformation matrix should belong to the group $SL(2,\mathbb{Z})$.
+i.e. the transformation matrix should belong to the group $\SL(2,\mathbb{Z})$.
 
 Under this transformation, we can verify that the modular parameter becomes
 
@@ -135,7 +135,7 @@ $$
 Since the physics only depends on $\tau$, we are free to flip the sign of all the four parameters. Therefore, the physical theory should be invariant under the **modular group (Möbius group)**
 
 $$
-PSL(2,\mathbb{Z}) \equiv SL(2,\mathbb{Z}) / \mathbb{Z}_2
+\PSL(2,\mathbb{Z}) \equiv \SL(2,\mathbb{Z}) / \mathbb{Z}_2
 $$
 
 i.e. matrices in $SL(2,\mathbb{Z})$ only differing by a sign change are identified. 

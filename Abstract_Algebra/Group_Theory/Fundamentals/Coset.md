@@ -36,16 +36,16 @@ The general theory of equivalence classes implies:
 
 <div class="result">
 
-*Theorem*: (Lagrange) Let $H$ be a subgroup of (a finite group) $G$.
+*Theorem*: Let $H$ be a subgroup of group $G$.
 
 - Two cosets $g_1 H, g_2 H$ ($g_1, g_2 \in G$) are *either disjoint or the same*;
-- $|G| = |G:H| |H|$
+- (Lagrange) If $G$ is a finite group, the order $|H|$ divides $|G|$.
 
 </div><br>
 
 ## Normal Subgroups and Quotient Group
 
-*Definition*: 
+*Definition*: Based on partition of $G$ by its cosets
 
 - **Index** of a subgroup $H$: the number of left/right cosets of $H$ in $G$, denoted by $|G:H|$.
 - **Quotient set** $G/H$: the set of all left/right cosets of $H$ in $G$.

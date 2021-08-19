@@ -4,8 +4,8 @@
 .remark {
     border-radius: 12px;
     /* padding: 20px; */
-    padding-top: 16px;
-    padding-bottom: 7px;
+    padding-top: 14px;
+    padding-bottom: 4px;
     padding-left: 20px;
     padding-right: 20px;
     background-color: SeaGreen;
@@ -14,8 +14,8 @@
 .result {
     border-radius: 12px;
     /* padding: 20px; */
-    padding-top: 16px;
-    padding-bottom: 7px;
+    padding-top: 14px;
+    padding-bottom: 4px;
     padding-left: 20px;
     padding-right: 20px;
     background-color: DarkSlateBlue;
