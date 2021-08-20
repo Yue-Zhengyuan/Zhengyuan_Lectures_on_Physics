@@ -1,6 +1,6 @@
-# Modules
+# *R*-Modules
 
-Modules are generalizations of vector spaces on fields.
+Modules over rings are generalizations of vector spaces on fields.
 
 *Definition*: Let $R$ be a ring.
 

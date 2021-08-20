@@ -1,6 +1,4 @@
-# Homology Groups of Simplicial Complexes 
-
-### **Part 2: Examples of Homology Groups**
+# Examples of Homology Groups
 
 ### Some Useful Theorems (Repeated from Part 1)
 

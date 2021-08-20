@@ -1,21 +1,10 @@
-<style>
-    .remark {
-        border-radius: 15px;
-        padding: 20px;
-        background-color: SeaGreen;
-        color: White;
-    }
-    .result {
-        border-radius: 15px;
-        padding: 20px;
-        background-color: FireBrick;
-        color: White;
-    }
-</style>
-
 # Elementary Processes of Scalar QED
 
-### **Part 2: Particle-Photon Interaction**
+<font size=5>
+
+**Part 2: Particle-Photon Interaction**
+
+</font>
 
 ## Compton Scattering
 

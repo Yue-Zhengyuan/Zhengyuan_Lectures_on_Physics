@@ -1,20 +1,18 @@
 # Homology Groups of Simplicial Complexes 
 
-### **Part 1: Definitions and Theorems**
-
-## Chain, Cycle, Boundary and Corresponding Groups
-
-*Definition*: Let
-
 <center>
 
 |Object|Symbol|
-|-:|:-|
+|:-:|:-:|
 |$i$th oriented $r$-simplex|$\sigma_{r,i}$|
 |$n$-dimensional simplicial complex|$K$|
 |Number of $r$-simplexes in $K$|$I_r$|
 
 </center>
+
+## Chain, Cycle and Boundary
+
+*Definition*:
     
 - **$r$-Chain**: A linear combination of all oriented $r$-simplexes in $K$
 
@@ -136,22 +134,22 @@
 
     *Remark*: Since the highest dimension of chains in $K$ is $n$, we *define* $B_n(K) = 0$
 
-----
+<div class="result">
 
-*Theorem*: (**Boundaries have no boundary**)
+*Theorem*: (Boundaries have no boundary)
 
-The composite map $\partial_{r+1} \circ \partial_r$ is *identically zero*:
+- The composite map $\partial_{r+1} \circ \partial_r$ is *identically zero*:
 
 $$
 \partial_r(\partial_{r+1}c) = 0, 
 \quad \forall c \in C_{r+1}(K)
 $$
 
-*Corollary*: (**Boundary group is a subgroup of cycle group**)
+- *Corollary*: $B_r(K) \subset Z_r(K)$
 
-$$
-B_r(K) \subset Z_r(K)
-$$
+</div>
+
+----
 
 *Proof*:
 
@@ -173,6 +171,8 @@ This follows immediately from the fact that "boundaries have no boundary", since
 
     - **Homology class**: An element in $H_r(K)$, which is an *equivalence class* in $Z_r(K)$
 
+    <div class="remark">
+    
     *Remark*: 
     
     - The equivalence relation used here is: 
@@ -181,19 +181,21 @@ This follows immediately from the fact that "boundaries have no boundary", since
     z' \sim z :\Leftrightarrow z' - z \in B_r(K)
     $$
 
-    - Any boundary $b$ is equivalent to 0, since $b - 0 \in B_r(K)$
+    - Any boundary $b$ is equivalent to $0$, since $b - 0 \in B_r(K)$
     
     - A homology group is a *finitely generated Abelian* group, but *not necessarily free*.
-  
-- **Group structure of $H_r(K)$**
+    
+    </div><br>
 
-    We prefer to define $H_r(K)$ with *integer* coefficients (in front of the generators of the group), denoted by $H_r(K;\mathbb{Z})$ ($\mathbb{Z}$ is usually omitted). 
+### Group structure of $H_r(K)$
 
-    It is also possible to use $\mathbb{R}$-coefficients (obtaining $H_r(K;\mathbb{R})$) or $\mathbb{Z}_2$-coefficients (obtaining $H_r(K;\mathbb{Z}_2)$). 
+We prefer to define $H_r(K)$ with *integer* coefficients (in front of the generators of the group), denoted by $H_r(K;\mathbb{Z})$ ($\mathbb{Z}$ is usually omitted). 
 
-----
+It is also possible to use $\mathbb{R}$-coefficients (obtaining $H_r(K;\mathbb{R})$) or $\mathbb{Z}_2$-coefficients (obtaining $H_r(K;\mathbb{Z}_2)$). 
 
-*Theorem*: (**Homology groups are topological invariants**)
+<div class="result">
+
+*Theorem*: (Homology groups are topological invariants)
 
 Let $X, Y$ be two topological spaces homeomorphic to each other. Let $(K,f), (L,g)$ be triangulations of $X, Y$ respectively. Then
 
@@ -201,26 +203,33 @@ $$
 H_r(K) \cong H_r(L), \quad r = 0,1,2,...
 $$
 
-*Corollary*: Let $(K,f), (L,g)$ be any two triangulations of the same topological space $X$. Then
+- *Corollary*: Let $(K,f), (L,g)$ be any two triangulations of the same topological space $X$. Then
 
-$$
-H_r(K) \cong H_r(L), \quad r = 0,1,2,...
-$$
+    $$
+    H_r(K) \cong H_r(L), \quad r = 0,1,2,...
+    $$
 
-*Remarks*:
-
-- The theorem tells us that:
-    - Homology group of one topological space is *independent of* the triangulation used;
-    - Homology groups of two *homeomorphic* topological spaces are *isomorphic*  ("the same").
+</div>
 
 ----
 
-*Theorem*: (**0th Homology group of connected simplicial complex**)
+----
 
-Let $K$ be a *connected* simplicial complex. Then
+<div class="remark">
+
+*Remarks*: The theorem tells us that:
+
+- Homology group of one topological space is *independent of* the triangulation used;
+- Homology groups of two *homeomorphic* topological spaces are *isomorphic*  ("the same").
+
+</div><br>
+
+<div class="result">
+
+*Theorem*: Let $K$ be a *connected* simplicial complex. Then
 
 $$
 H_0(K) \cong \mathbb{Z}
 $$
 
-----
+</div>

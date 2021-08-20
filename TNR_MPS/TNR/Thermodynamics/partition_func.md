@@ -1,18 +1,3 @@
-<style>
-    .remark {
-        border-radius: 15px;
-        padding: 20px;
-        background-color: SeaGreen;
-        color: White;
-    }
-    .result {
-        border-radius: 15px;
-        padding: 20px;
-        background-color: FireBrick;
-        color: White;
-    }
-</style>
-
 # Calculation of Partition Function
 
 The tensor network represents the partition function as the full conTract of tensors $T_A$ and $T_B$, formally denoted as

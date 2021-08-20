@@ -74,7 +74,7 @@ Space groups in 2D are called **wallpaper groups**.
 
 *Proof*: 
 
-- We shall use the first theorem of isomorphism. The desired isomorphism is
+- We shall use the first theorem of isomorphism. The desired isomorphism is simply
 
     $$
     \phi: \Isom(\R^n) \to \O(n) \quad (a,R) \mapsto R
@@ -184,7 +184,11 @@ The point group $P$ is *uniquely* determined (up to isomorphism) by the space gr
 
 - We first prove a lemma.
 
-    *Lemma*: 
+    *Lemma*: Let $G, T$ be a space group and its translation subgroup. Define the set
+
+    $$
+    G_n = \{x \in G \mid \forall g \in G, \ x g^n = g^n x\}
+    $$
 
 ----
 

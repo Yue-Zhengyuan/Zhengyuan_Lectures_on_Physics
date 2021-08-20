@@ -1,34 +1,78 @@
 # Group Extension
 
+The goal of the theory of group extension is to show how a group can be constructed from a *normal subgroup* and its *quotient group*.
+
 *Definition*: Let $A, B$ be two groups.
 
-- **Group extension:**  A group $G$ related to $A,B$ by a short exact sequence 
+- **Group extension** of $A$ by $B$: A group $G$ related (*not uniquely*) to $A,B$ by a short exact sequence 
     
     $$
-    1 \to A \xrightarrow{i} G \xrightarrow{\pi} B \to 1
+    1 \to A \xrightarrow{\mu} G 
+    \xrightarrow{\pi} B \to 1 \quad
+    (\im \mu = \ker \pi)
     $$
 
-- **Equivalent group extensions**: Two group extensions $G, G'$ are **equivalent** if there is a commutative diagram
+    The mapping $\mu$ is *injective*, and $\pi$ is *surjective*.
+
+- **Kernel** of the extension: the group $A$
+
+- **Equivalence of group extensions**: an equivalence relation defined by the existence of a commutative diagram between two group extensions (double line means the identity mapping)
 
     $$
     \begin{CD}
-        1 @>>> A @>{i}>> G @>{\pi}>> B @>>> 1
+        1 @>>> A @>{\mu}>> G @>{\pi}>> B @>>> 1
         \\
-        @. @VV{\text{id}}V @VV{\varphi}V @VV{\text{id}}V @.
+        @. @| @VV{\varphi}V @| @.
         \\
-        1 @>>> A @>>{i'}> G' @>>{\pi'}> B @>>> 1
+        1 @>>> A @>>{\mu'}> G' @>>{\pi'}> B @>>> 1
     \end{CD}
     $$
 
-    where $\varphi: G \to G'$ is a group *isomorphism*.
+    where $\varphi: G \to G'$ is a group *homomorphism*.
 
-## Properties of Group Extension
+<div class="result">
 
-1. $i(A)$ is a normal subgroup of $G$.
+*Theorem*: Define $M \equiv \im \mu = \ker \pi$.
 
-    *Proof*: By definition of exact sequence, $i(A) = \ker G$
+- $M \cong A$ and $M \lhd G$
+- $B \cong G/M$.
+- Extensions of $A$ by $B$ always exists. 
 
-2. $B$ is isomorphic to the quotient group $G/i(A)$.
+</div>
+
+----
+
+*Proof*: 
+
+- Simply note that:
+    - The monomorphism $\mu$ restricted to $A \to \mu(A) \subset G$ is an isomorphism.
+    - Since $\pi:G \to B$ is a homomorphism, we have $\ker \pi = M \lhd G$. 
+
+- This follows directly from the first isomorphism theorem $\im \pi \cong G / \ker \pi$:
+
+    - $\pi$ is surjective ($\im \pi = B$) 
+    - The exact sequence requires $\ker \pi = \im \mu = \mu(A)$
+
+    Thus we obtain $B \cong G/\mu(A)$.
+
+- We can always choose $G = A \rtimes_\xi B$ with the any group homomorphism $\xi: B \to \Aut(A)$. Then we can choose the monomorphism $\mu$ and the epimorphism $\pi$ as
+
+    $$
+    \mu(a) = (a,1), \quad \epsilon(a,b) = b
+    \quad (a\in A, b \in B) \quad \blacksquare
+    $$
+
+----
+
+<div class="remark">
+
+*Remark*: From the properties above, we can colloquially define the extension of $A$ by $B$ as a group $G$ containing a *normal subgroup* $M$ such that
+
+$$
+M \cong A \quad \text{and} \quad G/M \cong B
+$$
+
+</div><br>
 
 ## Example
 

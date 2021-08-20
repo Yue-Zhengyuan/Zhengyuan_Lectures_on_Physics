@@ -19,7 +19,7 @@
 
     <div class="remark">
 
-    *Remark*: The notation $G_n \xrightarrow{f_{n+1}} G_{n+1}$ only means $f_{n+1}(G_n) \le G_{n+1}$; they are *not* guaranteed to be equal.
+    *Remark*: The notation $G_n \xrightarrow{f_{n+1}} G_{n+1}$ only means $f_{n+1}(G_n) \subset G_{n+1}$; they are *not* guaranteed to be equal (unless $f_{n+1}$ is *surjective*).
 
     </div><br>
 
@@ -54,8 +54,8 @@ Below $1$ refers to the trivial group containing only the identity.
 - **Short exact sequence**: a 5-group exact sequence of the form
     
     $$
-    1 \to A \xrightarrow{f} B \xrightarrow{g} C \to 1
-    \quad (\im f = \ker g)
+    1 \to A \xrightarrow{\mu} B \xrightarrow{\pi} C \to 1
+    \quad (\im \mu = \ker \pi)
     $$
 
-    From previous two examples, $f$ is *injective*, and $g$ is *surjective*.
+    From previous two examples, $\mu$ is *injective*, and $\pi$ is *surjective*.

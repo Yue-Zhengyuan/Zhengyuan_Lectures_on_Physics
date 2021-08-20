@@ -1,21 +1,10 @@
-<style>
-    .remark {
-        border-radius: 15px;
-        padding: 20px;
-        background-color: SeaGreen;
-        color: White;
-    }
-    .result {
-        border-radius: 15px;
-        padding: 20px;
-        background-color: FireBrick;
-        color: White;
-    }
-</style>
-
 # Elementary Processes of Scalar QED
 
-### **Part 2: Particle Scattering**
+<font size=5>
+
+**Part 2: Particle Scattering**
+
+</font>
 
 In this part we introduce *multiple scalar fields* into the scalar QED theory. Consider two (uncoupled) complex scalar fields $\phi, \bar{\phi}$ and $\chi, \bar{\chi}$, of masses $m_\phi, m_\chi$ and charges $Q_\phi, Q_\chi$ respectively. The modified Lagrangian is
 

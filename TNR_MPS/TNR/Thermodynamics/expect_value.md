@@ -1,18 +1,3 @@
-<style>
-    .remark {
-        border-radius: 15px;
-        padding: 20px;
-        background-color: SeaGreen;
-        color: White;
-    }
-    .result {
-        border-radius: 15px;
-        padding: 20px;
-        background-color: FireBrick;
-        color: White;
-    }
-</style>
-
 # Expectation Value on 2D Network
 
 The expectation value of an operator $\mathcal{O}$ in a state $|\psi\rangle$ is

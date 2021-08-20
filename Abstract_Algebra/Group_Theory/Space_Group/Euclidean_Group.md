@@ -166,6 +166,12 @@ $$
 a(x) = a + x
 $$
 
+<div class="remark">
+
+*Remark*: Although $\mathbb{T}$ is an Abelian subgroup, this does not mean that its elements also commute with other elements in $\mathbb{E}$ (often they do not). 
+
+</div><br>
+
 ## Group Structure of $\mathbb{E}$
 
 The following theorem is now obvious:
