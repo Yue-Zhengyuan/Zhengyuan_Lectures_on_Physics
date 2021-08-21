@@ -4,7 +4,7 @@ Recall that a free boson field $\phi(z,\bar{z})$ compactified on a circle of rad
 
 $$
 \phi(z,\bar{z}) = \phi(z,\bar{z}) + 2\pi n R, \quad
-n \in \mathbb{Z}
+n \in \Z
 $$
 
 i.e. $\phi$ is treated as an angular variable. 
@@ -18,10 +18,10 @@ The currents have the mode expansion
 $$
 \begin{align*}
     j(z) &\equiv i \partial \phi 
-    = \sum_{n \in \mathbb{Z}} j_n z^{-n-1}
+    = \sum_{n \in \Z} j_n z^{-n-1}
     \\
     \bar{j}(\bar{z}) &\equiv i \bar{\partial} \phi 
-    = \sum_{n \in \mathbb{Z}} \bar{j}_n \bar{z}^{-n-1}
+    = \sum_{n \in \Z} \bar{j}_n \bar{z}^{-n-1}
 \end{align*}
 $$
 
@@ -40,14 +40,14 @@ Now we require that the field is invariant under the $2\pi$ rotation $z \to e^{2
 $$
 \phi(e^{2\pi i} z, e^{-2\pi i} \bar{z})
 = \phi(z, \bar{z}) + 2\pi n R,
-\quad z \in \mathbb{Z}
+\quad z \in \Z
 $$
 
 Using the expression of $\phi$ obtained above, we find
 
 $$
 j_0 - \bar{j}_0 = n R,
-\quad z \in \mathbb{Z}
+\quad z \in \Z
 $$
 
 Then we infer that
@@ -88,7 +88,7 @@ QR - \frac{n R^2}{2} = m
 \, \Rightarrow \,
 Q =  \frac{m}{R} + \frac{nR}{2},
 \quad
-m \in \mathbb{Z}
+m \in \Z
 $$
 
 Using this new notation, we write
@@ -191,8 +191,8 @@ $$
 we need to use the **Poisson Resummation Formula**
 
 $$
-\sum_{n \in \mathbb{Z}} \exp(-\pi a n^2 + b n)
-= \frac{1}{\sqrt{a}} \sum_{k \in \mathbb{Z}}
+\sum_{n \in \Z} \exp(-\pi a n^2 + b n)
+= \frac{1}{\sqrt{a}} \sum_{k \in \Z}
 \exp \left[
     -\frac{\pi}{a} \left(
         k + \frac{b}{2\pi i}

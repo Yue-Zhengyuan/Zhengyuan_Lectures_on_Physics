@@ -119,12 +119,12 @@ $$
     w_1 \\ w_2
 \end{pmatrix} \quad
 \begin{array}{c}
-    a,b,c,d \in \mathbb{Z}\\
+    a,b,c,d \in \Z\\
     ad - bc = 1
 \end{array}
 $$
 
-i.e. the transformation matrix should belong to the group $\SL(2,\mathbb{Z})$.
+i.e. the transformation matrix should belong to the group $\SL(2,\Z)$.
 
 Under this transformation, we can verify that the modular parameter becomes
 
@@ -135,10 +135,10 @@ $$
 Since the physics only depends on $\tau$, we are free to flip the sign of all the four parameters. Therefore, the physical theory should be invariant under the **modular group (Möbius group)**
 
 $$
-\PSL(2,\mathbb{Z}) \equiv \SL(2,\mathbb{Z}) / \mathbb{Z}_2
+\PSL(2,\Z) \equiv \SL(2,\Z) / \Z_2
 $$
 
-i.e. matrices in $SL(2,\mathbb{Z})$ only differing by a sign change are identified. 
+i.e. matrices in $SL(2,\Z)$ only differing by a sign change are identified. 
 
 ## Generators of Modular Group
 
@@ -191,6 +191,6 @@ $$
 \end{pmatrix} = -1 \quad \text{(?)}
 $$
 
-However, do not forget that we are restricting the calculation in the group $PSL(2,\mathbb{Z})$, where we identify matrices differing by a sign change. Thus $-1$ is the same as $1$. 
+However, do not forget that we are restricting the calculation in the group $PSL(2,\Z)$, where we identify matrices differing by a sign change. Thus $-1$ is the same as $1$. 
 
 ## Fundamental Domain

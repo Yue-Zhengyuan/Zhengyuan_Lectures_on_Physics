@@ -6,7 +6,7 @@
 
 *Theorem*: (**Fundamental group of circle**)
 
-$$ \pi_1(S^1) \cong \mathbb{Z}$$
+$$ \pi_1(S^1) \cong \Z$$
 
 *Proof*: 
 

@@ -8,7 +8,7 @@ $$
 
 - The site position $x_n = na$ becomes a *continuous* variable $x$. 
 - The continuous function $f(x)$ inherits periodicity $f(x+L) = f(x)$ from the discrete sequence ($f_{n+N} = f_n$)
-- The momentum $k_m = 2m\pi/L$ *remains discrete*, but now $m$ takes value from all $\mathbb{Z}$.
+- The momentum $k_m = 2m\pi/L$ *remains discrete*, but now $m$ takes value from all $\Z$.
 
 For two consecutive values of $x$, their difference is
 

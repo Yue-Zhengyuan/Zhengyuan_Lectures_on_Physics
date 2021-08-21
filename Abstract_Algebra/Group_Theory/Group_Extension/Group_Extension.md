@@ -74,24 +74,4 @@ $$
 
 </div><br>
 
-## Example
 
-Consider the quotient group $\mathbb{Z}/n\mathbb{Z} \ (n \in \mathbb{N})$, representing the cyclic group of order $n$ (up to group isomorphisms):
-
-$$
-\mathbb{Z}/n\mathbb{Z} = \{1, g, ..., g^{n-1}\} \qquad
-(g^n = 1)
-$$
-
-To demonstrate how the group extension is done, we set
-
-$$
-\begin{align*}
-    A &= \mathbb{Z}/4\mathbb{Z} = \{1, a, a^2, a^3\} 
-    & & (a^4 = 1) \\
-    B &= \mathbb{Z}/2\mathbb{Z} = \{1, b\}
-    & & (b^2 = 1)
-\end{align*}
-$$
-
-The extension $G$ is not unique. Let us pick an element $g \in G$ which is mapped to $b \in B$. 

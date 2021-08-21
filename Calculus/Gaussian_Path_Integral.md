@@ -20,7 +20,7 @@ where $x_n$ are positions on a $d$-dimensional, $N$-site square lattice (possibl
 
 $$
 x_n = (n_1 a, ..., n_d a) \quad
-n_1,...,n_d \in \mathbb{Z}
+n_1,...,n_d \in \Z
 $$
 
 Let us now take the continuum limit $a \to 0$ of the lattice (while keeping its volume $V = a^{Nd}$ unchanged). It is expected that the quantity $u(x_n)$ will scale as $a^d$, i.e. the volume per site; thus we set

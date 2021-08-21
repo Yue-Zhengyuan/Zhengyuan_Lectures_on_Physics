@@ -9,7 +9,7 @@
 Let $K$ be a *connected* simplicial complex. Then
 
 $$
-H_0(K) \cong \mathbb{Z}
+H_0(K) \cong \Z
 $$
 
 ----
@@ -18,7 +18,7 @@ $$
 
 Let $f: G_1 \to G_2$ be a group homomorphism. Then
 
-$$G_1 / \ker{f} \cong \text{im }f$$
+$$G_1 / \ker{f} \cong \im f$$
 
 ----
 
@@ -42,9 +42,9 @@ This simplicial complex is *connected*, and contains 0- and 1-simplexes only. Th
 $$
 \begin{align*}
     C_0(K) &= \{z_0 = i p_0 + j p_1 + k p_2 
-    \mid i,j,k \in \mathbb{Z}\}
+    \mid i,j,k \in \Z\}
     \\
-    C_1(K) &= \{z_1 = i (p_0 p_1) + j (p_1 p_2) + k (p_2 p_0)\mid i,j,k \in \mathbb{Z}\}\}
+    C_1(K) &= \{z_1 = i (p_0 p_1) + j (p_1 p_2) + k (p_2 p_0)\mid i,j,k \in \Z\}\}
 \end{align*}
 $$
 
@@ -52,7 +52,7 @@ $$
 
 Since $K$ is connected, by [Theorem 1](#theorem-1-0th-homology-group-of-connected-simplicial-complex), we must have
 
-$$H_0(K) \cong \mathbb{Z}$$
+$$H_0(K) \cong \Z$$
 
 Nevertheless, we verify this result by direct calculation. 
 
@@ -62,7 +62,7 @@ Nevertheless, we verify this result by direct calculation.
 
     $$
     Z_0(K) = \{z_0 = i p_0 + j p_1 + k p_2 
-    \mid i,j,k \in \mathbb{Z}\} \cong \mathbb{Z^3}
+    \mid i,j,k \in \Z\} \cong \mathbb{Z^3}
     $$
 
 - **Boundary Group $B_0(K)$**
@@ -89,14 +89,14 @@ Nevertheless, we verify this result by direct calculation.
 
     $$
     B_0(K) = \{i' p_0 + j' p_1 - (i' + j')p_2
-    \mid i', j' \in \mathbb{Z}\} \cong \mathbb{Z}^2
+    \mid i', j' \in \Z\} \cong \Z^2
     $$
 
 Finally
 
 $$
 H_1(K) \equiv Z_1(K) / B_1(K) \cong 
-\mathbb{Z}^3 / \mathbb{Z}^2 = \mathbb{Z}
+\Z^3 / \Z^2 = \Z
 $$
 
 ### Homology Group $H_1(K)$
@@ -109,7 +109,7 @@ $$
         \\
         &\Rightarrow i = j = k 
         \\
-        &\Rightarrow Z_1(K) \cong \mathbb{Z}
+        &\Rightarrow Z_1(K) \cong \Z
     \end{align*}
     $$
 
@@ -133,7 +133,7 @@ Finally
 
 $$
 H_1(K) \equiv Z_1(K) / B_1(K) \cong 
-\mathbb{Z}/\{0\} = \mathbb{Z}
+\Z/\{0\} = \Z
 $$
 
 ## Example 2
@@ -155,7 +155,7 @@ The 0-chain group (which is also the 0-cycle group)  is
 
 $$
 C_0(K) = Z_0(K) = \{z_0 = i p_0 + j p_1 
-\mid i,j \in \mathbb{Z}\} \cong \mathbb{Z}^2
+\mid i,j \in \Z\} \cong \Z^2
 $$
 
 There is no 1-simplexes in $K$, thus
@@ -168,5 +168,5 @@ Finally
 
 $$
 H_0(K) \equiv Z_0(K) / B_0(K) \cong 
-\mathbb{Z}^2/\{0\} = \mathbb{Z}^2
+\Z^2/\{0\} = \Z^2
 $$

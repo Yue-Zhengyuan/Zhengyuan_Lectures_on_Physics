@@ -6,7 +6,7 @@ Now we use Jordan-Wigner transformation to map the Hamiltonian $H^{A/P}$ of **He
 
 **Heisenberg-like spin chain:**
 
-- Local Hamiltonian and $\mathbb{Z}_2$ generator
+- Local Hamiltonian and $\Z_2$ generator
 
     $$
     \begin{gather*}

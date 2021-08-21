@@ -298,12 +298,12 @@ $$
     c_k(\tau) &= \frac{1}{\sqrt{\beta}} \sum_{\nu}
     c_{k\nu} e^{i\nu\tau}, & 
     \nu &\in \left\{
-        \frac{(2n+1)\pi}{\beta} \bigg| n \in \mathbb{Z}
+        \frac{(2n+1)\pi}{\beta} \bigg| n \in \Z
     \right\} \\
     b_q(\tau) &= \frac{1}{\sqrt{\beta}} \sum_{\chi}
     b_{q\chi} e^{i\chi\tau}, & 
     \chi &\in \left\{
-        \frac{2n\pi}{\beta}  \bigg| n \in \mathbb{Z}
+        \frac{2n\pi}{\beta}  \bigg| n \in \Z
     \right\}
 \end{align*}
 $$

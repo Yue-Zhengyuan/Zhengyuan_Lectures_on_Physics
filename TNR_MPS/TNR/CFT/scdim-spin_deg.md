@@ -152,7 +152,7 @@ $$
     \\[1em]
     \bar{h}_{m,n} &= \left(\frac{m}{R} - \frac{n R}{2}\right)^2
 \end{align*} \qquad
-(m,n \in \mathbb{Z})
+(m,n \in \Z)
 $$
 
 The scaling dimensions are

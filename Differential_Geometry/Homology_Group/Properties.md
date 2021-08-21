@@ -21,9 +21,9 @@ $$
 
 *Corollary*: 
 
-- $H_0(K) \cong \mathbb{Z}^N$
+- $H_0(K) \cong \Z^N$
 
-- $K \ \text{is connected} \Leftrightarrow H_0(K) \cong \mathbb{Z}$
+- $K \ \text{is connected} \Leftrightarrow H_0(K) \cong \Z$
 
 ----
 
@@ -34,13 +34,13 @@ $$
 - **Torsion subgroup of $H_r(K)$**: we decompose $H_r(K)$ to 
 
     $$
-    H_r(K) = \mathbb{Z}^f \oplus 
-    \mathbb{Z}_{k_1} \oplus \cdots \oplus \mathbb{Z}_{k_p}
+    H_r(K) = \Z^f \oplus 
+    \Z_{k_1} \oplus \cdots \oplus \Z_{k_p}
     $$
 
-    The *finite part* ($\mathbb{Z}_{k_1} \oplus \cdots \oplus \mathbb{Z}_{k_p}$) is called the **torsion subgroup of $H_r(K)$**
+    The *finite part* ($\Z_{k_1} \oplus \cdots \oplus \Z_{k_p}$) is called the **torsion subgroup of $H_r(K)$**
 
-    *Remark*: If we use $H_r(K;\mathbb{Z}_2)$ or $H_r(K;\mathbb{R})$, the torsion subgroup will not be recognized:
+    *Remark*: If we use $H_r(K;\Z_2)$ or $H_r(K;\mathbb{R})$, the torsion subgroup will not be recognized:
 
     $$
     H_r(K;\mathbb{R}) = \mathbb{R}^ f

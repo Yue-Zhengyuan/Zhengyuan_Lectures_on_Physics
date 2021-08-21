@@ -2,13 +2,7 @@
 
 ## Linear Maps
 
-A **linear map** (denoted by $A$) on a vector space $V$ maps a vector $u \in V$ to another vector $v = Au \in V$:
-
-$$
-A: V \to V
-$$
-
-The transformation must satisfy the following two *defining* requirements (called the **linearity conditions**):
+A **linear map** $A: V \to W$ between two vector spaces $V, W$ satisfy the following two *defining* requirements (called the **linearity conditions**):
 
 - $\forall \, u, v\in V \qquad \quad A(u + v)=A u + A v$
 

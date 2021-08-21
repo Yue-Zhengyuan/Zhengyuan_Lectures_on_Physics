@@ -9,7 +9,7 @@
     $$
     g = x_1^{i_1} x_2^{i_2} \cdots x_n^{i_n} \qquad
     n \text{ finite}, \,
-    i_k \in \mathbb{Z}, \,
+    i_k \in \Z, \,
     x_j \ne x_{j+1}
     $$
 

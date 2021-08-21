@@ -11,7 +11,7 @@ $$
 $$
 
 <center>
-<img src="Fig_4-6.png" alt="change loop" width="300px">
+<img src="images/Fig_4-6.png" alt="change loop" width="300px">
 </center>
 
 *Proof*: Intuitively, this is true because we can always change a loop at $x_0$ to a loop at $x_1$ in an arcwise connected topological space using the trick shown in the figure above. $\blacksquare$

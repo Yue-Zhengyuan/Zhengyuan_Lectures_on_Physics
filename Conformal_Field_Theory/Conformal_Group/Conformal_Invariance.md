@@ -41,7 +41,7 @@ In particular, CFT in **two dimensional** spaces is special and important:
 
 - The algebra of infinitesimal conformal transformations in 2D is *infinite dimensional* and therefore highly constraining. (e.g. we can determine the general form of 2-point and 3-point *correlation functions* without knowing the details of the system)
 
-    *Digression*: An **algebra** $A$ over a field $K$ is a *vector space* equipped with a bilinear product $[\_,\_]: A\times A \to A$ (e.g. the Lie bracket). Its **dimension** is the number of infinitesimal transformation generators. These generators will be later known as $L_n \, (n \in \mathbb{Z})$
+    *Digression*: An **algebra** $A$ over a field $K$ is a *vector space* equipped with a bilinear product $[\_,\_]: A\times A \to A$ (e.g. the Lie bracket). Its **dimension** is the number of infinitesimal transformation generators. These generators will be later known as $L_n \, (n \in \Z)$
 
 Important examples (or applications) of CFT include:
 

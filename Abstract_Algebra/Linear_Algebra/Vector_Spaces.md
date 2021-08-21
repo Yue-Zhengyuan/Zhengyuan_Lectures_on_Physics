@@ -87,12 +87,12 @@
 
 <div class="result">
 
-*Theorem*: (**Relation between $\ker{f}$ and $\text{im }f$**)
+*Theorem*: (**Relation between $\ker{f}$ and $\im f$**)
 
 Let $f: V \to W$ be a linear map. Then
 
 $$
-\dim{V} = \dim{\ker{f}}  + \dim{\text{im }f}
+\dim{V} = \dim{\ker{f}}  + \dim{\im f}
 $$
 
 </div><br>
@@ -111,7 +111,7 @@ $$
 *Theorem*: (**Dimension of $\tilde{f}$**)
 
 $$
-\dim{\text{im }f} = \dim{\text{im }\tilde{f}}
+\dim{\im f} = \dim{\im \tilde{f}}
 $$
 
 </div><br>

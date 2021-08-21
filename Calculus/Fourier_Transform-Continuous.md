@@ -13,7 +13,7 @@ $$
 For infinite space, we *have to* use the symmetric labelling of $x$:
 
 $$
-n \in \bigg[-\frac{N}{2}, \frac{N}{2} \bigg) \cap \mathbb{Z} 
+n \in \bigg[-\frac{N}{2}, \frac{N}{2} \bigg) \cap \Z 
 \ \Rightarrow \ 
 x_n \in \bigg[-\frac{L}{2}, \frac{L}{2} \bigg)
 $$

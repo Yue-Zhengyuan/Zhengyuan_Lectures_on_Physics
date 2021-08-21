@@ -19,7 +19,7 @@ $$
 a_n = \frac{1}{2\pi i}
 \oint_C dz \,
 \frac{f(z)}{(z - z_0)^{n+1}}, \quad
-n \in \mathbb{Z}
+n \in \Z
 $$
 
 The integration path $C$ (counter-clockwise) must enclose $z_0$, and obviously in the region where $f(z)$ is defined.

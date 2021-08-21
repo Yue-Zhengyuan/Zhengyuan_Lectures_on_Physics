@@ -31,7 +31,7 @@
     
     $$
     \begin{align*}
-        B^r(M) &= \text{im } d_{r-1} \\
+        B^r(M) &= \im  d_{r-1} \\
         &= \{
             \omega \in \Omega^r(M) \mid
             \omega = d_{r-1} \xi , \,

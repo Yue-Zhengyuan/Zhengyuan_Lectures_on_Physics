@@ -2,7 +2,7 @@
 
 <font size=5>
 
-**Part 2: The 14 Wallpaper Groups**
+**Part 2: The 17 Wallpaper Groups**
 
 </font>
 

@@ -289,7 +289,7 @@ If the matrices $M$ in an MPS satisfy the canonical conditions, we say that the 
 An infinite MPS invariant under $(N+1)$-site translation (iMPS) or a PBC-MPS has the property that
 
 $$
-M^n = M^{n+N+1} \qquad \forall \, n \in \mathbb{Z}
+M^n = M^{n+N+1} \qquad \forall \, n \in \Z
 $$
 
 The canonical conditions are the same as an open boundary MPS. However, due to periodicity, the matrix $R^{-1}$ will be identified with $R^N$, and $L^{N+1}$ with $L^0$. Therefore, in order to obtain the matrices $R,L$ for projector construction, we need to perform QR and LQ decomposition over the MPS iteratively until convergence is reached. 

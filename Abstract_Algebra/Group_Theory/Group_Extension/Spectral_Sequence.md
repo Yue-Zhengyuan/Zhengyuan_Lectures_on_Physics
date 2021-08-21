@@ -19,7 +19,7 @@ A **spectral sequence** is a means of computing homology groups by taking succes
         d_r^{p,q}: E_r^{p,q} \to E_r^{p-r,q+r-1}
         \\[4pt] \hline \\[-6pt]
         \text{Filtered Abelian groups} &
-        E^n \ (n \in \mathbb{Z})
+        E^n \ (n \in \Z)
     \end{array}
     $$
 

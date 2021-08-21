@@ -130,6 +130,32 @@ $$
 
 ----
 
+All 2-cocycles form the **2-cocycle group**, which is *Abelian*:
+
+$$
+Z^2(P,T) = \{c(g,h) \mid g,h \in P\}
+$$
+
+The group multiplication is defined as
+
+$$
+c(g,h) c(g',h') \equiv c(gg', hh')
+$$
+
+----
+
+*Verifying closeness under the multiplication*:
+
+$$
+\begin{align*}
+    \text{LHS} &= x_g x_h x_{gh}^{-1} x_{g'} x_{h'} x_{g'h'}^{-1}
+    \\
+    &= 
+\end{align*}
+$$
+
+----
+
 ### 2-Coboundaries
 
 The 2-cocycle $c(g,h)$ is *not uniquely determined* by $g,h$. Let us make new choices $y_g$ such that $\pi(y_g) = g$ (and similarly for other elements in $P$). Then the new 2-cocycle is
@@ -149,26 +175,8 @@ $$
 
 ### The Second Cohomology Group
 
-We can form 3 groups from all 2-cocycles and 2-coboundaries of $P, T$:
+The **second cohomology group** is defined as
 
-- The **second cocycle group** (Abelian)
-
-    $$
-    \begin{gather*}
-        Z^2(P,T) = \{c(g,h) \mid g,h \in P\}
-        \\
-        c(g,h) c(g',h') \equiv c(gg', hh')
-    \end{gather*}
-    $$
-
-- The **second coboundary group** 
-
-    $$
-    B^2(P,T) = \{b(g,h) \mid g,h \in P\} \le Z^2(P,T)
-    $$
-
-- The **second cohomology group**
-
-    $$
-    H^2(P,T) = Z^2(P,T) / B^2(P,T)
-    $$
+$$
+H^2(P,T) = Z^2(P,T) / B^2(P,T)
+$$

@@ -4,7 +4,7 @@ An $d$-dimensional **Bravais lattice** is an infinite array of discrete points d
 
 $$
 R = \sum_{j=1}^d n_j a_j, \quad 
-n_1,...,n_d \in \mathbb{Z}
+n_1,...,n_d \in \Z
 $$
 
 The lattice is invariant under elementary translation operations along any one of the basis vectors. We write
@@ -23,7 +23,7 @@ They generate the (Abelian) **translation group** of the lattice:
 
 $$
 G = \left\{ 
-    \prod_{j=1}^n g_j^{n_j} \bigg| n_1,...,n_d \in \mathbb{Z}
+    \prod_{j=1}^n g_j^{n_j} \bigg| n_1,...,n_d \in \Z
 \right\}
 $$
 
