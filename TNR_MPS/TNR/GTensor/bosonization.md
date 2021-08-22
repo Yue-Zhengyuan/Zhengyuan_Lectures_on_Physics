@@ -64,7 +64,7 @@ tm_apbc = gt.trace(a,3,1,-1)`   # Anti-PBC
 $$
 \begin{align*}
     \mathbf{T}(\theta)_{j_0 j_2}^{n_0 n_2}
-    &= [\operatorname{tr} \mathbf{A}(\theta)]_{j_0 j_2}^{n_0 n_2}
+    &= [\Tr \mathbf{A}(\theta)]_{j_0 j_2}^{n_0 n_2}
     \\
     &= \sum_{n_1,n_3} \sum_{j_1,j_3}
     (-1)^{P(1; 3; \{n\})} g_{13}^{n_1} 

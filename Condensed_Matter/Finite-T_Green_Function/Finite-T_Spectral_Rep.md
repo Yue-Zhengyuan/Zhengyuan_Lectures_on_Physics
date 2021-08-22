@@ -10,7 +10,7 @@ $$
 \begin{align*}
     i \bar{G}_{\alpha \beta}(t - t')
     &= \expect{T[a_\alpha(t) c^\dagger_\beta(t')]} \\
-    &= e^{\beta F} \tr \left\{
+    &= e^{\beta F} \Tr \left\{
         e^{-\beta H} T[a_\alpha(t) c^\dagger_\beta(t')]
     \right \}
 \end{align*}
@@ -24,7 +24,7 @@ Now we Fourier transform $\bar{G}$. As usual, we first separate the time depende
 
 $$
 \begin{align*}
-    &\tr \left\{
+    &\Tr \left\{
         e^{-\beta H} T[a_\alpha(t) c^\dagger_\beta(t')]
     \right \}
     = \sum_m \amp{m}{
@@ -418,10 +418,10 @@ $$
         \sum_{n} \amp{n}{e^{-\beta H} a^\dagger_{\alpha} a_\alpha}{n} 
     \bigg]
     \\
-    &= \operatorname{tr} (e^{-\beta(H - F)} 
+    &= \Tr (e^{-\beta(H - F)} 
     [a_{\alpha} a^\dagger_\alpha]_\mp)
     \\
-    &= \operatorname{tr} e^{-\beta(H - F)} = 1 
+    &= \Tr e^{-\beta(H - F)} = 1 
     \qquad \blacksquare
 \end{align*}
 $$

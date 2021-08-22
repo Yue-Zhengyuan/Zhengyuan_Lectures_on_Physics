@@ -3,14 +3,14 @@
 For simplicity, we let $\rho$ be the *normalized* density matrix:
 
 $$
-\rho = \frac{e^{-\beta H}}{\tr e^{-\beta H}}
+\rho = \frac{e^{-\beta H}}{\Tr e^{-\beta H}}
 = e^{-\beta (H - F)}
 $$
 
 so that the ensemble average of an operator $O$ is directly given by
 
 $$
-\expect{O} = \tr (\rho O)
+\expect{O} = \Tr (\rho O)
 $$
 
 ## Examples of Thermodynamic Quantities

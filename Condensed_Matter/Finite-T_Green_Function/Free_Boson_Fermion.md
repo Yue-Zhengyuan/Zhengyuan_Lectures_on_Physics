@@ -16,13 +16,13 @@ $$
     \mathcal{G}_{\rho \sigma}(\tau - \tau')
     &\equiv -\expect{T [c_\rho(\tau) c_\sigma^\dagger(\tau')]}
     \\
-    &= -\tr \left[
+    &= -\Tr \left[
         e^{-\beta(H - F)}
         T[c_\rho(\tau) c_\sigma^\dagger(\tau')]
     \right]
     \\[1em]
     \text{with} &\quad
-    Z = \tr e^{-\beta H} 
+    Z = \Tr e^{-\beta H} 
     = e^{-\beta F}, \quad \tau = it
 \end{align*}
 $$

@@ -11,7 +11,7 @@ $$
 From this we define the **grand-canonical partition function** $Z$ and the **grand-canonical potential** $F$ (also often denoted by $\Omega$, but we use the same notation as the canonical ensemble):
 
 $$
-Z = \tr e^{-\beta H} = e^{-\beta F}
+Z = \Tr e^{-\beta H} = e^{-\beta F}
 $$
 
 The imaginary time formulation is motivated by the similarity between the density matrix and the time evolution operator (starting from $t_0 = 0$)
@@ -41,8 +41,8 @@ $$
 But at finite temperature, the quantity is replaced by the *ensemble average*
 
 $$
-\expect{O} = \frac{\tr(\rho O)}
-{\tr(\rho)}
+\expect{O} = \frac{\Tr(\rho O)}
+{\Tr(\rho)}
 $$
 
 Thus we see the replacement
@@ -52,7 +52,7 @@ Thus we see the replacement
 **Expectation values from zero to finite temperature:**
 
 $$
-\amp{0}{S(+\infty,-\infty) O}{0} \to \tr(\rho O)
+\amp{0}{S(+\infty,-\infty) O}{0} \to \Tr(\rho O)
 $$
 
 </div><br>

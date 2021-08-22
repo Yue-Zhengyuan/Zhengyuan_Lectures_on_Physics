@@ -40,8 +40,9 @@
     
     *Remark*: 
 
-    - $a$ is *not necessarily* in the translation subgroup $T$. 
+    - $a$ is *not necessarily* a lattice vector in $T$. 
     - The origin-preserving subgroup $G_0 \le P$
+    - $P$ sends lattice vectors to lattice vectors; thus, under the lattice basis vectors, elements in $P$ are represented by matrices with *integer entries*, i.e. $P \le \GL(n,\Z)$. 
 
     </div>
 
@@ -283,6 +284,12 @@ We can say more about the isomorphism $\phi$:
 
 - On the induced isomorphism $\tilde{\phi}$:
 
+    For a translation element $(t,1)$, it is mapped by $\phi$ to 
+
+    $$
+    \phi(t,1) = (U_\phi t, 1)
+    $$
+
     Suppose $(a,A) \in G$; it is mapped by $\phi$ to
 
     $$
@@ -290,6 +297,34 @@ We can say more about the isomorphism $\phi$:
     (A \in P, B \in P')
     $$
 
-    We want to know what $B$ is. 
+    We want to know what $B$ is. Consider the conjugation of $(t,1)$ by $(a,A)$
+
+    $$
+    \begin{align*}
+        & (a,A)(t,1)(a,A)^{-1} \\
+        &= (a,A)(t,1)(-A^{-1}a, A^{-1}) \\
+        &= (a,A)(t-A^{-1}a, A^{-1})
+        = (At, 1)
+    \end{align*}
+    $$
+
+    which is a "rotated" translation. Thus, it is sent by $\phi$ to
+
+    $$
+    \begin{align*}
+        & \phi((a,A)(t,1)(a,A)^{-1}) = (U_\phi At, 1)
+        \\
+        &\overset{!}{=} (b,B)(U_\phi t,1)(b,B)^{-1}
+        = (BU_\phi t,1)
+    \end{align*}
+    $$
+
+    This implies that
+
+    $$
+    U_\phi A = B U_\phi \Rightarrow 
+    B = U_\phi A U_\phi^{-1} 
+    \quad \blacksquare
+    $$
 
 ----

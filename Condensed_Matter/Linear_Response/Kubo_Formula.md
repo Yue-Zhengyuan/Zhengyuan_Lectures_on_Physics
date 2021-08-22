@@ -12,7 +12,7 @@ Before turning on the perturbation, the ensemble average of a quantity $A$ is gi
 
 $$
 \begin{align*}
-    \expect{A}_0 &= \tr \rho_0 A 
+    \expect{A}_0 &= \Tr \rho_0 A 
     \qquad \left(
         \rho_0 = \frac{1}{Z_0} e^{-\beta H_0}
     \right)

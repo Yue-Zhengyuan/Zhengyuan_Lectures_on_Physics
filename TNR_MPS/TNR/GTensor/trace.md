@@ -6,7 +6,7 @@ The **trace** of a Grassmann tensor over the pairs of axes $(a,b), (c,d), ...$ i
 
 $$
 \begin{align*}
-    &[\operatorname{tr} \mathbf{A}(\theta)]_{i_1 ... \cancel{i_a} \cancel{i_b} \cancel{i_c} \cancel{i_d} ... i_r}^{n_1 ... \cancel{n_a} \cancel{n_b} \cancel{n_c} \cancel{n_d} ... n_r} 
+    &[\Tr \mathbf{A}(\theta)]_{i_1 ... \cancel{i_a} \cancel{i_b} \cancel{i_c} \cancel{i_d} ... i_r}^{n_1 ... \cancel{n_a} \cancel{n_b} \cancel{n_c} \cancel{n_d} ... n_r} 
     \\
     &\equiv \sum_{n_a,n_b} \sum_{n_c,n_d} \cdots \sum_{i_a,i_b} \sum_{i_c,i_d} \cdots
     (-1)^{P(a,c,...; b,d,...; \{n\})}
@@ -77,7 +77,7 @@ Using this transposed tensor, the formula is simplified to
 
 $$
 \begin{align*}
-    &[\operatorname{tr} \mathbf{A}(\theta)]_{i_{2q+1} ... i_r}^{n_{2q+1} ... n_r} 
+    &[\Tr \mathbf{A}(\theta)]_{i_{2q+1} ... i_r}^{n_{2q+1} ... n_r} 
     \\
     &= \sum_{n_1,n_2} \cdots \sum_{n_{2q-1},n_{2q}} 
     \sum_{i_1,i_2} \cdots \sum_{i_{2q-1},i_{2q}}
@@ -114,7 +114,7 @@ Now we are contracting over the pairs $(1,2q), (2,2q-1), ..., (q,q+1)$. Then
 
 $$
 \begin{align*}
-    &[\operatorname{tr} \mathbf{A}(\theta)]_{i_{2q+1} ... i_r}^{n_{2q+1} ... n_r} 
+    &[\Tr \mathbf{A}(\theta)]_{i_{2q+1} ... i_r}^{n_{2q+1} ... n_r} 
     \\
     &= \sum_{n_1,n_{2q}} \cdots \sum_{n_q,n_{q+1}} 
     \sum_{i_1,i_{2q}} \cdots \sum_{i_q,i_{q+1}}
@@ -154,16 +154,16 @@ then
 
 $$
 \begin{align*}
-    &[\operatorname{tr} \mathbf{A}(\theta)]_{i_{2q+1} ... i_r}^{n_{2q+1} ... n_r} 
+    &[\Tr \mathbf{A}(\theta)]_{i_{2q+1} ... i_r}^{n_{2q+1} ... n_r} 
     \\
     &= \sum_{N} \sum_{I}
     \tilde{A}_{I I, i_{2q+1} ... i_r}^{N N, n_{2q+1} ... n_r} 
     \theta_{2q+1}^{n_{2q+1}} \cdots \theta_r^{n_r} 
     \\
-    &= \sum_{N} \left(\operatorname{tr}_I 
+    &= \sum_{N} \left(\Tr_I 
     \tilde{A}_{I I, i_{2q+1} ... i_r}^{N N, n_{2q+1} ... n_r} \right)
     \theta_{2q+1}^{n_{2q+1}} \cdots \theta_r^{n_r} 
 \end{align*}
 $$
 
-Here $\operatorname{tr}_I$ means trace over the index $I$ only.
+Here $\Tr_I$ means trace over the index $I$ only.

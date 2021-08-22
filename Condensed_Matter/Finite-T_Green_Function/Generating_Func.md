@@ -5,8 +5,8 @@
 Now consider how the interaction $V$ will change the partition function and free. Let
 
 $$
-Z_0 = \tr e^{-\beta H_0} = e^{-\beta F_0}, \quad
-Z = \tr e^{-\beta H} = e^{-\beta F}
+Z_0 = \Tr e^{-\beta H_0} = e^{-\beta F_0}, \quad
+Z = \Tr e^{-\beta H} = e^{-\beta F}
 $$
 
 It is assumed that $Z_0$ is known. By definition in interaction picture (with $\tau_0 = 0$)
@@ -21,9 +21,9 @@ But recall that $e^{-\beta H} = U(\beta,0)$, therefore
 
 $$
 \begin{align*}
-    Z &= \tr [e^{-\beta H_0} S(\beta,0)]
+    Z &= \Tr [e^{-\beta H_0} S(\beta,0)]
     \\
-    &= Z_0 \frac{\tr [e^{-\beta H_0} S(\beta,0)]}{Z_0}
+    &= Z_0 \frac{\Tr [e^{-\beta H_0} S(\beta,0)]}{Z_0}
     \\
     &= Z_0 \expect{S(\beta,0)}_0
 \end{align*}
