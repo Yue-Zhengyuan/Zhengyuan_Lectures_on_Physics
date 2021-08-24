@@ -13,6 +13,8 @@ $$
 
 *Definition*: Let $G$ be a group.
 
+- **Group ring** $\Z G$:
+
 - **Left $G$-module**: an *Abelian* group $M$ (written additively) together with a (left) action of $G$ on $M$ which is *compatible* with the Abelian structure of $M$
 
     $$
