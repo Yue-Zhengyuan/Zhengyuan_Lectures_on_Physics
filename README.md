@@ -4,14 +4,16 @@ This repository is a collection of lecture notes on physics and related mathemat
 
 ## Standard of Good Lecture Notes
 
+<div class="remark">
 <center>
 
 **AS HIGH AS POSSIBLE**
 
 </center>
+</div><br>
 
-- Assumes no prior knowledge on the part of the readers
-- Jokes and anecdotes are strictly forbidden to avoid distraction and reduce file size
+- Assumes few prior knowledge on the part of the readers
+- Jokes and anecdotes are forbidden to avoid distraction and reduce file size
 - New concepts should be introduced with good motivations
 - Key ingredients in a complex derivation should never be omitted, in order to save labor of new generations of learners, unless the derivation is much less important compared to the result itself
 - Avoid cross-references that breaks the smoothness and continuity of the reading experience
