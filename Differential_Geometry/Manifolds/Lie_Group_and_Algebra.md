@@ -67,7 +67,9 @@ Every closed subgroup $H$ of a Lie group $G$ is also a Lie group.
         
         $$ \dim{\frak{g}} = \dim{T_e G} = \dim{G} $$
     
-- **Lie algebra $\frak{g}$ of Lie group $G$**: the set $\frak{g}$ defined on $G$ together with the *Lie bracket*: $[\quad, \quad]: \frak{g} \times \frak{g} \to \frak{g}$.
+- **Lie algebra $\frak{g}$ of Lie group $G$**: the set $\frak{g}$ defined on $G$ together with the *Lie bracket*: $[\ , \ ]: \frak{g} \times \frak{g} \to \frak{g}$.
+
+    ----
 
     *Proof of closure of $\frak{g}$ under Lie bracket*:
 
@@ -88,3 +90,4 @@ Every closed subgroup $H$ of a Lie group $G$ is also a Lie group.
 
     Thus $[X, Y] \in \frak{g}$. $\blacksquare$
 
+    ----

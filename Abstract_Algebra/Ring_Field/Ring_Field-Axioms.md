@@ -2,38 +2,40 @@
 
 *Definition*:
 
-- **Ring**: a set $R$ (its elements are called **scalars**) with two binary operations satisfying given axioms.
+- **Ring**: a set $R$ (its elements are called **scalars**) with two binary operations (**addition** and **multiplication**) satisfying given axioms.
 
-   - **Addition** $+: R \times R \to R$
+- **Axiom of addition** $+: R \times R \to R$
 
-        For any $a,b,c \in R$:
+    For any $a,b,c \in R$:
 
-        $$
-        \begin{array}{r|l}
-            \text{Commutativity} & a+b = b+a
-            \\[6pt] \hline \\[-6pt]
-            \text{Associativity} & a+(b+c) = (a+b)+c
-            \\[6pt] \hline \\[-6pt]
-            \begin{aligned}
-                \text{Existence of zero} \\
-                \text{(additive identity)}
-            \end{aligned} & \exists 0 \in R, \ a + 0 = a
-            \\[6pt] \hline \\[-6pt] 
-            \begin{aligned}
-                \text{Existence of} \\
-                \text{additive inverse}
-            \end{aligned} & \exists -a \in R, \ a + (-a) = 0
-        \end{array}
-        $$
+    $$
+    \begin{array}{r|l}
+        \text{Requirement} & \text{Description}
+        \\[4pt] \hline \\[-8pt]
+        \text{Commutativity} & a+b = b+a
+        \\[6pt]
+        \text{Associativity} & a+(b+c) = (a+b)+c
+        \\[6pt]
+        \begin{aligned}
+            \text{Existence of zero} \\
+            \text{(additive identity)}
+        \end{aligned} & \exists 0 \in R, \ a + 0 = a
+        \\[6pt]
+        \begin{aligned}
+            \text{Existence of} \\
+            \text{additive inverse}
+        \end{aligned} & \exists (-a) \in R, \ a + (-a) = 0
+    \end{array}
+    $$
 
-    - **Multiplication** $\cdot: R \times R \to R$ 
-        
-        Related to addition by the *distributive law*; for any $a,b,c \in R$:
+- **Axiom of multiplication** $\cdot: R \times R \to R$ 
+    
+    Related to addition by the *distributive law*; for any $a,b,c \in R$:
 
-        $$
-        (a+b)c = ac + bc, \quad
-        a(b+c) = ab + ac
-        $$
+    $$
+    (a+b)c = ac + bc, \quad
+    a(b+c) = ab + ac
+    $$
 
 If we impose additional axioms on the multiplication, we obtain special rings:
 

@@ -1,41 +1,47 @@
 # Inner Product
 
-## Defining Properties
+*Definition*: Let $V$ be a vector space over the field $F$ (usually $\R$ or $\C$).
 
-For two vectors $u,v\in V$, we can define an operation called the **inner product** (denoted by $u \cdot v$), which send two vectors *to a real number*: 
-
-$$
-\_ \cdot \_ : V \times V \to \mathbb{R}
-$$
-
-Inner product is *defined to have* the following properties:
-
-- **Symmetry**: $\forall \, u,v \in V$
+- **Inner product**: a binary operation sending two vectors to the field $F$: 
 
     $$
-    u \cdot v = v \cdot u
+    \la \_, \_ \ra: V \times V \to F,
+    \quad (u,v) \mapsto \expect{u,v}
     $$
 
-- **Linearity in the second argument**: $\forall \, u,v,w \in V ;\, \alpha,\beta \in \mathbb{R}$
-    
+    which satisfied the following axioms: for all $u,v,w\in V$ and $\alpha \in F$
+
     $$
-    u \cdot (\alpha v + \beta w) 
-    = \alpha (u \cdot v) + \beta(u \cdot w)
+    \begin{array}{c|c}
+        \text{Requirement} & \text{Description}
+        \\[4pt] \hline \\[-8pt]
+        \text{Conjugate symmetry} & 
+        \expect{u,v} = \expect{v,u}^*
+        \\[6pt]
+        \text{Positivity} &
+        \expect{v,v} \ge 0
+        \\[6pt]
+        \text{Definiteness} &
+        \expect{v,v} = 0 \Leftrightarrow v = 0
+        \\[6pt]
+        \text{Additivity in 2nd slot} &
+        \expect{u,v+w} = \expect{u,v} + \expect{u,w}
+        \\[6pt]
+        \text{Linearity in 2nd slot} &
+        \expect{u,\alpha v} = \alpha \expect{u,v}
+    \end{array}
     $$
 
-The two properties combined gives linearity in the first argument, too (show this by yourself; thus we say that the inner product is a **bi-linear** function):
+<div class="remark">
 
-$$
-(\alpha v + \beta w) \cdot u
-= \alpha (v \cdot u) + \beta(w \cdot u)
-$$
+*Remark*: A vector space endowed with an inner product is called an **inner product space**.
 
-Up to now we have not really define how to *calculate* the inner product. It turns out that there are many ways to define the calculation that satisfy the two properties above. We can then also generalize the concept of inner product to more abstract vector spaces.
+</div><br>
 
-*Remark*: Some concepts derived from the inner product
+### Some Concepts Derived from the Inner Product
 
 - Two vectors are **orthogonal** to each other if their inner product is 0.
-- The **length** of a vector $v$ is defined as $|v| \equiv \sqrt{v \cdot v}$. 
+- The **length** of a vector $v$ is defined as $|v| \equiv \sqrt{\expect{v,v}}$. 
 
 ## Orthonormal Basis Vectors
 
@@ -45,16 +51,16 @@ $$
 u = u_i e_i, \quad v = v_i e_i
 $$
 
-Due to bi-linearity of inner product, $u \cdot v$ can be reduced to the linear combination of the inner product of basis vectors:
+Due to bi-linearity of inner product, $\expect{u,v}$ can be reduced to the linear combination of the inner product of basis vectors:
 
 $$
-u \cdot v = u_i v_j (e_i \cdot e_j)
+\expect{u,v} = u_i^* v_j \expect{e_i, e_j}
 $$
 
-The numbers $e_i \cdot e_j$ are still not determined, and depend on both the choice of basis vectors, which is *not unique*. Now we pick a *special* choice of basis vectors such that
+The numbers $\expect{e_i, e_j}$ are still not determined, and depend on both the choice of basis vectors, which is *not unique*. Now we pick a *special* choice of basis vectors such that
 
 $$
-e_i \cdot e_j = \delta_{ij} 
+\expect{e_i, e_j} = \delta_{ij} 
 = \begin{cases}
     1 & i = j \\
     0 & i \ne j
@@ -66,29 +72,29 @@ i.e. each basis vector has length 1, and is orthogonal to all other basis vector
 Then we recover something you already know:
 
 $$
-u \cdot v = u_i v_j \delta_{ij} = u_i v_i
+\expect{u,v} = u_i^* v_j \delta_{ij} = u_i^* v_i
 $$
 
 We emphasize that **this formula is valid only when we are using the components of $u,v$ along an orthonormal basis**.
 
-From this relation, we can choose $v = e_j$ and express the $j$th components of $u$ along $e_j$ as the inner product of $u$ and $e_j$:
+From this relation, we can choose $u = e_j$ and express the $j$th components of $v$ along $e_j$ as the inner product of $u$ and $e_j$:
 
 $$
-u \cdot e_j = u_i \delta_{ij} = u_j
+\expect{e_j, v} = \delta_{ij} v_i = v_j
 $$
 
 *Remark*: Even the choice of orthonormal basis is *not unique*. For example, you can easily *rotate* the basis to obtain a new one. This is easy to understand intuitively, but a rigorous mathematical proof of this statement is not very trivial.
 
 ## Inner Product under Linear Map
 
-After the linear map $A$, the inner product $u \cdot v$ is transformed to 
+After the linear map $A$, the inner product $\expect{u,v}$ is transformed to 
 
 $$
 \begin{align*}
-    (Au) \cdot (Av)
-    &= (Au)_i (Av)_j (e_i \cdot e_j)
+    \expect{Au, Av}
+    &= (Au)_i^* (Av)_j \expect{e_i, e_j}
     \\
-    &= (A_{ik} u_k) (A_{jl} v_l) (e_i \cdot e_j)
+    &= (A_{ik} u_k)^* (A_{jl} v_l) \expect{e_i, e_j}
 \end{align*}
 $$
 
@@ -96,24 +102,25 @@ If we are using an orthonormal basis, then
 
 $$
 \begin{align*}
-    (Au) \cdot (Av)
-    &= (A_{ik} u_k) (A_{jl} v_l) \delta_{ij}
+    \expect{Au, Av}
+    &= (A_{ik} u_k)^* (A_{jl} v_l) \delta_{ij}
     \\
-    &= A_{ik} u_k A_{il} v_l
+    &= A_{ik}^* u_k^* A_{il} v_l
     \\
-    &= u_k (A^\mathsf{T})_{ki} A_{il} v_l
+    &= u_k^* (A^\dagger)_{ki} A_{il} v_l
     \\
-    &= u_k (A^\mathsf{T} A)_{kl} v_l
+    &= u_k^* (A^\dagger A)_{kl} v_l
 \end{align*}
 $$
 
-## Orthogonal Matrix
+## Unitary Matrix
 
 Let us consider a special case: if 
 
 $$
-A^\mathsf{T} A = 1 \quad
-\text{or equivalently $A A^\mathsf{T}$ = 1}
+A^\dagger A = 1 
+\quad \text{or equivalently} \quad
+A A^\dagger = 1
 $$
 
 where $1$ is the **identity matrix** (we will talk more about it later)
@@ -126,11 +133,11 @@ then
 
 $$
 \begin{align*}
-    (Au) \cdot (Av)
-    &= u_k \delta_{il} v_l
+    \expect{Au, Av}
+    &= u_k^* \delta_{il} v_l
     \\
-    &= u_k v_k = u \cdot v
+    &= u_k^* v_k = \expect{u,v}
 \end{align*}
 $$
 
-i.e. the inner product is invariant under $A$. We call such a representation matrix an **orthogonal matrix**. 
+i.e. the inner product is invariant under $A$. We call such a representation matrix a **unitary matrix**. 

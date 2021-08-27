@@ -1,34 +1,5 @@
 # Group Cohomology
 
-## Group Extension with Abelian Kernel
-
-Consider the special case of extension of an *Abelian* group $A$
-
-$$
-1 \to A \xrightarrow{\mu} G 
-\xrightarrow{\pi} B \to 1
-$$
-
-## *G*-Modules
-
-*Definition*: Let $G$ be a group.
-
-- **Group ring** $\Z G$:
-
-- **Left $G$-module**: an *Abelian* group $M$ (written additively) together with a (left) action of $G$ on $M$ which is *compatible* with the Abelian structure of $M$
-
-    $$
-    \forall g\in G,\ \forall a,b \in M \quad 
-    g(a+b) = g(a) + g(b)
-    $$
-
-- **Right $G$-module**: defined similarly as the left $G$-module, but with a compatible right action of $G$ on $M$:
-
-    $$
-    \forall g\in G,\ \forall a,b \in M \quad 
-    (a+b)g = (a)g + (b)g
-    $$
-
 ## Cochain
 
 *Definition*: Let $G$ be a group, $M$ a $G$-module (in additive notation), and $n$ a non-negative integer. 

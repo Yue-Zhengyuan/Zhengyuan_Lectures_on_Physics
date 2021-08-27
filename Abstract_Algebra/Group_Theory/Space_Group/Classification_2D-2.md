@@ -34,11 +34,11 @@ $$
     \\[4pt]
     C_6 & 0 & 1 & p6
     \\[4pt]
-    D_{1p} & \Z/2\Z & 2 & pm, pg
+    D_{1p} & \Z_2 & 2 & pm, pg
     \\[4pt]
     D_{1c} & 0 & 1 & cm
     \\[4pt]
-    D_{2p} & \Z/2\Z \times \Z/2\Z & 4 & 
+    D_{2p} & \Z_2 \times \Z_2 & 4 & 
     pmm, pmg, pgg
     \\[4pt]
     D_{2c} & 0 & 1 & cmm
@@ -47,7 +47,7 @@ $$
     \\[4pt]
     D_{3s} & 0 & 1 & p31m
     \\[4pt]
-    D_4 & \Z/2\Z & 2 & p4m, p4g
+    D_4 & \Z_2 & 2 & p4m, p4g
     \\[4pt]
     D_6 & 0 & 1 & p6m
 \end{array}

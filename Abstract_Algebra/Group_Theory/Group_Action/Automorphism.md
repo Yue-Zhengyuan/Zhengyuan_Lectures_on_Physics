@@ -76,6 +76,18 @@ $$
 \quad \blacksquare
 $$
 
+<div class="remark">
+
+*Remark*: Based on this theorem, we define the **outer automorphism group** as
+
+$$
+\Out(G) = \Aut(G) / \Inn(G)
+$$
+
+Its elements are not conjugation operations, and are called **outer automorphism**.
+
+</div><br>
+
 ----
 
 ## Center of A Group

@@ -168,15 +168,15 @@ $$
 *Definition*: Suppose $N, H$ are both subgroups of $G$ (hence the name *inner*).
 
 - **Inner semi-direct product** $N \rtimes H$:<br>
-    the group $G$ itself (denoted by ) if all of the following are true:
+    the group $G$ itself if all of the following are true:
 
-    1. $G = NH$
-    2. $N \cap H = \{1_G\}$
-    3. $N \lhd G$
+    - $G = NH$
+    - $N \cap H = \{1_G\}$
+    - $N \lhd G$
 
 <div class="result">
 
-*Theorem*: The inner semi-direct product $G$ is *isomorphic* to the outer semi-direct product $G' \equiv N \rtimes_\phi H$ with an appropriate $\phi$.
+*Theorem*: The inner semi-direct product $G$ is *isomorphic* to the outer semi-direct product $G' \equiv N \rtimes_\phi H$ with $\phi$ as *conjugation* by elements in $H$.
 
 </div>
 
@@ -202,18 +202,23 @@ $$
     \end{aligned} \right.
     $$
 
-Thus we can choose the isomorphism between $G, G'$ as
+This motivates the following choice of isomorphism between $G, G'$ as
 
 $$
 (n,h) \mapsto nh
 $$
 
-The homomorphism $\phi$ can then be determined as
+Then we want
 
 $$
-\phi_h(n') = h n' h^{-1} 
+n'' = n h n' h^{-1} \overset{!}{=} n \phi_h(n')
+$$
+
+This determines the homomorphism $\phi$ as a conjugation operation:
+
+$$
+\phi_h(n) = h n h^{-1} 
 \quad \blacksquare
 $$
 
 ----
-

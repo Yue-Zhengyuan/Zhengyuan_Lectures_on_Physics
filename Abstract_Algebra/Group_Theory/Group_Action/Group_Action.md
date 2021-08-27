@@ -24,6 +24,8 @@
     \end{array}
     $$
 
+    Usually we simply write $g * x$ as $g(x)$. 
+
 - **Right action** of $G$ on $X$: a map
 
     $$

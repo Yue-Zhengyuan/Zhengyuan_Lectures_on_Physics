@@ -1,6 +1,6 @@
 # Stokes' Theorem
 
-## Preliminary: Integration of Differential Forms in $\mathbb{R}^m$
+## Integration of Differential Forms in $\mathbb{R}^m$
 
 *Definition*:
 
@@ -155,7 +155,7 @@ $$
 
 where $f$ is a smooth map from a region *containing* $\sigma_r$ to $M$ (sometimes simply written as $f: \sigma_r \to M$), and $f^*$ is the corresponding pullback from $r$-forms in $M$ to $r$-forms in $\mathbb{R}^r$. 
 
-----
+<div class="result">
 
 *Theorem*: (**Stokes' theorem**)
 
@@ -164,6 +164,10 @@ Let $\omega \in \Omega^{r-1}(M), \, c \in C_r(M)$, where $M$ is an $m$-dimension
 $$
 \int_c d \omega = \int_{\partial c} \omega
 $$
+
+</div>
+
+----
 
 *Proof*:
 

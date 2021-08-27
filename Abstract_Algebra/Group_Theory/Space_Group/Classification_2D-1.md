@@ -136,7 +136,7 @@ $$
 Z^2(P,T) = \{c(g,h) \mid g,h \in P\}
 $$
 
-The group multiplication is defined as
+The group multiplication is defined *pointwise*
 
 $$
 c(g,h) c(g',h') \equiv c(gg', hh')
